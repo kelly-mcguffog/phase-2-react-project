@@ -1,6 +1,6 @@
-/* .App {
+.App {
   text-align: center;
-} */
+}
 
 .App-logo {
   height: 40vmin;
@@ -9,9 +9,10 @@
 
 .card-image{
   width:  100px;
-  height: 200px;
+  height: 150px;
   object-fit: scale-down;
-  border-radius: 2px;
+  margin: 0 auto;
+  display: block;
 }
 .content-card{
   width: 20%;
@@ -19,7 +20,12 @@
   margin: 2%;
 }
 h3{
-  color:#61dafb;
+  font-size: 14px;
+  margin: 10px;
+}
+p{
+  font-size: 12px;
+  margin: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {

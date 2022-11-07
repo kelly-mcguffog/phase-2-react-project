@@ -1,11 +1,20 @@
 import React, { useState, useEffect } from "react";
-import Container from "./Container";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import NavBar from "./NavBar";
+import HBO from "./HBO";
+import Netflix from "./Netflix";
+import Hulu from "./Hulu";
+import Container from "./Container";
 import "../App.css"
 
 
 function App() {
-  const [isContent, setContent] = useState([]);
+
+   const [isContent, setContent] = useState([]);
 
 
   useEffect(() => {
@@ -14,12 +23,26 @@ function App() {
       .then(data => setContent(data))
   },[])
 
+
   return (
-    <div className="App">
+    <Router>
       <NavBar />
-      <Container allContent={isContent} />
-    </div>
-  );
+      <Switch>
+        <Route exact path="/">
+          <Container allContent={isContent} />
+        </Route>
+        <Route path="/hbo">
+          <HBO />
+        </Route>
+        <Route path="/hulu">
+          <Hulu/>
+        </Route>
+        <Route path="/netflix">
+          <Netflix/>
+        </Route>
+      </Switch>
+    </Router>
+  )
 }
 
 export default App;
