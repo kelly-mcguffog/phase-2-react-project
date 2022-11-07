@@ -1,0 +1,796 @@
+{
+  "content": [
+      {
+          "id": 1,
+          "title": "The Shawshank Redemption",
+          "category": "Movie",
+          "genre": "Drama",
+          "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi3877612057/1434659607842-pgv4ql-1616202333253.mp4?Expires=1667844359&Signature=eoGDE7jfb-1wiXeW6OxARgInOQfHdQbVPZGzkSR22gWfp7XbspMljYDaLWZXBZou~Ba-uWX5ngHGCy7DYHabVqgmCTKsQY2~NIZWAv70VMR0JGW0McGluL9-8KC7~L0tLTuoWmXfcUAiaKHxmYTSMxuKj5IKdggK--G04TgbZpGmaYaE7KkMZaicKzrwintjeks2URveAtm7PsM-DoEnrtvMe-86fIMzwJTOawagMQkxnlvgcTh22EazgydWviF8S5tnuENHgH7Q6nkNwbasol9UnyyNc2A~8XBCzQXY-D8Tp60GQFKZYEP93KutFKhKICGcwCzMstAyetcfGvxtJw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 2,
+          "title": "The Dark Knight",
+          "category": "Movie",
+          "genre": [
+              "Action",
+              "Crime",
+              "Drama"
+          ],
+          "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi324468761/1434659607842-pgv4ql-1563712918369.mp4?Expires=1667844586&Signature=pjCAfL6uVDQg7By3Ko4wlslxKmNcLZK6mlK85ygJUzsCa-ojOlFvr1uvZx-ILkdEnKiHYVze~ZH~7Fxce79yVRvvYK2TGF~CRJXKK5PqI6zDQY1BWK9w07GiTdWEQJCbXv0qLqiV6PE8YVRXEASt4ERYtF81O8E1V963ymtuj1kEHgKVhzsH8i0nOzoWSBU-OqGFkjEvZS5wF1qQxPE-M~7cQGB3alpRUttYUM~SnsCSnmu7LcojjO-oPbRoH6FcoQQf6BgCxTBWUZiYlpCMpW24PDOxzDzz5P96xF6n9dT4m-P8ZcJ1HCM5umVjk~nkUkOVNhNeRTGbvFp7G~xwvg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg"
+      },
+      {
+          "id": 3,
+          "title": "Pulp Fiction",
+          "category": "Movie",
+          "genre": [
+              "Crime",
+              "Drama"
+          ],
+          "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi2620371481/1434659607842-pgv4ql-1450205469045.mp4?Expires=1667844839&Signature=Mq~rGofSg5vOeWOYnAVfzahYhDNvaUZ8bXfD~oQzDbCv10RCuHInjpN-H6AC0vZ0zIY9hb2mJb06NeoB1L0TAdCRhm-Jpk3a36GgLzP0U3hURS3qymIiojwhiY1FbxQF37SI4F696oUNlSXmS992Rt9-7WvqXlz7SQj7zBHQK-mwmFfrAGrcOVet275VUqPXBH6TRXjvnbNATcBcJp~0JE5l3Jl6oytCPOvTS7M8Ib19sAswSjfnO~J8DzuWwH~8CWpUSVbVxXrDseaPEh0vZ3fVLZXGer9sQG8uFCdbMMaksQTjca9jiJV8IjDYM8R8KKRZDl28u1PqadO9PnQRPA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+      },
+      {
+          "id": 4,
+          "title": "Fight Club",
+          "category": "Movie",
+          "genre": "Drama",
+          "description": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi781228825/1434659607842-pgv4ql-1563680941480.mp4?Expires=1667844925&Signature=WQMaEgW7~vFjaxbE2UL5qUiHQGa3pG7oLkNNMkKNX0mEupnvCWvXGloOv42VuzKigPcEvKi0Sc1RrN7WSita-X5iuf4a6wWKbWjukTQ6O2Jq3fPtk3m3Hp~uqKSEdsbMfyGCScIwe6DDOBG0LgYo-6hcuQGUjMtaWgfDwQCxxKDJ94zOOVcj917xPXNsvUnjaTc6twPl7ypr7GoL2c5povRsCUlhNGFPXP7OoYih~E1FavEOq1EVc~2fJT0dngGTZs4h44Q6ETxxit0bm8k3nFWBkjw0fiflrouhiDdHIjkQvWQtrcwzLeedm9TQ3EKBCkCECYSOrhxYbu~GlwSp3w__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg"
+      },
+      {
+          "id": 5,
+          "title": "Inception",
+          "category": "Movie",
+          "genre": [
+              "Action",
+              "Adventure",
+              "Sci-Fi"
+          ],
+          "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi2959588889/1434659607842-pgv4ql-1596404706743.mp4?Expires=1667845391&Signature=FtJ6QpVY5pYcQRhe9Nv2W67O85aJICjW7vLft9k9FPKnj90SfQ6PxCqz-JLPJKBMi3bdjXujnZkWfa3l99Sk5bxWdaTAEABjgUvC0ad8XJC5syN2KUIUgFnyvgs~cEY3Y0gkOwZUMsH6fqtJthPru-xGtkmupmeafeBWYULGGWb2XllHSmXC5bn8hAkSsnzOZX7xXGuNZcMehVFGaJH5IfGi676WJFQwM-CGt9BZdLAByTraSgOokY2txkP6u09j0m4b1v7Hn13L14J9lVOTSf3tQ2Aws3HU81DK3zE~HN3~qH6rLJUw2IZh5geXa74KSkiksRn9ul6vBF2mvudjZw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 6,
+          "title": "GoodFellas",
+          "category": "Movie",
+          "genre": [
+              "Biography",
+              "Crime",
+              "Drama"
+          ],
+          "description": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi3625105945/1434659607842-pgv4ql-1547216625607.mp4?Expires=1667845687&Signature=mQrCUuszJMOCi7BMNoO7cnDNZGwP6L9kdjO1I8c77DyrOlSNOylwLOMjl5ObUC32TMSvjPSak9c90olAU0SS6XT23IRWYJ~U4M1KXe~BoRYdF9rbz2amRooUmk-m7eq2EuibdbywnfE3xDNTP~b6ueCDN4jKd00OQ56EM~~dvWybDoTENCo-aq4-Ktx5PWcYywdX3y4z4o7mKk26bBKBQzBbijfXhHBYZMGcZvIxVXR-vB2GbzB7~ly0~-jfRzM~~x8HzzVxozsBfBeXCYZfEsCQpV20LiWp5iiIB0bd~QN3amGN3BslWhI6t89BWimAGMiuDT4NNbQOtZGXwedKjg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+      },
+      {
+          "id": 7,
+          "title": "Se7en",
+          "category": "Movie",
+          "genre": [
+              "Crime",
+              "Drama",
+              "Mystery"
+          ],
+          "description": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi2508831257/1434659607842-pgv4ql-1540843135385.mp4?Expires=1667845065&Signature=tFsHp7Uco5kjIIy01rahaycQ4tH6wOGXO7NxkTgcQG8CsoyJY1FRYZEE5OG5kro-1-SJmykMFwGTA7YYjdCKs~QH-urwoKDT5O6-u~VDtWTvYhgPzWhGq3oHfHIYMifkDrj4ND016NXs4MzGFVX44wC24V0gKEdavJD0rb-nEHzqnt5DDmdCmEJjcDioBvTzwh5Mm1QncvllIbV8WF88AL8UzzNIjokkqQOFfrdU-vpJ9ib2hOAZrAaLjDj~JmfxB8RZP31w1FTuLAox8j9bgOsv0-4RAyxzFPSKLOinWffL0uloPs9UWRMjAdeP3T1~pmIxwJHOyunoN-d-LdczZA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_QL75_UX190_CR0,8,190,281_.jpg"
+      },
+      {
+          "id": 8,
+          "title": "Parasite",
+          "category": "Movie",
+          "genre": [
+              "Drama",
+              "Thriller"
+          ],
+          "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi1015463705/1434659607842-pgv4ql-1606954080073.mp4?Expires=1667845712&Signature=ITC9QP~LHKxt6qT7vDuzHMzmiCUldC1BpwRaGJhduzjvBKebGFp5DbD6PVMxf30QsHJ4wl8uXsHeKyU-EjVLj5BYBAI6C8WPU2tWxaW7txWyE8i81TrUDma1n9Qvw~CF934WkZNKzy003ZGuKYXpBL-RjUNxVz-3h3qYd8SdijY5HRwArkxRwUaiWSUga~xoxwmhGuH1ARkK4yg-unqACTfvKKfhT3tdVhCz-W4ywqWqKgCPK0jFDaN0XB6yo6pli0InvGJh8sBOYZkKHkWjtBVIZ21WKVuvLhlU09BDNwQ4A1iOXSNorbLX4IiPL3SwGpedr~pIKliqAZfTfvQL~g__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg"
+      },
+      {
+          "id": 9,
+          "title": "Gladiator",
+          "category": "Movie",
+          "genre": [
+              "Action",
+              "Adventure",
+              "Drama"
+          ],
+          "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi2628367897/1434659607842-pgv4ql-1473794595177.mp4?Expires=1667845280&Signature=qzlj0mCK04PRXrVCALL8MZekTBTh4vpKL1GVexr9QLZWBuQNb0B-cfsEmO9GNrNeLEsDEVsntWeI8MBZFCH-Wge9uGX2NUrFDcDYdKD1siTwEPmj3Vucs5sURYIkUdkX5Lr8mD1TsW0MJKKe27hY5bwOlHXZzjJI059tN-LHFGT-fxHZLZyV9DJBkeP3lllFxybSwQ554YrfQWNNg8EYZyQIZIFb33GP-j9WT3HERTzRm-3e2XoseSSWLzNlFR-y7E2Uzh0BPJAIqQ69KhlSXRtAme0DZQq8gpJzqKFIiaiT2TH8Qzj0ek0IyE3sPtmbI1WdZJWdW4ZWmvXBaSOJ8w__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://upload.wikimedia.org/wikipedia/en/f/fb/Gladiator_%282000_film_poster%29.png"
+      },
+      {
+          "id": 10,
+          "title": "The Departed",
+          "category": "Movie",
+          "genre": [
+              "Crime",
+              "Drama",
+              "Thriller"
+          ],
+          "description": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi2760573209/1434659607842-pgv4ql-1563532402193.mp4?Expires=1667845815&Signature=pRWG-rZLdZFb6AYqCvzSqZ2FD7b-1aArBlt-FQ1WKZMPYja2L11ZV1lza2IE-WkQECzjaQj8Yo9FW9ez2~GHFDePkTkyvAFwL6k8ZeRMRmbVufmdNL4fxDKxnz6zK216jA2XicBoz1PUmkyB22W-kONmUOkTtRjf3p6HFAF0LgDqJOmRS7RhJXkRcAACHcjqNd7YsLjuSjSVw0GdRE40c67rm44gAWOjk~RnERYJ3XjPjvSCAsM4tkbhDGWLL-4lGcBfvo106-Of2GH2hkek92OCBotulphwCWFfVu-V5YN-ylbhqkyp5EKStgBEMFxYlSGmvH91~yGWhGAgpVgtgQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://upload.wikimedia.org/wikipedia/en/5/50/Departed234.jpg"
+      },
+      {
+          "id": 11,
+          "title": "Joker",
+          "category": "Movie",
+          "genre": [
+              "Crime",
+              "Drama",
+              "Thriller"
+          ],
+          "description": "A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of an iconic villain.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi1723318041/1434659607842-pgv4ql-1567008550851.mp4?Expires=1667846124&Signature=tIYdy5WXiS1ImyNBdUGTyjSV4mvsmq92v7ZS5mawKGABkSP1XJx3Af2k08~Mpxcqenu2qX-XETIiVDNet8NpDIHKg1haUFgIktnx-O0oHJLift4I-Dho8n7bfKGg7bIQFH3AHQOcHVyyPIB-RSJ0SXDruWgQjBs7ZeZJyIAhF8HqRzrrYKmCGomyYu7LUTEyhCIrt9SnpACTRRsa7MwytG~7VNTy0fu04ViHmA8xYowLaYT-xACPUYQ-QK4b00drJcbwTVI~Vpm-ytfJLYkLaGz7zZ8Lktt0Lv6~vGsapuDLOIvc4NZcDxkI9rAmo0u7yTd8Nxv6Gu1H6Gz9BVsKjw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+      },
+      {
+          "id": 12,
+          "title": "Inglorious Basterds",
+          "category": "Movie",
+          "genre": [
+              "Adventure",
+              "Drama",
+              "War"
+          ],
+          "description": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi3738173977/1434659607842-pgv4ql-1616202372085.mp4?Expires=1667846085&Signature=DwU3Q~erSvTIaAYTTY7aU~D2FpXuFAaU5o739qPebSqd9ljp6oIch7A~64pDNUmQSsroFp4cNiZpyAEoz2Wi-2QGUSn1rJir70smQupklzCWp0uWPSVPnuXPx3hSDEQy19v4wT-PyzOZfs8Be9xbjRyqPGDN~CdM4q~tzv4g5b-KV3lxFqRmbKbNshdvBssfDAUN-oWgCjbnSq641GvkiGkcKJoKBbUzaxKW5~DxB790Qo~bk-~GU0dpXLAe~7rrcSwJN3UPyE6iIJyvCJgf6bvUdVJoCgrgDs6Tg9ZilzaiTl9N4WLSynYSD2wL2W8WLzJrVREuUPzzrBzvpX8XrA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://upload.wikimedia.org/wikipedia/en/c/c3/Inglourious_Basterds_poster.jpg"
+      },
+      {
+          "id": 13,
+          "title": "Braveheart",
+          "category": "Movie",
+          "genre": [
+              "Biography",
+              "Drama",
+              "History"
+          ],
+          "description": "Scottish warrior William Wallace leads his countrymen in a rebellion to free his homeland from the tyranny of King Edward I of England.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi2874063641/1434659607842-pgv4ql-1537469491566.mp4?Expires=1667846658&Signature=cFhhXgMnjAWnv0u64iYc9qvoClvxbrWmQk1U-kVJaRKvSWJFpYV3LHwA3ADhlTzGYbPpFjsA1j1tHDauRh7UZJjHMax-m5DJLHclSsZwU9E08cbGIF1-Qas7D6u-VXDz6sG4Emkai6qMIjWr-nvYsH7B1r2~C9h2zqA0XOyc7rxP0JcIiA3PhfWism48~ZQ5~CLwEOt3vT7TXeTXAos5gBD7NUtVdCnTxGkvGOKNoTrjuiQvRvScs01uw8~Sg8AMqsm5CwAiM2ekTzAvyiq5KvOe1CJAPshA7NDfd6ENoczjf5HWlkV5nvtwhN78QTyOdMJwLptyYtsq5OK~O1kavw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMzkzMmU0YTYtOWM3My00YzBmLWI0YzctOGYyNTkwMWE5MTJkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+      },
+      {
+          "id": 14,
+          "title": "Moneyball",
+          "category": "Movie",
+          "genre": [
+              "Biography",
+              "Drama",
+              "Sport"
+          ],
+          "description": "Oakland A's general manager Billy Beane's successful attempt to assemble a baseball team on a lean budget by employing computer-generated analysis to acquire new players.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi3229326361/1434659607842-pgv4ql-1616202692054.mp4?Expires=1667849311&Signature=X3YNIn899fd1JbboLiCU3pXLd0ODCX80Vn9aX35tqTdcxz1Nrmw3JNrR2XWxh7KQREInRoTSnzpH0J51hkfwYfgacvcw83rpaewbkTRAT~37XEa3Q7fNdPfD~QXHfTjlMU3dLCnsT1tIYg4RE3XWJMZTzBY858TEuICUGOQofP-drAwnhkMiP90cpWI2yWkUeKLPuz4D8znEo4P-JgV7Xcz5druur~xO6kwjiYcZPHWiyCVHKs0l5DQDIsBNIpXfq4EOa1Ndk5VsFTFIz0t-WOClPzG3zo2dAWIBTtK8USqVq9eIx5-Uar9pcWVuEvtkcC5rHPGobN7UB-uM7VyumA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMjAxOTU3Mzc1M15BMl5BanBnXkFtZTcwMzk1ODUzNg@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 15,
+          "title": "The Irishman",
+          "category": "Movie",
+          "genre": [
+              "Biography",
+              "Crime",
+              "Drama"
+          ],
+          "description": "Hitman Frank Sheeran looks back at the secrets he kept as a loyal member of the Bufalino crime family.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi2244525849/1434659607842-pgv4ql-1574176922903.mp4?Expires=1667849657&Signature=TRUYoUO3zf9gn5ZN3BBYOXNn9E8SvfvX2sByjVpp57TgMbWVc0xy7emy5NlYMeZPQmiPDNjyVedFJGa3FSnmhGPqnpk8ip7wgdKxmMYIvk3EWKzJ0q6J2V02d8bes83jOWp6gTfL8c-sNBxjthVogTBjZNY9L7NRgghVwvFbpFSlP8MVU5z162zGl8PwHKmvim~2rwUx31xUjUPzYFUE-tGTg9-1e9NCfA9PCZLifNm1G~hwTh~QGCiPoFfXrd4umMsAjffbLcrKCJm-UCZgdOYlU1jo2TdKGcH3jQxUg~BLtc1jmjbyWtErVTTsrPlQ9xtcL1gr--s5M6dixI0ezA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMGUyM2ZiZmUtMWY0OC00NTQ4LThkOGUtNjY2NjkzMDJiMWMwXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 16,
+          "title": "Ocean's Eleven",
+          "category": "Movie",
+          "genre": [
+              "Crime",
+              "Thriller"
+          ],
+          "description": "Danny Ocean and his ten accomplices plan to rob three Las Vegas casinos simultaneously.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi1822294297/1434659607842-pgv4ql-1563487662812.mp4?Expires=1667849300&Signature=LsCyxszlKL92FzZq03DTpdOH7tiV8xRhURjjFlM1pgtQfcdPG9~83azf5LLrb6r-j7f2NqVFHZVDZl7G9VmvrUQt3RAoPOklurrl2eHUEimQBBPDanLmmhbwfUC6SixslJ~pTOmd1lBq3-ImNAE-KjtAGIP1xACPJJLrsK2Xk0sko0O-ywCXdzRj8eqVA8E8H-YGoaMgS4dEBRb973NKWCbg47ogkgnKOvfQneQUAwimcXqevlAMPTbRDeizKdoreCVk9dU1V6V8TPyi-wqktMlw2vlSAp4hJ~I3nqfMFjYuJr-VbC9nblyXMvydGKv~iVaC-8XbU1Fx0k6Lcve6nw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BYzVmYzVkMmUtOGRhMi00MTNmLThlMmUtZTljYjlkMjNkMjJkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_.jpg"
+      },
+      {
+          "id": 17,
+          "title": "The Descendants",
+          "category": "Movie",
+          "genre": [
+              "Comedy",
+              "Drama"
+          ],
+          "description": "A land baron tries to reconnect with his two daughters after his wife is seriously injured in a boating accident.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi4144471577/1434659607842-pgv4ql-1616202835399.mp4?Expires=1667849675&Signature=df3CqlKWT1YKSze2X90~vpz4KjjNd4tRWJS-eM0CO387ibma6-Ct7Lwx8fAjvkouWPL1d~NlZnRi06qPAJ1gNUGOmXB1Pz4PC28XhtgJC~hdlWLg6BDrIgQNcOJlWlL930HRdpmvCPhb-mPZvuB5DgTrd6OUpjxU1KcYCnwLWmFnWh3lJobXGv5i3tQ~RVC4jIcwlqx5X5OLjkCeoBgz641Ot4wSuP0EsJirPBSPoUJJJ87yE5QrjM3QKeoJfcyKXWojbZhaywBpvafs2ISoSiK-C~xEWUDKWcuso9MfhBrg9zng2ZHnlBORoYJPc4zRWVs6OFej-0ciHTSPmfDnAQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMjAyNTA1MTcyN15BMl5BanBnXkFtZTcwNjEyODczNQ@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 18,
+          "title": "Marriage Story",
+          "category": "Movie",
+          "genre": [
+              "Drama",
+              "Romance"
+          ],
+          "description": "Noah Baumbach's incisive and compassionate look at a marriage breaking up and a family staying together.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi2650521369/1434659607842-pgv4ql-1571355112908.mp4?Expires=1667859431&Signature=hurM2TezSRhhY2p6~Bo~2M8T6LBKSEfBhc1F4PCtavKzlTO~VoXjeoGOQWvkGllfOS~vxDp05E9VXmQbS00ZYKfip1ny9mAv1udoZWFPSD1jCZnJQwp1whjVp2yf-0BfaifGUIF1yS0yIbQOZTtLomJRtYkSWwP0ImvaGJbulwZKXXyFVb71jPvnI~LUgInYxWqIEdgXGyiPjC5GI8PO~R2izRg8xrwUMysGYdLE9YeL-H5UC3EpvRUWY0fCRSp4wWXnbFvYmU~L~g1H2JW1YrhKOH5VdzAsufd7eoJDNS81AWoLTecOnqUE6q4PVpHCjzbgNSC-bwrvSYsI~sU3lw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BZGVmY2RjNDgtMTc3Yy00YmY0LTgwODItYzBjNWJhNTRlYjdkXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 19,
+          "title": "Zero Dark Thirty",
+          "category": "Movie",
+          "genre": [
+              "Drama",
+              "History",
+              "Thriller"
+          ],
+          "description": "A chronicle of the decade-long hunt for al-Qaeda terrorist leader Osama bin Laden after the September 2001 attacks, and his death at the hands of the Navy S.E.A.L.s Team 6 in May 2011.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi2281482009/1434659607842-pgv4ql-1616202486959.mp4?Expires=1667859771&Signature=MFxDDRQaDlM5f9Y6da6N9krI6Ybf5xqeYQOeWrqQn5zRLBAgr27DaD4CFw3-mTl5YkNbZP1EuZKmCVXg928TdFYmbrBwiA0toFmAYcgUgCYWyGZGkg-Ubj0Gzje07IZbT7vBckOBiqMVwwcL5-Q1pLyTms7J5OJQ1rznqVQjWHyv5Mu0TulO4y5wAB30HK~WcFwBSvnWcCgOsqSc0Djk3ERHpKZgQxGF5tOjRTgbqeP2V7jXnwdhAFD~OsA~c8b35uzYPwUx5LOXyQ0kI0K8fScBtTGwHNiMAkY7uEfMEujisJDiypm7g6XRpA2Ehmbu0QRNHwILG6y0Za7vXxq4UQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMTQ4OTUyNzcwN15BMl5BanBnXkFtZTcwMTQ1NDE3OA@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 20,
+          "title": "Bohemian Rhapsody",
+          "category": "Movie",
+          "genre": [
+              "Biography",
+              "Drama",
+              "Music"
+          ],
+          "description": "The story of the legendary British rock band Queen and lead singer Freddie Mercury, leading up to their famous performance at Live Aid (1985).",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi1451538969/1434659607842-pgv4ql-1540474852592.mp4?Expires=1667859726&Signature=sVXsv0rk0AhpVpPdiQI1qfkHyZZmS9rZNcXupiRf3Nz0qqma9LVJhFhMYl5Q0U~rmfhaoeSzMLd8KSxDZ5-c-RIQoflohdu~jsC7LuZIfWiaMid-X42IQvX3P3rOzoFBrE1fZBBCBYAL7u4unGCk8U--kAaOoE0UGInj8SEbQUl~69VBXQJNhOoBSIdL~sLjTiBLm1QERGSsICnrm-~n6L0qmePb0-Xw1axdav8TtPfXhg1Q6KTiVUYTC2MdcQDyKpp91y5VHm-UsXGNISVlrljCuhgWMuliqcdf~550y3LYjXdaT25N-vTtAnFtDVUuSG~xqGprmrMBzHWl9gJgww__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMTA2NDc3Njg5NDVeQTJeQWpwZ15BbWU4MDc1NDcxNTUz._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 21,
+          "title": "Casino",
+          "category": "Movie",
+          "genre": [
+              "Crime",
+              "Drama"
+          ],
+          "description": "A tale of greed, deception, money, power, and murder occur between two best friends: a mafia enforcer and a casino executive compete against each other over a gambling empire, and over a fast-living and fast-loving socialite.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi1035796761/1434659607842-pgv4ql-1564464625619.mp4?Expires=1667860300&Signature=RQsEel1x~FTB2vzyUMgWe7~zycwFieLA6KVJoA3hXOhTrHhmSRa~VoJZGS3E8IkiacdumoelDrUTOtfG4HSCgfB-EfcavukPY17oo5X-Fw4BoYgPGerbRhLo0umvGFPns0u9XeF9nw-InbnqUzmkvy7wEjerbQsdweDZFWhwPphGyw9a9HWF-Se9QKKB6iyYEDrQ5d~6vX3DuT-yk1L2sgwVdAY3oCa8qH5X-iwApYVGCcr8Y9oCky6nTlTMiKQJ8cuFZJyDlRkX0hSkGdBq1rbDKDH6QlQE1wPBL9o-oDwLMbsimT9q2WJmgoStFXzj2Bh7fKYuv2IsYl-aIXXlNA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMTcxOWYzNDYtYmM4YS00N2NkLTk0NTAtNjg1ODgwZjAxYzI3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 22,
+          "title": "The Girl with the Dragon Tattoo",
+          "category": "Movie",
+          "genre": [
+              "Crime",
+              "Drama",
+              "Mystery"
+          ],
+          "description": "Journalist Mikael Blomkvist is aided in his search for a woman who has been missing for 40 years by young computer hacker Lisbeth Salander.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi3830160409/1434659607842-pgv4ql-1616202467709.mp4?Expires=1667860283&Signature=GhjppAgO8-9CFBSv7dhPLljabOFW66ugI7Mjx9U9HCN6qOtmVnMf03Zfoc09oh3oksfCZ5pjdMPFI8Slz9x4InEFjHi1xecYgLx2B8HzbP3OpegveUXkLuNu-Gyd4wrenJ1S0HKAU8KGI~5qf~VD7v32Xmrjz0ndBlpPbTiFtGA0j8hsg0fQK0ttyXVouSLbOl7aZkQ3xQJGJpnSij~zpk~-GMltHFg~zexsiVxUfovN1iiHNNQDOTGE4QnAlmJOW4~jZXYYoAQA0yrXKVfe4nHtLYCPgcz0dzzRwxJFVo4R8K1Eg~cjtV0yVOzyfzJaLPd6iqweHpcOl9j9Pc4Z2w__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMTczNDk4NTQ0OV5BMl5BanBnXkFtZTcwNDAxMDgxNw@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 23,
+          "title": "Elvis",
+          "category": "Movie",
+          "genre": [
+              "Biography",
+              "Drama",
+              "Music"
+          ],
+          "description": "The life of American music icon Elvis Presley, from his childhood to becoming a rock and movie star in the 1950s while maintaining a complex relationship with his manager, Colonel Tom Parker.",
+          "platform": "HBO Max",
+          "trailer": "https://m.media-amazon.com/images/I/F1ABrswK6sL.mp4",
+          "image": "https://m.media-amazon.com/images/M/MV5BYzMzNTJjYmMtZTkxNS00MjI4LWI3YmQtOTQ4MDZjZDJlZjQyXkEyXkFqcGdeQXVyNjc0NzQzNTM@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 24,
+          "title": "King Richard",
+          "category": "Movie",
+          "genre": [
+              "Biography",
+              "Drama",
+              "Sport"
+          ],
+          "description": "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi2139603737/1434659607842-pgv4ql-1634834757903.mp4?Expires=1667860308&Signature=thO~6LaLPH19rZaduY2as2eEb8J8hBb8HyS2Goh890I6F2jpg0SX3Dq8JzfBh3VMQxPaOwqlpq0Lnj9Y-be~WLuJga6u9Ax9bzBxaI~DVA-6stM-9OZ5NxTpELoDNgQ16GYTWZIxzpedbV4EVVNaqecbIsSquexAJDIFZ905vsaroRUkUNsN5FAkPM2Xwtsv1NCVngDjcCeP~hrofKRDSo5WfEwCpnbvCZlcOaJRUnCiIrVkSVG29XQpPNPclOIiOf2cbxqVh9nHk4PMoQzZblhbgouSTweUDp~rTC23k5JNTE~-bukGE8RriH3KibM3gO4~jiimNEQ7DO204bFttQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BYTcyNmY4ZGEtYmE4Zi00ZDViLTlmYzMtMmQ4ZTM4OWNmZjQxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+      },
+      {
+          "id": 25,
+          "title": "Breaking Bad",
+          "category": "TV Show",
+          "genre": [
+              "Crime",
+              "Drama",
+              "Thriller"
+          ],
+          "description": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's future.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi338798873/1434659607842-pgv4ql-1616202355944.mp4?Expires=1667860652&Signature=CACIvcDBFRxHDKN45n-YLBakVKHsRj4KtGAwu3V-Gp6W8acvkYw1Ee6onnWhg-l3ywJtRpsTx5AZi~N5mvUE~1tghBAs13HOAfDgIM1xq-gfLYOf1nE6PPThSFO5TyqInC-pSVRpHtyo9rKljUygFjq-r~JBkKo2VjyiSnUOmc428dYD20dmAQ~D-p~Lx6JJ9b4Utg9mYuMYKu70I5mCBCEmE~uatls5YzcZy~jzW0xFFHI5xhA512HreUEP6SvlZeGzcgWSTWuaAlRDLP7vZwZFiG7otNe~qeMqwTjVdLupbvSNAskzodArtsCgDH5AXme0QXHmdfaynuRJdnBFyQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BNDkyZThhNmMtZDBjYS00NDBmLTlkMjgtNWM2ZWYzZDQxZWU1XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_UY1200_CR85,0,630,1200_AL_.jpg"
+      },
+      {
+          "id": 26,
+          "title": "Better Call Saul",
+          "category": "TV Show",
+          "genre": [
+              "Crime",
+              "Drama"
+          ],
+          "description": "The trials and tribulations of criminal lawyer Jimmy McGill in the years leading up to his fateful run-in with Walter White and Jesse Pinkman.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi2830483993/1434659607842-pgv4ql-1648844517801.mp4?Expires=1667861340&Signature=N7jfbF51YmU7QPflRoNmojXkRebZuoWQar08DKKOMUh-7pjfvTtHoAq58FO6XdX9TJa3rFSSRCz35wSM8V5uKl14E~rmluGzVYJDcaRu-v3DDKcpd-T7JQHsknqYjd08YqiKNxBlciwy-4XyXdt2x~bQaJwtKYx~LHmA8FqkusFVMCeXMxv-DQnbs-iLzWb4m~kiiWOoXxaUJbIOvIAzH27qMztGMU1t~pgAUcZ4exOfurjO-bWWshiZrd2V5-hxN~f7tr392sGSM~dvFmjer6HckrWNnYQ~~0YuXFG6-ESepfjJFENfX2kKnpNuGnATwAmISVrSjXOYiiqiI2prDA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "data:image/jpeg;base64,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"
+      },
+      {
+          "id": 27,
+          "title": "Ozark",
+          "category": "TV Show",
+          "genre": [
+              "Crime",
+              "Drama",
+              "Thriller"
+          ],
+          "description": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's future.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi1303560729/1434659607842-pgv4ql-1648572666430.mp4?Expires=1667860864&Signature=jnWAbAdUv8Ji3WeCx0mcnt5mUeFabWb63jHfzoVXA2EyCeem-cLzSkWP8uh7dGwISspZN0Kdsm9g2QQiSoneW-BGvLxId3KipDc10236s24fL5d-EAtIcTjD8KLumjarqhH8wMFw8OZBqFfZ-vGllezNWLV06mUQCmOhYyfNF~tGjW24ktGBUoSqkgB8PbRYtJ6SeYtScTfXADuhz~RQnxtWNG7PXHX-e8uDVMZa-YKum5ScdOALaA14uTgReLZGxzoOxP8pVCTOzKpTm7ko6ZkP7fd3E1zOdmPQNz-wrtPHodjjYabnwLqZq60jktJLv5CJ~r-Sk4C6jUx1cKSkdQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BZDUxMWNlMTUtYTljZS00MTE0LTlkYjktOTU1ODZjYzBhMTk0XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 28,
+          "title": "The Queen's Gambit",
+          "category": "TV Show",
+          "genre": "Drama",
+          "description": "Orphaned at the tender age of nine, prodigious introvert Beth Harmon discovers and masters the game of chess in 1960s USA. But child stardom comes at a price.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi1185857817/1434659607842-pgv4ql-1600961658214.mp4?Expires=1667861377&Signature=tcWcvKyAvMRJW8QHRrCAD8pvaZzWkhXx~j2zZTckHD3WDEC~NhruGxgCwVzmfAgCSHbZh6xlFaYLWpLwsXbhzH5VzN~cP2ZUFRfU9hpP0Bi1DkopzHUd-nvG5Lht9ZKCojbcPKR-8s-Uef7H~3~AOosE9LgMi-SefLog5~5nFNDftasjvoVioMbhi~5Kl43ThNZI-bwrnoT5fX-jINknHkKjTrLyJgOsrc5SJlL9-R1CN9fJ5ZB~izq14STFoUPk4loMKheEnpp9vrSXWO~TQb6o0NF-y614Jd8oDSPqKA97gLs8XwgoUn~Q3Q~yyWbDSarXCKmruii3DgETGg9-1Q__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BZDUxMWNlMTUtYTljZS00MTE0LTlkYjktOTU1ODZjYzBhMTk0XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 29,
+          "title": "Stranger Things",
+          "category": "TV Show",
+          "genre": [
+            "Drama",
+            "Fantasy",
+            "Horror"  
+          ],
+          "description": "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces in order to get him back.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi3269313049/1434659607842-pgv4ql-1655820721427.mp4?Expires=1667861040&Signature=B1ZuTTE-AsVAz-4w46G1D3dAGp9nZ5iijLl~Abi8Oah8NtzRKl2HFW53XeS7gl24BusKJ4Ui3DTEiXjyG~t9-BFTU4fjKShmPlwrDBjP9vK9uEgEV4fZURs~c-qM1Um8ieS1H7deF73fLK4wyvZnexeIG3gyR1KDjc9TIG691orrGJKZXvC5Xl8YMiv7vm2DzinvXYJ5uOGmd7~ogKbdhgSZXpThp9RwawYQ8RzTGWTovSxdSH-6~kq-FRNyRXmerkVoOrNNcNjrxNUrHYAR0AIPFkodRYLvDgwUIC~gDZ4Ju89KRADdFgtaCW2IxNPaobE5h0ZGwuVxZIGaLZ-lFQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+      },
+      {
+          "id": 30,
+          "title": "The Crown",
+          "category": "TV Show",
+          "genre": [
+            "Biography",
+            "Drama",
+            "History"  
+          ],
+          "description": "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi1822803225/1434659607842-pgv4ql-1666275383036.mp4?Expires=1667861704&Signature=lNfweS7cZm4uVQzuTZOtWZTOozrKKJJjEcZ1DxxLcJ05VXXc-xoJYx2dhqdWLbcdRZ8fdB4TBwwLRB~4JkBT7-~ZZ-0Z0q0GSWKr-PRoM3YOBxzPOFgaIgcqh4EyENTSyEtf6hGSf65x3vJnTWfD2WZ274Dm4MOQlmnxSHV5Om9Jzg8iE3L9sbcb1BOZ46jSlOG5qgTgSVVZtk0obxWxOf3Le5bFgXJEhHZzmCePkiKlYGVPqoUf2WMGFfFLO-8Gv9-ObxeQR-E3zyzYLZQzrSz3uY7q5b01mBkgygrijQd2KKvSp5ejIE6k9K~5XBb3mQyf4n3A77FW~~NU8x2Pvw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BZTEyNjBjYmYtYWYxYi00MmQyLThlYmItY2I4NzM1Mjg1MWYxXkEyXkFqcGdeQXVyMTU3ODI3MTk2._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 31,
+          "title": "Bridgerton",
+          "category": "TV Show",
+          "genre": [
+            "Drama",
+            "History",
+            "Romance"  
+          ],
+          "description": "Wealth, lust, and betrayal set against the backdrop of Regency-era England, seen through the eyes of the powerful Bridgerton family.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi1817821977/1434659607842-pgv4ql-1646837710255.mp4?Expires=1667861312&Signature=DflRvtVbTzYnjPsuvhO~VQakV0P~RJbpC431u9m9scnmdGXpgoC4-K7HA~drpBiLi4bOJj0Z5rw7u5x90DJKzpZDMhZlmGMC1BaAwwsaAnG5dsg9b8X~fJfgLMEGcD8ZV2PXAh0FFXya0YfeTk3~ZNLDLEP-KkPVlGVingvmmUFM6kRMX5l-U8~g1UiWSOUdZhzKR61OmJBpPhCSYA~LBO1YWCju7oDb0gDz73-vNV29iNBZsG3xz6GO9PVP0-1WuYk~6uzHqI7VOdzdaYTADk5bl7Ck7sUpDHAoghs5NpnpjakcU49B-nYdv6uyZ~bqX-wTy8bxCIyqJad6ZN2OaA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BNjk4MDdhODctMmFhYi00ZTNhLThlN2UtN2NhZGY0OGFlMWEwXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 32,
+          "title": "Squid Game",
+          "category": "TV Show",
+          "genre": [
+            "Action",
+            "Drama",
+            "Mystery"  
+          ],
+          "description": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi2427699993/1434659607842-pgv4ql-1631100525843.mp4?Expires=1667861512&Signature=HWpEXUdZqzIKAuAS51LeCl4n9otj8UGvJRgUs2KKeynoxVJ2LRNMJpaUXou17EO0y0ZtOUG4VS7AJKZKg4GFzTRD36nVCFCgquX0s6JsELaJUrWW2du~~gas7V7bmFPemy05nMBZHIPkNRMVRTAag1G~~DhZW9q-BkhdvoZM~Rfy9K64gnENZFP5yZEG8zGRqX3kiStS7b42graj1S7xu8I4PPNcCIKoSsODTAtuNP6VFmHrm3xZml1yqQThJ-x5BTgAR2JzqDcQPc1EpnN1GTpWGxfZoDnKVYh5l5xvBdYZQ5qAj4Ew9IQ~Cd29tjj0628m6DbmE5Fdbs4gbHPFnA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg"
+      },
+      {
+          "id": 33,
+          "title": "Orange is the New Black",
+          "category": "TV Show",
+          "genre": [
+            "Comedy",
+            "Crime",
+            "Drama"  
+          ],
+          "description": "Convicted of a decade old crime of transporting drug money to an ex-girlfriend, normally law-abiding Piper Chapman is sentenced to a year and a half behind bars to face the reality of how life-changing prison can really be.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi4029332505/1434659607842-pgv4ql-1561563505446.mp4?Expires=1667861950&Signature=YoPFbz5e5bxUEAfFPLuIs5CGjIGqzGn8XYUKcbnwnSkrvj1--A94-vnp~TdorEL10naA~IecL1ulNJ0wHP-cxH08PeXRqQ6mfXsKUeBHqcHzPk1vUwHdNhFM-oqRbLEcA-Ui1RTYGYjEA3tSI~a5wgBzbvRUvHpzwRQaZ~zW7kkUDu3q0hWgikqrXWM0T-ND1EuFWzFLQ23mc0yfYcalifd-~ggwmrKVu~TUctv3LLzAPyPWh1bXuDPacV-yEZleXXdqU0YTjlT8V21rMvaveG8vpNESjFHyyr4PLFB6HKxxqRZCzukUU1CSVn6i226mvZGvLnLwTq~gIytbKLswVA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BYjYyM2FmMmMtZDgyZi00NGU3LWI3NzktODllZDY0YzQyNzgyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 34,
+          "title": "Narcos",
+          "category": "TV Show",
+          "genre": [
+            "Biography",
+            "Crime",
+            "Drama"  
+          ],
+          "description": "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug kingpins who plagued the country through the years.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi3929979161/1434659607842-pgv4ql-1501777503492.mp4?Expires=1667861392&Signature=RVlBKX28pt-WcHSNubHOULxzEg5PL2rudjt2WsNAMksm0a~xqa~WAgSQGUzTUSfnyjcBBAL8KjtnUhtdKV3sj4Ae9ao6qBqlVbdQ42Go4bjTGXX24NduD9vLumW4dLwzp5E5hNM4zI6pofBfOZlzqVt184fykcyMExlN6PTtFunPVMrMdH61veARoxT6gdhJogutrbZOcESvLnoppUVfypy2L5p5v171AB-7~lHe51iEUgPPGBGtfIqRePdJgCoW8r8DxQFbWcafyJDDqi6acYtUEfACmD1o12BJAxm1uJZSKk4BilIo9X8zi0b1edn7rPPmNNwD-HDYBVfyUIB5DQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BNmFjODU3YzgtMGUwNC00ZGI3LWFkZjQtMjkxZDc3NmQ1MzcyXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 35,
+          "title": "Sex Education",
+          "category": "TV Show",
+          "genre": [
+            "Comedy",
+            "Drama"
+          ],
+          "description": "A teenage boy with a sex therapist mother teams up with a high school classmate to set up an underground sex therapy clinic at school.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi901694233/1434659607842-pgv4ql-1631805603596.mp4?Expires=1667862132&Signature=QqFRDNCseEkYel8dokVssZ7vtfBHqm2KvrZTGyrJ1VX8OF57psa4~EkgODoYcP1Tb9MpUBkfsrBHnNQsMnWzLS5yn0eJxtAGeg36gjvENGXXgiH3ZG10ZAbFfk60pUi2UbnMlztKuTivedXLIkurLeBidJOJD42rRMLSu24f02ZSW1osWp~0eo~zqwuZrHXuj-7~v~2zmbfv6ciHgwVTMYxE~cVwET08zcRxBv-W6xXGrc6OYst0hA1vEG2mA2infWGcHcFwalnCs2gKlsg798x2vs8SONxVwk-RrA8M8RoeKAbrTpBAzxwulRtIySCiEj9GuAn4nVkaUNboU6fhbg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BOTE0MjQ1NDU3OV5BMl5BanBnXkFtZTgwNTI4MTgwNzM@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 36,
+          "title": "Seinfeld",
+          "category": "TV Show",
+          "genre": "Comedy",
+          "description": "The continuing misadventures of neurotic New York City stand-up comedian Jerry Seinfeld and his equally neurotic New York City friends.",
+          "platform": "Netflix",
+          "trailer": "https://imdb-video.media-imdb.com/vi4273980185/1434659607842-pgv4ql-1631895638181.mp4?Expires=1667861486&Signature=pz2b2JOmgSJywFrPKDhYwKL3RLp1DVsmnP5~mohb36bxYwhSPfrRqUxwJd8-3DMg7oRltA95GSDIGaJV~CcU-tPYdr7BuOfwEZxKR8vOnG1fyQ7kS4liRDozzuU0MQ5ZX2iCAD~k1F2Fy-FmamsXdHle71cEks-x5dk9Ak0scsUdyguK9w6JekX8iycLDlAnXQU24zYwnUkFHBZNHgd6NJPtwCyiRjWxroT9mupSRXNJbj~jyzk0ilyOLY84nX6T5N-XAJlPkbjS59raOOTF0YoBIDjV15LfbcdUTAuprILX8baoyj5WyYsVgWuyyfRxe4jkYX~yt8ibPv7HrHXDKA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BZjZjMzQ2ZmUtZWEyZC00NWJiLWFjM2UtMzhmYzZmZDcxMzllXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg"
+      },
+      {
+          "id": 37,
+          "title": "Schitt's Creek",
+          "category": "TV Show",
+          "genre": "Comedy",
+          "description": "After being a victim of fraud, Johnny Rose and his family go from extremely wealthy to penniless overnight. The only asset left to them is a small, unsophisticated town: Schitt's Creek. They relocate there. Culture shock ensues.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi3254828825/1434659607842-pgv4ql-1576859302879.mp4?Expires=1667862123&Signature=ihxOdyLMJpZffC1ykQOF6-Yo0bypUnrGmPVq1ymZgG5eGVCNdtvOBPDjpcJfU0mrg3-hCjR-AYSv0AIREVBJtf8GVnan9z~M6MpR1CPQlBecUix3Br9IqZ27CcL0c5BQg4cDsvn2OVK1G8qdX274uXbVGnG~DNqJ6YhTyVxvVLvjYjc2a7tsDWzZRBJdEkcoFWIu9vA9-obLQqrY2gFjgJNfoaop8sJkTHx9H3tsope3Zmbmhq-LXIS10tUMR9NzFJpla1QljeOJy-tLbI2U-xAidK4QQMyZ~8yxBJtJau8ZUlsVydsZF2M9weEGC2REknI400X8uTEeRbOY3MBEBQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BNWQ1ZmM3MTQtNTVhZC00MWVlLWI5ZjgtYmZiYWQxZjUzZWM0XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_.jpg"
+      },
+      {
+          "id": 38,
+          "title": "Abbott Elementary",
+          "category": "TV Show",
+          "genre": "Comedy",
+          "description": "Follows a group of teachers brought together in one of the worst public schools in the country, simply because they love teaching.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi1062715929/1434659607842-pgv4ql-1663044915698.mp4?Expires=1667862303&Signature=HJBUNXR0HRSRZxPhdVhqWTzj1W29retY6LMY961lObQpdaiWtBvnlJ4gf7xBK4HJSO6kuerNgFRMXrCMI7unnWkUDp~1~s5-8smOTmwJmP0qgPmUNGgE3SNFRQcP4AU2MJ~Mzb5GqdWgDbPLfkesOMzhzM~O9EJUUadbr4akAv9mLTTJ~H8Zcjfl5xYQe9nyzBHtWqlb2U7I80UQouhVqQ5r4VugmQNiBJIa4LQGLRU2Rvx0IzCHcgLgSZS17G6HFKd-MfbLYEvUJeywqkYZW8F0jw9~IEip0NsYItUE6cdhOWxMu-rkzpcmpaXfeKuVTuanlEBh9A7r4M5XvaqQwA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMTY1MWUwYjItY2JmYi00ZDgyLTgzMjUtNzNkMzg0NjNjYTdkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 39,
+          "title": "The Handmaid's Tale",
+          "category": "TV Show",
+          "genre": [
+            "Drama",
+            "Sci-Fi",
+            "Thriller"  
+          ],
+          "description": "Set in a dystopian future, a woman is forced to live as a concubine under a fundamentalist theocratic dictatorship.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi425837081/1434659607842-pgv4ql-1661361976758.mp4?Expires=1667862635&Signature=J3xWi~hjuqHwSMwzQLyT7~NcymrBYG-8FoeiDpBSLB9ZMXjWaefQV9p2k-VwwO9e5N4loGIq7Hpk0E~hDQ25vd8hvzwG03S~yzNaSi1dBWRoIrIX2ECfYwiwAiQI0f21DFNkzKbWlifLVbSdnqga0Glq7wPDn5FG5GXF84p5qf5QgHxD3xTE~nvKpGRetqFh2I5neTwjMGrRTea3zzHXjjukhSQbWfGPJ4ld5UlPF1JmM1JsSkHATfraeRuIuyYPyV8GguP41~PL4FzR6Er2gDOzH5mQfQ36Vku9nCNuMY-OL-cHytWU469SG9JXGMfTDUJCtZllxL9E9VTwcIwoJw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BN2M0NTdiMGYtNmFjZi00MjIxLWI3OTUtNTdmZDRlOTNiYWU0XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 40,
+          "title": "The Patient",
+          "category": "TV Show",
+          "genre": [
+            "Drama",
+            "Mystery",
+            "Thriller"  
+          ],
+          "description": "A psychotherapist who recently lost his wife, finds himself held prisoner by a serial killer with an unusual request to curb his homicidal urges.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi591381017/1434659607842-pgv4ql-1657818804432.mp4?Expires=1667862286&Signature=eAYN7ArHD6bPiEc55311Yxt4~DQYGyW3dXcbmDJ2uvytMTc0NQY8amG91KxI-xjGaXOX4DkTl3DfNiHQJFsrQJAYrECBF2KRlSDRLK5YLVnmeUzCeFwHhRd~6pEpcqxwuPvuFnL1l0a-jqq0LeOZnMpld8qJKm4mmLo0hgm069ZlxWnqmVcY-OYQNhla4lOgk4DSqmyMJ9Go3qZazEp1Pg9UI0K7soiOUXwuypxhgQeuWxtkASifdgLvHjL76i3x6qOm1XjnRnnAJmR94dc45xU8zw6W7hnUVjoH7yN-b2EHnWQFWLBjWC65lvtv8A97zvGtN~sFEv5mtG5n3gx5pg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BNDA4MzE3NGItNTk0Yi00OTYyLWFmOWQtYjc2NjlhOTAzN2RlXkEyXkFqcGdeQXVyMTgxNDgxOQ@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 41,
+          "title": "The Dropout",
+          "category": "TV Show",
+          "genre": [
+            "Biography",
+            "Drama"  
+          ],
+          "description": "TV series that chronicles Theranos founder Elizabeth Holmes' attempt to revolutionize the healthcare industry after dropping out of college and starting a technology company.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi2617951001/1434659607842-pgv4ql-1644254044579.mp4?Expires=1667862883&Signature=MvqbKRkwx1JxxIUjW1daIUWhmMXPJbr6yn9NaMxiuQ8Nt3QqTp2HWahdH65HbEyEqZI8m-4rMPFRSs6IC2nFDnRgSZb2tCeyZ3KxFLG2wknJhRW7BQfher~9-peGY6KVC1zQByoC~Cr3e9HP~ahTz9wq0GXBJHjxFTOjPiwlCIuWF2BS~BZ0881k90y~gnrXIcQcBfKPQR2O2-KSozMSY0Ae80vsAUdHjDLoZfZbmJpHemjAG-yiTgZXjjtXYcBhEpuvTGXDPd3t-wzNIl6s-HmpEHq2V9f3LfhESEhiilcDyh5bdSXii1lSFjHm0JvoEhuKgLZJFf~NeFwyBgeTKA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BOTEzYzYzOTgtNDVhMS00NTkxLWExNGEtOTU1MjhkZWZjYWZmXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 42,
+          "title": "It's Always Sunny in Philadelphia",
+          "category": "TV Show",
+          "genre": "Comedy",
+          "description": "Five friends with big egos and small brains are the proprietors of an Irish pub in Philadelphia.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi2262352665/1434659607842-pgv4ql-1638301422283.mp4?Expires=1667862863&Signature=BHwFrxisf0b0gEHMXDxKyUugjYwIeUOwLlGWAnCHxul~q9yH8wQvyej-qvIUvTg3HaKxIdZVsR09CCalqQT821tfyenOhwZGuGEJ5ZiuYRIgUeMXpVfal3MKb9jiZYHZJg--ADccF9Uf8fbHky7WFi8TQNzkojClPvxTM9mO2A47a57gn3Vx2D4TPe8lF2libyd7LpOhFbUhW0mN9-nN~d3RrzxI4LMpgo4GpxZvdK5n75b7G429XCvHrxlQN09ZfGYvXyUF28r8wPwzWeHlmXajW1V9frpDdRK~CQa0-u~gDVqRPeykI2ljlPDK~2gxYmxPSgccu6LolH1qvHk8RA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMzg3ODVjZTYtZTAyNC00MzVjLTk3NmUtMGI4ZjZmNGQ1NmY4XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 43,
+          "title": "The Great",
+          "category": "TV Show",
+          "genre": [
+              "Biography",
+              "Comedy",
+              "Drama"
+          ],
+          "description": "A royal woman living in rural Russia during the 18th century is forced to choose between her own personal happiness and the future of Russia, when she marries an Emperor.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi1455799833/1434659607842-pgv4ql-1589949998375.mp4?Expires=1667863147&Signature=K52kzKY0ahr84m1H3X8DE2hd5LnG8aA3phWNdV1DctRm4QuME1e9WDclnjBMSF1I2y9nco~N-5QLqbBzGK4IIiYR4ZyS6rojq-1U0xFh8gEvvNi1ErbM~ErUEZKXofY7bHsip6qUya2Cz1CVYljUdFDjJvWhNUa20Hh9WfLWWPk162n0nIZaWe~i0pqLTY1PEQDIXJ~HlwPR6FIVmWxWwu7sxfNgmE7JIo8zg1JKYW1fpeTC34qYkPY7tPjwAT75RazUprqEqKjDeAPbzMDjg23pUTavKTszuIEipheQPhYwiskcOsbbDBsIBqWjAMMsZUqEo87ZJEf9FtjVba~YTg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BYzVmOGNlOTctZGFhZi00MTczLTg1MTEtYTg3ZTNkNjQ2YjRlXkEyXkFqcGdeQXVyNjYxNjc0OTc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 44,
+          "title": "Dopesick",
+          "category": "TV Show",
+          "genre": "Drama",
+          "description": "The series takes viewers to the epicenter of America's struggle with opioid addiction, from the boardrooms of Purdue Pharma, to a distressed Virginia mining community, to the hallways of the DEA.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi714851097/1434659607842-pgv4ql-1633983471557.mp4?Expires=1667863608&Signature=S1uAzxudPfKle23s5MMRvH~7EiGRg7ZgA~wo94HvspZc2A8YiqZI7q3r-YXnLqDbB61zI6NtOL4plwvkFiY5xJOdaUTHdsnJpkTZ5w7oqlDZILfHplrxBhK-bgeGzzgcPWO~x3phWcUrWFWPBqQtnZq4tUkAFyDuYMDsWe~UOLtn5wUBv3LZoG7cR8f7ZtRd7XdNjXQ84Ez2koKLMNt3HnIZGh9a9xixJDiu6fye5VeiccgrDUHNk-SwiMwU1Wjf2awBR9NnQQ4wUNHtBGwlX-uo45ifzHP-Dd88~i3krLbim2cPF5T227jbbzUZ84mcDLEtJL~QolAPh1VtKiEBEA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BZTc5NmU1YWUtMzgxNC00YmVmLTk1MDYtNjlkNjQwZGVjMTIzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 45,
+          "title": "Fargo",
+          "category": "TV Show",
+          "genre": [
+              "Crime",
+              "Drama",
+              "Thriller"
+          ],
+          "description": "Various chronicles of deception, intrigue and murder in and around frozen Minnesota. Yet all of these tales mysteriously lead back one way or another to Fargo, North Dakota.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi2438774297/1434659607842-pgv4ql-1597701707365.mp4?Expires=1667863852&Signature=iI8YtUGZ6UiMIQhSvYpUWpuDs8-ephB0aipBz3c8q0k6nPWJTfPm8lBQR32axt59uaHq9HeNCKaqA8zAURu7WbkyEHySjVSxFm3aJNB3SvOeok0JY9q6vLRUpGZx7Iw1h05OMhMc7iCRpvcSwtJ9Wguak~9BpFRxxswh0siu9Be6SRXcMQvmcI-cOjXRM7tObLP0g2AgboLjU2HKXYDUVr2hRII6luj7zX73Iq1iIjDjkHA6K3CD~NlA8YYInRHHTDFQ4yLgbwMB2pMB94OZ0ci-lDkT-t7hiVsnznwPRBLgZVXPQn3cqraWYLUjkZGhjHpRSTO8vFmf35scSK~5UA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BN2NiMGE5M2UtNWNlNC00N2Y4LTkwOWUtMDlkMzEwNTcyOTcyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 46,
+          "title": "Freaks and Geeks",
+          "category": "TV Show",
+          "genre": [
+              "Comedy",
+              "Drama"
+          ],
+          "description": "A high school mathlete starts hanging out with a group of burnouts while her younger brother navigates his freshman year.",
+          "platform": "Hulu",
+          "trailer": "https://imdb-video.media-imdb.com/vi1990721817/1434659607842-pgv4ql-1563425745781.mp4?Expires=1667863652&Signature=t61ItaKdRWSXA8eK4m94XyO6~p18GO1jh0elp9kTadczwiJrSF-Fst9eOBCTvYUk5rqQ4INbT7uTbIP5qJkggKw9xlB5UlfoAqDCJtYNufcMZtUie0kPmlxD25EDm3C2twB9IjNh6FUvAHrGKCYvRgsTG3Be0ngPrvrG8Dq2TWT89h5QH-zJFWO2NV116vkSLUx0wKKlatI3MtK2HBVha~6XpRqHKWENUrHn5OfZp9yX7sWceeyjguk3oq1sIA63rTP3zOEcXgg~fVuhjZLC2Lsy9-tVgfhpJXT~Rx~GyPmIPoDNtR9QWdRYPdYGWwWP~uyKfANrp5zNAHFxF0UnVQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BZWJhOGFiZWMtYTY5Ni00NGU1LWE5OWItNzA5NThkNWUwYzc4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 47,
+          "title": "The White Lotus",
+          "category": "TV Show",
+          "genre": [
+              "Comedy",
+              "Drama"
+          ],
+          "description": "Set in a tropical resort, it follows the exploits of various guests and employees over the span of a week.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi2477966617/1434659607842-pgv4ql-1665069267656.mp4?Expires=1667865474&Signature=QNchTDwRReW3neVICexDrR0CblCAXimGvE5-yz4Ece5PsTqEbPkPgjMv3NldXUiq0nmoWgSTrARmq4lC4TCo-3ZAostuhj9BTc2kpbTBzn-8u75qFddnpIp0DDiqNj2R9YcJ3BvoaWHS1fNERCK8SVclTDwIgH5FJ4GINTRY6gFDy4xDwuP0WOgUfUTHBuKArrY6~cuz9LOmroZhh7SQcp8RrBJrCDrfCESYa0ywSXIZAz4g3Few7~TEBvJS9J7U0sHQkykvnxy9ts3yHejLi~n3dSk5h2vkVXARm4DutlQOQblBrP9wflUSBPx8wHoW-x9D2mNmcVYR5OimCm1k9w__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BYjdjNzBmYjEtM2Y5My00YjI0LWJjY2YtOGQ4MjNkNmE2MDVjXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg"
+      },
+      {
+          "id": 48,
+          "title": "Game of Thrones",
+          "category": "TV Show",
+          "genre": [
+              "Action",
+              "Adventure",
+              "Drama"
+          ],
+          "description": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi59490329/1434659607842-pgv4ql-1617727182740.mp4?Expires=1667865119&Signature=hBWPyYJetujgQPa5xmHVIC7Wzy-bsfIW14f1gbBKwyJo66tfymoWFuaNQ8WdwYnKqhNc04c9OJv2crzOFr8AuhtwijIhXsFOO88pl7ppmIm~ZcDnhpyoyPP339WrrtkY4Yudnp7Z1hhDYeQepGCiYwP-8DaVEaTX-YWdy4jUuobI-teAqEDsCfNmhM6DEpGj1p-QVIK3S-4dj3UkjHuuTNej7fN91HS~P6fHKfeTGtVEcNItmqyAAJd-NWx4l-zZjLbgvZQHj0mvnS~Lb-b3rb6QvY3gAjAIElUU3dcob0BUC4AbRr5AMRjGKAvqoCURpszyaLPy4QEhiBn78-YP1A__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 49,
+          "title": "Westworld",
+          "category": "TV Show",
+          "genre": [
+              "Drama",
+              "Mystery",
+              "Sci-Fi"
+          ],
+          "description": "At the intersection of the near future and the reimagined past, waits a world in which every human appetite can be indulged without consequence.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi1356317209/1434659607842-pgv4ql-1655400096982.mp4?Expires=1667865061&Signature=cdin-MWWP5YlsodZZtSXMJ3lPOR6zcBpm0kH0wrEhEJ-LpseLNBGvRE-1ecfRSe4niV8cYwgVoewB6f5DaCec2GlWlVQcfgB4iG~N1Mzz5Kzf0uwEs55K9OkK5uTrIwvdINKuhMTAwgZWt8DIKaZUVyDp8AW7zwWp4om8PY49t5o2nvigeQ4vgU~VW0YHzsqBDgg2CZhOrAC-nVCNIFVKCNhWApD4j1otCf9R3vq-9RHT7abuyo8Q8s1L0FnUbzDKLwBa1FZAjVkhA6gEYzIYsaTrNTRyVL-rvOMqKSeA4r4T60BoKv0ni8HDKBaqGuUAHsX4YARodYT4MY7C5b1DQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BZDg1OWRiMTktZDdiNy00NTZlLTg2Y2EtNWRiMTcxMGE5YTUxXkEyXkFqcGdeQXVyMTM2MDY0OTYx._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 50,
+          "title": "Barry",
+          "category": "TV Show",
+          "genre": [
+              "Action",
+              "Comedy",
+              "Crime"
+          ],
+          "description": "A hit man from the Midwest moves to Los Angeles and gets caught up in the city's theatre arts scene.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi4189700633/1434659607842-pgv4ql-1649178788866.mp4?Expires=1667865832&Signature=QYpC35Rkvbe2O49hO78Y6zmA-K4qJqAtR9WNJq4Rnk-6G1TZUKNrvNNG-oVKSZhM50HUhUraiybnEQgeuW-kFaUgb1I7keeBgbcbdH8UTFV~AtKE-6I4Virh55v3qkuL~QQd8BX4InkJUe81e08YzQhcXmw5zoLf1qMy6W1COFZfJnjzEhYx5vjHZ8qdPL6NNca-700dAZeGpPJIAeImwYegV1p~rAGZwEO-2638QMrfvJwIEwV4LfkePUPlJoLBJTEH6DZNS89aYcGYY7eEcQcp7wJxjiuP52A4Xwof05AXLKYOzPL6BTAWj07C~Pr4C0x9QaZFLT9eM2zHN44IiQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMzE0MDNiNDMtZTQ4Ni00MmQ4LTk4YzktZjFkYTVmODEzMDc2XkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 51,
+          "title": "The Flight Attendant",
+          "category": "TV Show",
+          "genre": [
+              "Comedy",
+              "Drama",
+              "Mystery"
+          ],
+          "description": "A reckless flight attendant with an alcoholism problem wakes up in the wrong hotel, in the wrong bed, with a dead man - and no idea what happened. Unable to piece the night together, she begins to wonder if she could be the killer.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi3065561625/1434659607842-pgv4ql-1649092171757.mp4?Expires=1667865875&Signature=T0Xo6t53dywY6-vco6xvL7m-M50Js1nGGZpF6yeP88sHIbys2iVSZ~sXbLAxNr35r2s6AsHEc0kDGuESm27yG6uZ0and7~DgYxVa~gPA8N4KvGJY8wRaAVCxIBanfCGDqgeVJ9b0DxaCbsU8wsSPklq6Rkb6RtBU8aFfyxxyrb~ybSPUHem6JVBGd6iEpnn3ie1HShVqrHQoPF05OUTYPbTLnBiBvTDy0SJ~Okzk5VUgEDStmpwP2QZBk~pJ1Hu~ldqubcVWUD04NA9ZsK1OEAUEDUWaCqg7dD7ANuPXdxOzy5NJJHtKrwylaEukuA5684ZFHat11TNia2iiZjVOjQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BOWYzN2Q0NTYtODEzMi00YWMxLWE3MDMtZGUwNGM4NjMxMzQ4XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 52,
+          "title": "The Gilded Age",
+          "category": "TV Show",
+          "genre": "Drama",
+          "description": "A wide-eyed young scion of a conservative family embarks on a mission to infiltrate the wealthy neighboring clan dominated by ruthless railroad tycoon George Russell, his rakish son, Larry, and his ambitious wife, Bertha.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi1640350489/1434659607842-pgv4ql-1639411523241.mp4?Expires=1667866038&Signature=bhtWbgR4ZwEYztBY92liDqcI8jtQqbBSC0Xmp5GrqgseLRtNH-PRUEOJWdQ3iM4Vh5fxax-GbOSiLA5zrmTFzdAzIpC9PAMD81tll9o6jJM6~HrBYokn-vAHkVAe4yF-zkUSiNeoPZ4KHMPvWvX9GUH6AhPLk6gr~akXi8CpERn812GTmFIyTkhWPPd9Y2q98v6lnYFC3rc5V9H9iuYS50odMG7RKcLP3jryUYVxvNGDdfxNMKN6jMLFkJCyHcv8jG-ppbdLYFuYo1ko8P0budwDBcphwlzBNz2aNN2jen3PrJp-7x-346a-x22YEblDPX~qowo5WZwfpY-IpR4Kaw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BZTcyODBlMjktYzgyMy00YTczLWI3ZDktYmY3Y2JjODE2MzZhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+      },
+      {
+          "id": 53,
+          "title": "Euphoria",
+          "category": "TV Show",
+          "genre": "Drama",
+          "description": "A look at life for a group of high school students as they grapple with issues of drugs, sex, and violence.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi691258137/1434659607842-pgv4ql-1640648850491.mp4?Expires=1667866246&Signature=tuHsiiZoOMU99vkzAYPpcHbFBrqpms-3IQz8q3PExv2tWLhUZnWNHd1AMLbDhoSwvAHKHwFfA1PHtucsq-OtxAZF17fDzxmxXygP89oqCqRAa1bc4scntdJpOwVKseKR~7qNE27-la-FKKSN~ovgSubPzW183A8uwtbyl0m7NY3redV3ihDPpmcoSdfgbQI5upW1CcYYLTbKNBMQbm-ttm8YQmvP6HdOYtuunDlCs1gemy5VzEs~fY65AMDyV2wUHP3s~QZVBR8MjVw3OYFsaxrKwRpHIkW~BkysoyWW9hMvi5A5BwUXZhfhCduBePvbRG0mDVK3jd0EvPImpv2ldQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMDMzZDkyNzEtYTY5Ni00NzlhLWI4MzUtY2UzNjNmMjI1YzIzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY1200_CR90,0,630,1200_AL_.jpg"
+      },
+      {
+          "id": 54,
+          "title": "Succession",
+          "category": "TV Show",
+          "genre": "Drama",
+          "description": "The Roy family is known for controlling the biggest media and entertainment company in the world. However, their world changes when their father steps down from the company.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi3064644889/1434659607842-pgv4ql-1666627488373.mp4?Expires=1667866302&Signature=W3Fl0CQTVX9ZJ2n3x8Q4lLBLEXnHgTPBjuKBfTSSctx5gIERuZVu35SFR1aWDfD3hYOO22KkLYCUQUmIAyl2ZYJzZzJe8wTvL9RSp~-qZs8PzsMkgk8g6a3yrT7lDiXACfqzP8Q5yVQDr6uk7LzoZJHo16tFfEnofwRxkFKrvrwyIx-G5Ap6WXQCZzVRb3GBG88odkgOmh9icQmHW9AhMHFXGA3pDXPGahHFfUp3olwh~QXTrqPZFvFobY3Y~DQMpsrkTwnm~k2VwObopCRHHpyFWIYNBx-snIkaEQzaqJWmFtv41cLHJssUHXjfCR80nX7RTkNtxXy~Z-CUCx1Qrg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BZDE0ODVlYjktNjJiMC00ODk4LWIwNTktMWRhZmZiOGFhYmUwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 55,
+          "title": "Station Eleven",
+          "category": "TV Show",
+          "genre": [
+              "Adventure",
+              "Drama",
+              "Fantasy"
+          ],
+          "description": "A post apocalyptic saga spanning multiple timelines, telling the stories of survivors of a devastating flu as they attempt to rebuild and reimagine the world anew while holding on to the best of what's been lost.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi4158374681/1434659607842-pgv4ql-1638538062931.mp4?Expires=1667866753&Signature=tIKietlLgf8RgG~zNwEHWnlgAKaVMlEC8-FtR93MnyXQr6240F0uU-p27pWMX099mk~UdZTJ1I1-6EaTlIYccmlIztQ~EcZ~Qq8HRO5G928QZ~RcDSJ1an6~ceT4e0LrwyQFxye2vSyawAwCs1-EtNOZKOWpHtneAfWCw7NHr2qb6C0Suc0oo-c3PjbWhdt4bLCOTLiInowZTqJXqOqTbV7CtPVtDofbTkxSzvsF5wS44L-Z8oXYYBveeKGzvOUrYDJUPWqQEyOePpTY0RjMSNUgqrfc29XVtmDCMb4xdNdIkUvcgRFDCKmZNo2dk7tHpukRbX1qYRxnILiD9oY-ow__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BZDBmZWUwZTctMTI5My00ZjFiLTgyOWEtMzJiOTZhNmRhYTZhXkEyXkFqcGdeQXVyMTA1OTAyOTI@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 56,
+          "title": "Curb Your Enthusiasm",
+          "category": "TV Show",
+          "genre": "Comedy",
+          "description": "The life and times of Larry David and the predicaments he gets himself into with his friends and complete strangers.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi3919430425/1434659607842-pgv4ql-1634144948777.mp4?Expires=1667866911&Signature=m~0mD6CuXAMmMVMTLhA-vrAKtkZTQz3~K31G1mN2FDTDpfiKhHEoYxY9lMyje9w8k7REHFUUzClY1BAZQHUmSvSQ4joDc-9nNlckBPCdHLOXKm1e8XJ9MeIDWgU8VHOpQiHMqkX-DJOm-kVKw0oAvleK~imu8WibqfHhFdmrGyls6ZbGVlCATknj8VIGq-XVGlWTs5LRLTcFEoNPhr~LW~y3C~fPxzdlbWe5b0ZaeW7ZgPtV~29ebHwvg6vk8I~AkdzOBI56AZuvvtTTsgPnc5uvjM3KbWVBaFQtH-VJFRBTV35m8Jus0sf9CMZP8Sk41vhuZQS5WLHzFdMzxSJ8WQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BMzE3ZDA4OWItOGY2ZC00MzVmLTk0Y2QtNzEzMjc5YWI5ZWFiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 57,
+          "title": "Mare of Easttown",
+          "category": "TV Show",
+          "genre": [
+              "Crime",
+              "Drama",
+              "Mystery"
+          ],
+          "description": "A detective in a small Pennsylvania town investigates a local murder while trying to keep her life from falling apart.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi3833774105/1434659607842-pgv4ql-1617207047431.mp4?Expires=1667866400&Signature=Lmr7oZAhhuTPXcRudHQ8enmyyAQOHshZx1RlNgBF-pDaSzth8wMIm5vO9Aium6zXb7s8YT13KXG0XTfxUcrQvtcmtICJqMNkLNKiEohpYYfb~IRvr-4ydqAzTjoIy-e889nKoMlerwnO~hbvRNjJCgck469LgLCXxDT7t3fpk9FwLMR8o7LPrU3pFOl8gfv3pe-UTUYxfUXAXLjX4HHhDD9esH~ka1LYsW5Ny~KNmC24qDuuvFCAmh6lUGJZ8spcTlnRjJ40kNRdcTKg2RWjHtd-Gj976vYrQz1q-wiNg2Qs~z7BfeP63vd0~ksvqIbOFJXypIvImTzQDeV08ggJWQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BYjIyOGU1NzAtODZmYi00NGMzLWJiMjItNGNjNTFjOTM5ZDJhXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg"
+      },
+      {
+          "id": 58,
+          "title": "The Wire",
+          "category": "TV Show",
+          "genre": [
+              "Crime",
+              "Drama",
+              "Thriller"
+          ],
+          "description": "The Baltimore drug scene, as seen through the eyes of drug dealers and law enforcement.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi4043047193/1434659607842-pgv4ql-1563731048360.mp4?Expires=1667866704&Signature=mX5nwFxjdW4dsO4jsGq7vdHn1L86IMKzzCTuaNBImzKA26hP5-P~TamiztCwWAvFw-9nFRDMbBFeVwOGR3f7dh30MXEGbVVIZqz0gzGg6WGGWkRYwR~2J-htIyCYSsKwOHmus9-WA7T7PHdZ2SvlWo6-dszu6w1zumCFZPIbT-M1xD6tAsRHOhPp5WPNRAq7Kn7eTdX9Rr~s24-dWnYYi9dI3T~~1Rdda3LpWi24rCE79~KpCX~dfRR9-KnWfHVa6quaIyyvbHnaX3PPkHIrSv~ccCPdnUIudfIchmvRmJA0csJDUTm9rlibba-R556fZ7LKVunOWFXpUZPo-3H4Iw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BNTllYzFhMjAtZjExNS00MjM4LWE5YmMtOGFiZGRlOTU5YzJiXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 59,
+          "title": "The Sopranos",
+          "category": "TV Show",
+          "genre": [
+              "Crime",
+              "Drama"
+          ],
+          "description": "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi2751070489/1434659607842-pgv4ql-1563942172267.mp4?Expires=1667867069&Signature=iNmFKA-UujiOUp0ZJWwgs2Fqa9ZezBh6RSBBHYOyNvRQGnkQhdaccnftHS4pImMWHDtPEWsluZnXFjZeI-uv~hT8k72afswLdSleppVeTwZ571A-9u5RyQuGjIFXP4HsMoxlwmRzyBoRNV9u4DLsWFu-FlgJYBECGiiTVUMf~IZXYteLKY0LTqUuXyg0CjRc5y87~MFbJCYPLerfWbUS4l3efAciyRU05ghMafuAv27dUo996DL1Y7bEK1UnuBoBK-uGnxAcWFtwlCPWZf2kpRgFOl9g5ZpfZqii88OWRABFDbrHSqhLFTEXwlVfWOm0cL5MnZ3MPChA6ryT8P96hg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BZGJjYzhjYTYtMDBjYy00OWU1LTg5OTYtNmYwOTZmZjE3ZDdhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 60,
+          "title": "Entourage",
+          "category": "TV Show",
+          "genre": [
+              "Comedy",
+              "Drama"
+          ],
+          "description": "Film star Vince Chase navigates the vapid terrain of Los Angeles with a close circle of friends and his trusty agent.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi4049404441/1434659607842-pgv4ql-1563898498952.mp4?Expires=1667866899&Signature=o49YOh3IMdjrv6nXiyBbW0GaAOXiod3rSpqL5n32-FH4raEJPW9tfm-TRup7kYSo2bnhFLiZy2I5bTJB7BTF0QlJvFIehdPhPEnVpzQVMelFEcUrYJoZczshUyhzxQVaakb66U6EyF4EL1jjLTBNGQj5YQh9Wfei41coIRqAd8roy3C9-ZbaJikRXkvtWXehx73qkaPHaM6APOyymRxEujxkxDeis4DM3yYqfPSgi9xTEIMVh9Fn8ro~N2VP3DgM2Xz61wCLVXmgy7KxRLgKR0gyDQv9nmhZs1HPd8ju4sB3GBNo0B9zPvUPiFGMOAQRe1qK2AIc33STxU09jmE0~g__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BZDg3ZDc2MDQtNzQwZi00YzFjLTgyOTMtMDMzZTc5N2VlNTg2XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+          "id": 61,
+          "title": "Friends",
+          "category": "TV Show",
+          "genre": [
+              "Comedy",
+              "Romance"
+          ],
+          "description": "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
+          "platform": "HBO Max",
+          "trailer": "https://imdb-video.media-imdb.com/vi4240746009/1434659607842-pgv4ql-1563699164137.mp4?Expires=1667866997&Signature=gKTEh2D-El8OnR7u2b9MAbdeKago7E-CIM2ECUms8Mbot2YE6YHgSIIRaTokmJTw6x04NVOZtSW7MEPRzd3KDrMZYTbuaDD9cQ9LlPa42wRNRPQ8VNWfnFEU-EHleAmb6IQgT1aAjDqNZkGkc0fAhzkUElw80MFU1lOcmLyHPm4RNJVV7t~gom-rwUI-e5UKwhdigjdFpcWqZnHU7ponaofqooBfWTLfP0B5loAZgtiD3Vh6Z91qev-N4wwYqOIcKENH1FjcC5DJVBB363yab-G0LiLyQnW6pPAcW8CI3m~01zS8cVGCV25bns9gIL1LabgqZ2HKrxtsGP3DHbyovA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+          "image": "https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg"
+      }
+  ]
+}
