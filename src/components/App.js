@@ -38,7 +38,7 @@ function App() {
           <Hulu allContent={isContent} />
         </Route>
         <Route path="/netflix">
-          <Netflix/>
+          <Netflix allContent={isContent} />
         </Route>
       </Switch>
     </Router>
