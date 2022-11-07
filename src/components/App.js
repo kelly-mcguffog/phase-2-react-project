@@ -32,7 +32,7 @@ function App() {
           <Container allContent={isContent} />
         </Route>
         <Route path="/hbo">
-          <HBO />
+          <HBO allContent={isContent} />
         </Route>
         <Route path="/hulu">
           <Hulu/>

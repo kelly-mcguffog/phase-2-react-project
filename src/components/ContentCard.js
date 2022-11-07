@@ -1,6 +1,6 @@
 import React from "react";
 
-function ConentCard({content}){
+function ContentCard({content}){
     const {title, genre, image, platform, category, description, trailer} = content
 
     return(
@@ -12,4 +12,4 @@ function ConentCard({content}){
     )
 }
 
-export default ConentCard;
+export default ContentCard;

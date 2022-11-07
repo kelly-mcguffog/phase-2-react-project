@@ -1,7 +1,17 @@
 import React from "react";
+import ContentCard from "./ContentCard";
 
 
-function HBO(){
+function HBO({allContent}){
+
+    const hboContent = allContent.filter(content => content.platform === "HBO Max").map(filter => (
+        <ContentCard key={filter.id} content={filter}/>
+        ))
+
+
+    console.log(hboContent)
+
+    return(hboContent)
 
 }
 
