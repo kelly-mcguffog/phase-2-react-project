@@ -35,7 +35,7 @@ function App() {
           <HBO allContent={isContent} />
         </Route>
         <Route path="/hulu">
-          <Hulu/>
+          <Hulu allContent={isContent} />
         </Route>
         <Route path="/netflix">
           <Netflix/>

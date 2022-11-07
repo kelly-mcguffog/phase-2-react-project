@@ -5,7 +5,7 @@ import ContentCard from "./ContentCard";
 function HBO({allContent}){
 
     const hboContent = allContent.filter(content => content.platform === "HBO Max").map(filter => (
-        <ContentCard key={filter.id} content={filter}/>
+        <ContentCard key={filter.title} content={filter}/>
         ))
 
 
