@@ -7,9 +7,6 @@ function Netflix({allContent}){
         <ContentCard key={filter.title} content={filter}/>
         ))
 
-
-    console.log(netflixContent)
-
     return(netflixContent)
 }
 

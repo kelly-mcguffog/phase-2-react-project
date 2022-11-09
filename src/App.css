@@ -28,6 +28,51 @@ p{
   font-size: 12px;
   margin: 0;
 }
+h4{
+  display: inline-block;
+  width: 10%;
+}
+/* .content-details{
+  background-color: black;
+  width: 100%;
+  color: white;
+} */
+/* .details-image{
+  width: 20%;
+  display: inline-grid;
+  margin: 2%;
+  text-align: center;
+} */
+/* .card-container{
+  position: relative;
+} */
+.hide-content-card{
+  background-color: black;
+  margin: auto;
+  color: white;
+  width: 50%;
+  padding:5px;
+}
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type=submit]{
+  width: 100%;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

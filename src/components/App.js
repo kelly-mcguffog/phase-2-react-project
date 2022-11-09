@@ -9,6 +9,7 @@ import HBO from "./HBO";
 import Netflix from "./Netflix";
 import Hulu from "./Hulu";
 import Container from "./Container";
+import Form from "./Form";
 import "../App.css"
 
 
@@ -22,6 +23,10 @@ function App() {
       .then(res => res.json())
       .then(data => setContent(data))
   },[])
+
+  function handleAddNewContent(newContent){
+    setContent([...isContent, newContent]);
+  }
 
 
   return (
@@ -39,6 +44,9 @@ function App() {
         </Route>
         <Route path="/netflix">
           <Netflix allContent={isContent} />
+        </Route>
+        <Route path="/new">
+          <Form onContentFormSubmit={handleAddNewContent} />
         </Route>
       </Switch>
     </Router>

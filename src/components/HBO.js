@@ -8,9 +8,6 @@ function HBO({allContent}){
         <ContentCard key={filter.title} content={filter}/>
         ))
 
-
-    console.log(hboContent)
-
     return(hboContent)
 
 }
