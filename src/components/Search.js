@@ -4,6 +4,7 @@ function Search({search, setSearch}){
     return (
         <>
         <div className="filterCategory">
+                <input type="radio" name="category" value="all"/>All
                 <input type="radio" name="category" value="movie"/>Movie
                 <input type="radio" name="category" value="tv"/>TV Show
         </div>
