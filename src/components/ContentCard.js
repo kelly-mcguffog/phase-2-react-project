@@ -1,7 +1,8 @@
 import React, {useState} from "react";
+import Details from "./Details"
 
 function ContentCard({content}){
-    const {title, genre, image, platform, category, description, trailer} = content
+    const {title, image} = content
 
     const [isShowingDetails, setDetails] = useState(false)
 
@@ -10,7 +11,8 @@ function ContentCard({content}){
     }
 
     return(
-        <div onClick={showDetails} className={isShowingDetails ? "hide-content-card" : "content-card"}>
+        <div className="content-card" onClick={showDetails}>
+            {isShowingDetails ? <Details content={content}/> : false}
             <img className="card-image" src={image}></img>
             <h3>{title}</h3>
         </div>

@@ -10,6 +10,7 @@ import Netflix from "./Netflix";
 import Hulu from "./Hulu";
 import Container from "./Container";
 import Form from "./Form";
+import Search from "./Search";
 import "../App.css"
 
 
@@ -30,6 +31,7 @@ function App() {
 
 
   return (
+    <>
     <Router>
       <NavBar />
       <Switch>
@@ -50,6 +52,8 @@ function App() {
         </Route>
       </Switch>
     </Router>
+    <Search />
+    </>
   )
 }
 

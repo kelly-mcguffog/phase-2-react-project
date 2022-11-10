@@ -36,75 +36,77 @@ function Form({onContentFormSubmit}){
       }
 
         return (
-            <form className="NewItem" onSubmit={handleSubmit}>
-              <label>
-                Title:
-                <input 
-                type="text" 
-                name="title" 
-                onChange={handleChange} 
-                value={formData.title}
-                className="form-input"
-                placeholder="Enter a Title"
-                />
-              </label>
-              
-              <label>
-                Category:
-                <select className="form-input" name="category" onChange={handleChange}>
-                  <option value="Movie">Movie</option>
-                  <option value="TV Show">TV Show</option>
-                </select>
-              </label>
+            <div className="form-container">
+                <form className="NewItem" onSubmit={handleSubmit}>
+                <label>
+                    Title:
+                    <input 
+                    type="text" 
+                    name="title" 
+                    onChange={handleChange} 
+                    value={formData.title}
+                    className="form-input"
+                    placeholder="Enter a Title"
+                    />
+                </label>
+                
+                <label>
+                    Category:
+                    <select className="form-input" name="category" onChange={handleChange}>
+                    <option value="Movie">Movie</option>
+                    <option value="TV Show">TV Show</option>
+                    </select>
+                </label>
 
-              <label>
-                Description:
-                <textarea 
-                name="description" 
-                onChange={handleChange} 
-                value={formData.description}
-                className="form-textarea"
-                placeholder="Enter a Description..."
-                >
-                </textarea>
-              </label>
+                <label>
+                    Description:
+                    <textarea 
+                    name="description" 
+                    onChange={handleChange} 
+                    value={formData.description}
+                    className="form-textarea"
+                    placeholder="Enter a Description..."
+                    >
+                    </textarea>
+                </label>
 
-              <label>
-                Streaming Service:
-                <select className="form-input" name="platform" onChange={handleChange}>
-                  <option value="HBO">HBO</option>
-                  <option value="Hulu">Hulu</option>
-                  <option value="Netflix">Netflix</option>
-                </select>
-              </label>
+                <label>
+                    Streaming Service:
+                    <select className="form-input" name="platform" onChange={handleChange}>
+                    <option value="HBO">HBO</option>
+                    <option value="Hulu">Hulu</option>
+                    <option value="Netflix">Netflix</option>
+                    </select>
+                </label>
 
-              <label>
-                Trailer URL:
-                <input 
-                type="text" 
-                name="trailer" 
-                onChange={handleChange} 
-                value={formData.trailer}
-                placeholder="Enter a URL for the Trailer"
-                className="form-input"
-                />
-              </label>
-              
-              <label>
-                Image URL:
-                <input 
-                type="text" 
-                name="image" 
-                onChange={handleChange} 
-                value={formData.image}
-                placeholder="Enter an Image URL"
-                className="form-input"
-                />
-              </label>
-              
-        
-              <button onChange={(e) => setFormData(e.target.value)} name="submit" type="submit">Add to List</button>
-            </form>
+                <label>
+                    Trailer URL:
+                    <input 
+                    type="text" 
+                    name="trailer" 
+                    onChange={handleChange} 
+                    value={formData.trailer}
+                    placeholder="Enter a URL for the Trailer"
+                    className="form-input"
+                    />
+                </label>
+                
+                <label>
+                    Image URL:
+                    <input 
+                    type="text" 
+                    name="image" 
+                    onChange={handleChange} 
+                    value={formData.image}
+                    placeholder="Enter an Image URL"
+                    className="form-input"
+                    />
+                </label>
+                
+            
+                <button onChange={(e) => setFormData(e.target.value)} name="submit" type="submit">Add to List</button>
+                </form>
+            </div>
           );
 
 }
