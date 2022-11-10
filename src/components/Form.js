@@ -7,10 +7,12 @@ function Form({onContentFormSubmit}){
         title: "",
         category: "Movie",
         description: "",
+        genre: "Comedy",
         platform: "HBO",
         trailer: "",
         image: ""
     }
+
     const [formData, setFormData] = useState(initialState)
 
     function handleChange(event) {
@@ -30,7 +32,7 @@ function Form({onContentFormSubmit}){
         body: JSON.stringify(formData)
         })
         .then(res => res.json())
-        .then(content => console.log(content))
+        .then(content => onContentFormSubmit(content))
         setFormData(initialState)
 
       }
@@ -55,6 +57,19 @@ function Form({onContentFormSubmit}){
                     <select className="form-input" name="category" onChange={handleChange}>
                     <option value="Movie">Movie</option>
                     <option value="TV Show">TV Show</option>
+                    </select>
+                </label>
+
+                <label>
+                    Genre:
+                    <select className="form-input" name="genre" onChange={handleChange}>
+                    <option value="Crime">Crime</option>
+                    <option value="Action">Action</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
                     </select>
                 </label>
 
