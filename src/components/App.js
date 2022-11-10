@@ -17,6 +17,9 @@ import "../App.css"
 function App() {
 
    const [isContent, setContent] = useState([]);
+   const [search, setSearch] = useState("")
+
+   const displayContent = isContent.filter(content => content.title.toLowerCase().includes(search.toLowerCase()))
 
 
   useEffect(() => {
@@ -31,29 +34,27 @@ function App() {
 
 
   return (
-    <>
     <Router>
       <NavBar />
+      <Search search={search} setSearch={setSearch}/>
       <Switch>
         <Route exact path="/">
-          <Container allContent={isContent} />
+          <Container allContent={displayContent} />
         </Route>
         <Route path="/hbo">
-          <HBO allContent={isContent} />
+          <HBO allContent={displayContent} />
         </Route>
         <Route path="/hulu">
-          <Hulu allContent={isContent} />
+          <Hulu allContent={displayContent} />
         </Route>
         <Route path="/netflix">
-          <Netflix allContent={isContent} />
+          <Netflix allContent={displayContent} />
         </Route>
         <Route path="/new">
           <Form onContentFormSubmit={handleAddNewContent} />
         </Route>
       </Switch>
     </Router>
-    <Search />
-    </>
   )
 }
 
