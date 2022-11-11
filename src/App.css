@@ -2,16 +2,46 @@
   background: linear-gradient(to right, #000000, #1b1b1b, #040404);
   color: white;
 }
-
+#home{
+  margin: 20px;
+  background:-webkit-linear-gradient(90deg, rgba(174,134,37,1) 0%, rgba(247,239,138,1) 35%, rgba(210,172,71,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-logo{
+  height: 15px;
+  width: auto;
+  margin:0px 20px 0px 20px;
+}
+.nav-right{
+  float: right;
+  width: 32%;
+  /* display: inline-block; */
+}
+.nav-left{
+  /* float: left;
+  margin-left: 20px; */
+  display: inline-block;
+  width: 65%;
+}
 .search{
-width: 75%;
-margin: 0 auto;
-text-align: center;
+width: 55%;
+/* margin: 0 auto;
+text-align: center; */
+display: inline-block;
+}
+
+.add-button{
+  display: inline-block;
+  padding: 5px 30px;
+  border-radius: 50px;
+  background:-webkit-linear-gradient(90deg, rgba(174,134,37,1) 0%, rgba(247,239,138,1) 35%, rgba(210,172,71,1) 100%);
 }
 
 .input-search{
   width: 80%;
-  padding: 10px;
+  padding: 5px;
   border-radius: 50px;
   background: transparent;
   border: 1px solid white;
@@ -23,7 +53,9 @@ text-align: center;
 }
 
 .navbar{
-  text-align: center;
+  /* text-align: center; */
+  width: 98%;
+  margin: 0 auto;
 }
 
 .card-image{
@@ -94,7 +126,7 @@ p{
 }
 h4{
   display: inline-block;
-  width: 10%;
+  /* width: 10%; */
 }
 .content-details-container{
   background-color: rgba(0,0,0,0.9);
@@ -142,7 +174,8 @@ h4{
   border: none;
 }
 a{
-  color:white;
+  color:black;
+  text-decoration: none;
 }
 .filterCategory{
   text-align: center;
