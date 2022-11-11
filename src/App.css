@@ -37,7 +37,7 @@ text-align: center;
 .content-card{
   width: 150px;
   display: inline-grid;
-  margin: 2%;
+  margin: 1%;
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
@@ -46,6 +46,7 @@ text-align: center;
   height: 250px;
   filter:drop-shadow(16px 16px 10px black);
   -webkit-transition: transform 0.25s ease-in-out;
+  vertical-align: middle;
 }
 .content-card:hover{
   transform: scale(1.1);
@@ -61,12 +62,19 @@ text-align: center;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-.right-button{
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.arrow-button{
   height: 150px;
   vertical-align: middle;
   background-color: rgba(25, 22, 15);
   filter:drop-shadow(16px 16px 10px black);
   border: 0;
+}
+h2{
+  margin: 20px;
 }
 h3{
   font-size: 14px;
@@ -134,12 +142,13 @@ a{
 }
 input[type=radio]{
   margin: 10px 10px 10px 20px;
+  accent-color:  rgba(174,134,37,1);
 }
 .content-details-image{
   display: none;
 }
 .card-container{
-  width: 100%;
+  width: 92%;
   margin: 0 auto;
 }
 input[type=text], select, textarea{
@@ -158,7 +167,7 @@ input::placeholder, textarea::placeholder{
 
 button[type=submit]{
   width: 100%;
-  background: linear-gradient(90deg, rgba(174,134,37,1) 0%, rgba(247,239,138,1) 35%, rgba(210,172,71,1) 100%);;
+  background: linear-gradient(90deg, rgba(174,134,37,1) 0%, rgba(247,239,138,1) 35%, rgba(210,172,71,1) 100%);
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -168,7 +177,9 @@ button[type=submit]{
 
 .form-container{
   border-radius: 5px;
-  background-color: #f2f2f2;
+  width: 80%;
+  margin: 0 auto;
+  /* background-color: #f2f2f2; */
   padding: 20px;
 }
 
