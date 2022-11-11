@@ -31,56 +31,84 @@ function HBO({allContent}){
     const renderHBOSciFi = displayHBOSciFi.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceHBODramaBelt(){
-        setHBODramaBeltPosition((hboDramaBeltPosition + 3) % displayHBODramas.length)
+        setHBODramaBeltPosition((hboDramaBeltPosition + 5) % displayHBODramas.length)
+      }
+      function retreatHBODramaBelt(){
+        setHBODramaBeltPosition((hboDramaBeltPosition - 5) % displayHBODramas.length)
       }
     function advanceHBOCrimeBelt(){
-        setHBOCrimeBeltPosition((hboCrimeBeltPosition + 3) % displayHBOCrime.length)
+        setHBOCrimeBeltPosition((hboCrimeBeltPosition + 5) % displayHBOCrime.length)
+    }
+    function retreatHBOCrimeBelt(){
+        setHBOCrimeBeltPosition((hboCrimeBeltPosition - 5) % displayHBOCrime.length)
     }
     function advanceHBOActionBelt(){
-        setHBOActionBeltPosition((hboActionBeltPosition + 3) % displayHBOAction.length)
+        setHBOActionBeltPosition((hboActionBeltPosition + 5) % displayHBOAction.length)
+    }
+    function retreatHBOActionBelt(){
+        setHBOActionBeltPosition((hboActionBeltPosition - 5) % displayHBOAction.length)
     }
     function advanceHBOMysteryBelt(){
-        setHBOMysteryBeltPosition((hboMysteryBeltPosition + 3) % displayHBOMystery.length)
+        setHBOMysteryBeltPosition((hboMysteryBeltPosition + 5) % displayHBOMystery.length)
+    }
+    function retreatHBOMysteryBelt(){
+        setHBOMysteryBeltPosition((hboMysteryBeltPosition - 5) % displayHBOMystery.length)
     }
     function advanceHBOThrillerBelt(){
-        setHBOThrillerBeltPosition((hboThrillerBeltPosition + 3) % displayHBOThriller.length)
+        setHBOThrillerBeltPosition((hboThrillerBeltPosition + 5) % displayHBOThriller.length)
+    }
+    function retreatHBOThrillerBelt(){
+        setHBOThrillerBeltPosition((hboThrillerBeltPosition - 5) % displayHBOThriller.length)
     }
     function advanceHBORomanceBelt(){
-        setHBORomanceBeltPosition((hboRomanceBeltPosition + 3) % displayHBORomance.length)
+        setHBORomanceBeltPosition((hboRomanceBeltPosition + 5) % displayHBORomance.length)
+    }
+    function retreatHBORomanceBelt(){
+        setHBORomanceBeltPosition((hboRomanceBeltPosition - 5) % displayHBORomance.length)
     }
     function advanceHBOSciFiBelt(){
-        setHBOSciFiBeltPosition((hboSciFiBeltPosition + 3) % displayHBOSciFi.length)
+        setHBOSciFiBeltPosition((hboSciFiBeltPosition + 5) % displayHBOSciFi.length)
+    }
+    function retreatHBOSciFiBelt(){
+        setHBOSciFiBeltPosition((hboSciFiBeltPosition - 5) % displayHBOSciFi.length)
     }
    
     return(
         <div className="card-container">
             <h2>Drama</h2>
-            {renderHBODramas.slice(hboDramaBeltPosition, hboDramaBeltPosition+3)}
-            <button onClick={advanceHBODramaBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHBODramaBelt}><i className="arrow left"></i></button>
+            {renderHBODramas.slice(hboDramaBeltPosition, hboDramaBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHBODramaBelt}><i className="arrow right"></i></button>
             
             <h2>Crime</h2>
-            {renderHBOCrime.slice(hboCrimeBeltPosition, hboCrimeBeltPosition+3)}
-            <button onClick={advanceHBOCrimeBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHBOCrimeBelt}><i className="arrow left"></i></button>
+            {renderHBOCrime.slice(hboCrimeBeltPosition, hboCrimeBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHBOCrimeBelt}><i className="arrow right"></i></button>
 
             <h2>Action</h2>
-            {renderHBOAction.slice(hboActionBeltPosition, hboActionBeltPosition+3)}
-            <button onClick={advanceHBOActionBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHBOActionBelt}><i className="arrow left"></i></button>
+            {renderHBOAction.slice(hboActionBeltPosition, hboActionBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHBOActionBelt}><i className="arrow right"></i></button>
 
             <h2>Mystery</h2>
-            {renderHBOMystery.slice(hboMysteryBeltPosition, hboMysteryBeltPosition+3)}
-            <button onClick={advanceHBOMysteryBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHBOMysteryBelt}><i className="arrow left"></i></button>
+            {renderHBOMystery.slice(hboMysteryBeltPosition, hboMysteryBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHBOMysteryBelt}><i className="arrow right"></i></button>
 
             <h2>Thriller</h2>
-            {renderHBOThriller.slice(hboThrillerBeltPosition, hboThrillerBeltPosition+3)}
-            <button onClick={advanceHBOThrillerBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHBOThrillerBelt}><i className="arrow left"></i></button>
+            {renderHBOThriller.slice(hboThrillerBeltPosition, hboThrillerBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHBOThrillerBelt}><i className="arrow right"></i></button>
 
             <h2>Romance</h2>
-            {renderHBORomance.slice(hboRomanceBeltPosition, hboRomanceBeltPosition+3)}
-            <button onClick={advanceHBORomanceBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHBORomanceBelt}><i className="arrow left"></i></button>
+            {renderHBORomance.slice(hboRomanceBeltPosition, hboRomanceBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHBORomanceBelt}><i className="arrow right"></i></button>
 
             <h2>Sci-Fi</h2>
-            {renderHBOSciFi.slice(hboSciFiBeltPosition, hboSciFiBeltPosition+3)}
-            <button onClick={advanceHBOSciFiBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHBOSciFiBelt}><i className="arrow left"></i></button>
+            {renderHBOSciFi.slice(hboSciFiBeltPosition, hboSciFiBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHBOSciFiBelt}><i className="arrow right"></i></button>
             
         </div>
         )

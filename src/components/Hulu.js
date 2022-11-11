@@ -30,56 +30,84 @@ function Hulu({allContent}){
     const renderHuluSciFi = displayHuluSciFi.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceHuluDramaBelt(){
-        setHuluDramaBeltPosition((huluDramaBeltPosition + 3) % displayHuluDramas.length)
+        setHuluDramaBeltPosition((huluDramaBeltPosition + 5) % displayHuluDramas.length)
+      }
+      function retreatHuluDramaBelt(){
+        setHuluDramaBeltPosition((huluDramaBeltPosition - 5) % displayHuluDramas.length)
       }
     function advanceHuluCrimeBelt(){
-        setHuluCrimeBeltPosition((huluCrimeBeltPosition + 3) % displayHuluCrime.length)
+        setHuluCrimeBeltPosition((huluCrimeBeltPosition + 5) % displayHuluCrime.length)
+    }
+    function retreatHuluCrimeBelt(){
+        setHuluCrimeBeltPosition((huluCrimeBeltPosition - 5) % displayHuluCrime.length)
     }
     function advanceHuluActionBelt(){
-        setHuluActionBeltPosition((huluActionBeltPosition + 3) % displayHuluAction.length)
+        setHuluActionBeltPosition((huluActionBeltPosition + 5) % displayHuluAction.length)
+    }
+    function retreatHuluActionBelt(){
+        setHuluActionBeltPosition((huluActionBeltPosition - 5) % displayHuluAction.length)
     }
     function advanceHuluMysteryBelt(){
-        setHuluMysteryBeltPosition((huluMysteryBeltPosition + 3) % displayHuluMystery.length)
+        setHuluMysteryBeltPosition((huluMysteryBeltPosition + 5) % displayHuluMystery.length)
+    }
+    function retreatHuluMysteryBelt(){
+        setHuluMysteryBeltPosition((huluMysteryBeltPosition - 5) % displayHuluMystery.length)
     }
     function advanceHuluThrillerBelt(){
-        setHuluThrillerBeltPosition((huluThrillerBeltPosition + 3) % displayHuluThriller.length)
+        setHuluThrillerBeltPosition((huluThrillerBeltPosition + 5) % displayHuluThriller.length)
+    }
+    function retreatHuluThrillerBelt(){
+        setHuluThrillerBeltPosition((huluThrillerBeltPosition - 5) % displayHuluThriller.length)
     }
     function advanceHuluRomanceBelt(){
-        setHuluRomanceBeltPosition((huluRomanceBeltPosition + 3) % displayHuluRomance.length)
+        setHuluRomanceBeltPosition((huluRomanceBeltPosition + 5) % displayHuluRomance.length)
+    }
+    function retreatHuluRomanceBelt(){
+        setHuluRomanceBeltPosition((huluRomanceBeltPosition - 5) % displayHuluRomance.length)
     }
     function advanceHuluSciFiBelt(){
-        setHuluSciFiBeltPosition((huluSciFiBeltPosition + 3) % displayHuluSciFi.length)
+        setHuluSciFiBeltPosition((huluSciFiBeltPosition + 5) % displayHuluSciFi.length)
+    }
+    function retreatHuluSciFiBelt(){
+        setHuluSciFiBeltPosition((huluSciFiBeltPosition - 5) % displayHuluSciFi.length)
     }
    
     return(
         <div className="card-container">
             <h2>Drama</h2>
-            {renderHuluDramas.slice(huluDramaBeltPosition, huluDramaBeltPosition+3)}
-            <button onClick={advanceHuluDramaBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHuluDramaBelt}><i className="arrow left"></i></button>
+            {renderHuluDramas.slice(huluDramaBeltPosition, huluDramaBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHuluDramaBelt}><i className="arrow right"></i></button>
             
             <h2>Crime</h2>
-            {renderHuluCrime.slice(huluCrimeBeltPosition, huluCrimeBeltPosition+3)}
-            <button onClick={advanceHuluCrimeBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHuluCrimeBelt}><i className="arrow left"></i></button>
+            {renderHuluCrime.slice(huluCrimeBeltPosition, huluCrimeBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHuluCrimeBelt}><i className="arrow right"></i></button>
 
             <h2>Action</h2>
-            {renderHuluAction.slice(huluActionBeltPosition, huluActionBeltPosition+3)}
-            <button onClick={advanceHuluActionBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHuluActionBelt}><i className="arrow left"></i></button>
+            {renderHuluAction.slice(huluActionBeltPosition, huluActionBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHuluActionBelt}><i className="arrow right"></i></button>
 
             <h2>Mystery</h2>
-            {renderHuluMystery.slice(huluMysteryBeltPosition, huluMysteryBeltPosition+3)}
-            <button onClick={advanceHuluMysteryBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHuluMysteryBelt}><i className="arrow left"></i></button>
+            {renderHuluMystery.slice(huluMysteryBeltPosition, huluMysteryBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHuluMysteryBelt}><i className="arrow right"></i></button>
 
             <h2>Thriller</h2>
-            {renderHuluThriller.slice(huluThrillerBeltPosition, huluThrillerBeltPosition+3)}
-            <button onClick={advanceHuluThrillerBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHuluThrillerBelt}><i className="arrow left"></i></button>
+            {renderHuluThriller.slice(huluThrillerBeltPosition, huluThrillerBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHuluThrillerBelt}><i className="arrow right"></i></button>
 
             <h2>Romance</h2>
-            {renderHuluRomance.slice(huluRomanceBeltPosition, huluRomanceBeltPosition+3)}
-            <button onClick={advanceHuluRomanceBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHuluRomanceBelt}><i className="arrow left"></i></button>
+            {renderHuluRomance.slice(huluRomanceBeltPosition, huluRomanceBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHuluRomanceBelt}><i className="arrow right"></i></button>
 
             <h2>Sci-Fi</h2>
-            {renderHuluSciFi.slice(huluSciFiBeltPosition, huluSciFiBeltPosition+3)}
-            <button onClick={advanceHuluSciFiBelt}>more</button>
+            <button className="arrow-button" onClick={retreatHuluSciFiBelt}><i className="arrow left"></i></button>
+            {renderHuluSciFi.slice(huluSciFiBeltPosition, huluSciFiBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceHuluSciFiBelt}><i className="arrow right"></i></button>
             
         </div>
         )

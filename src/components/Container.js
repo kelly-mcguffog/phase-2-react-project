@@ -32,46 +32,46 @@ function Container({allContent}){
     const renderSciFi = displaySciFi.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceDramaBelt(){
-        setDramaBeltPosition((dramaBeltPosition + 1) % displayDramas.length)
+        setDramaBeltPosition((dramaBeltPosition + 5) % displayDramas.length)
       }
       function retreatDramaBelt(){
-        setDramaBeltPosition((dramaBeltPosition - 1) % displayDramas.length)
+        setDramaBeltPosition((dramaBeltPosition - 5) % displayDramas.length)
       }
     function advanceCrimeBelt(){
-        setCrimeBeltPosition((crimeBeltPosition + 1) % displayCrime.length)
+        setCrimeBeltPosition((crimeBeltPosition + 5) % displayCrime.length)
     }
     function retreatCrimeBelt(){
-        setCrimeBeltPosition((crimeBeltPosition - 1) % displayCrime.length)
+        setCrimeBeltPosition((crimeBeltPosition - 5) % displayCrime.length)
     }
     function advanceActionBelt(){
-        setActionBeltPosition((actionBeltPosition + 1) % displayAction.length)
+        setActionBeltPosition((actionBeltPosition + 5) % displayAction.length)
     }
     function retreatActionBelt(){
-        setActionBeltPosition((actionBeltPosition - 1) % displayAction.length)
+        setActionBeltPosition((actionBeltPosition - 5) % displayAction.length)
     }
     function advanceMysteryBelt(){
-        setMysteryBeltPosition((mysteryBeltPosition + 1) % displayMystery.length)
+        setMysteryBeltPosition((mysteryBeltPosition + 5) % displayMystery.length)
     }
     function retreatMysteryBelt(){
-        setMysteryBeltPosition((mysteryBeltPosition - 1) % displayMystery.length)
+        setMysteryBeltPosition((mysteryBeltPosition - 5) % displayMystery.length)
     }
     function advanceThrillerBelt(){
-        setThrillerBeltPosition((thrillerBeltPosition + 1) % displayThriller.length)
+        setThrillerBeltPosition((thrillerBeltPosition + 5) % displayThriller.length)
     }
     function retreatThrillerBelt(){
-        setThrillerBeltPosition((thrillerBeltPosition - 1) % displayThriller.length)
+        setThrillerBeltPosition((thrillerBeltPosition - 5) % displayThriller.length)
     }
     function advanceRomanceBelt(){
-        setRomanceBeltPosition((romanceBeltPosition + 1) % displayRomance.length)
+        setRomanceBeltPosition((romanceBeltPosition + 5) % displayRomance.length)
     }
     function retreatRomanceBelt(){
-        setRomanceBeltPosition((romanceBeltPosition - 1) % displayRomance.length)
+        setRomanceBeltPosition((romanceBeltPosition - 5) % displayRomance.length)
     }
     function advanceSciFiBelt(){
-        setSciFiBeltPosition((sciFiBeltPosition + 1) % displaySciFi.length)
+        setSciFiBeltPosition((sciFiBeltPosition + 5) % displaySciFi.length)
     }
     function retreatSciFiBelt(){
-        setSciFiBeltPosition((sciFiBeltPosition - 1) % displaySciFi.length)
+        setSciFiBeltPosition((sciFiBeltPosition - 5) % displaySciFi.length)
     }
       
 

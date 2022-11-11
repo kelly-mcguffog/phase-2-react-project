@@ -30,56 +30,84 @@ function Netflix({allContent}){
     const renderNetflixSciFi = displayNetflixSciFi.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceNetflixDramaBelt(){
-        setNetflixDramaBeltPosition((netflixDramaBeltPosition + 3) % displayNetflixDramas.length)
+        setNetflixDramaBeltPosition((netflixDramaBeltPosition + 5) % displayNetflixDramas.length)
+      }
+      function retreatNetflixDramaBelt(){
+        setNetflixDramaBeltPosition((netflixDramaBeltPosition - 5) % displayNetflixDramas.length)
       }
     function advanceNetflixCrimeBelt(){
-        setNetflixCrimeBeltPosition((netflixCrimeBeltPosition + 3) % displayNetflixCrime.length)
+        setNetflixCrimeBeltPosition((netflixCrimeBeltPosition + 5) % displayNetflixCrime.length)
+    }
+    function retreatNetflixCrimeBelt(){
+        setNetflixCrimeBeltPosition((netflixCrimeBeltPosition - 5) % displayNetflixCrime.length)
     }
     function advanceNetflixActionBelt(){
-        setNetflixActionBeltPosition((netflixActionBeltPosition + 3) % displayNetflixAction.length)
+        setNetflixActionBeltPosition((netflixActionBeltPosition + 5) % displayNetflixAction.length)
+    }
+    function retreatNetflixActionBelt(){
+        setNetflixActionBeltPosition((netflixActionBeltPosition - 5) % displayNetflixAction.length)
     }
     function advanceNetflixMysteryBelt(){
-        setNetflixMysteryBeltPosition((netflixMysteryBeltPosition + 3) % displayNetflixMystery.length)
+        setNetflixMysteryBeltPosition((netflixMysteryBeltPosition + 5) % displayNetflixMystery.length)
+    }
+    function retreatNetflixMysteryBelt(){
+        setNetflixMysteryBeltPosition((netflixMysteryBeltPosition - 5) % displayNetflixMystery.length)
     }
     function advanceNetflixThrillerBelt(){
-        setNetflixThrillerBeltPosition((netflixThrillerBeltPosition + 3) % displayNetflixThriller.length)
+        setNetflixThrillerBeltPosition((netflixThrillerBeltPosition + 5) % displayNetflixThriller.length)
+    }
+    function retreatNetflixThrillerBelt(){
+        setNetflixThrillerBeltPosition((netflixThrillerBeltPosition - 5) % displayNetflixThriller.length)
     }
     function advanceNetflixRomanceBelt(){
-        setNetflixRomanceBeltPosition((netflixRomanceBeltPosition + 3) % displayNetflixRomance.length)
+        setNetflixRomanceBeltPosition((netflixRomanceBeltPosition + 5) % displayNetflixRomance.length)
+    }
+    function retreatNetflixRomanceBelt(){
+        setNetflixRomanceBeltPosition((netflixRomanceBeltPosition - 5) % displayNetflixRomance.length)
     }
     function advanceNetflixSciFiBelt(){
-        setNetflixSciFiBeltPosition((netflixSciFiBeltPosition + 3) % displayNetflixSciFi.length)
+        setNetflixSciFiBeltPosition((netflixSciFiBeltPosition + 5) % displayNetflixSciFi.length)
+    }
+    function retreatNetflixSciFiBelt(){
+        setNetflixSciFiBeltPosition((netflixSciFiBeltPosition - 5) % displayNetflixSciFi.length)
     }
    
     return(
         <div className="card-container">
             <h2>Drama</h2>
-            {renderNetflixDramas.slice(netflixDramaBeltPosition, netflixDramaBeltPosition+3)}
-            <button onClick={advanceNetflixDramaBelt}>more</button>
+            <button className="arrow-button" onClick={retreatNetflixDramaBelt}><i className="arrow left"></i></button>
+            {renderNetflixDramas.slice(netflixDramaBeltPosition, netflixDramaBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceNetflixDramaBelt}><i className="arrow right"></i></button>
             
             <h2>Crime</h2>
-            {renderNetflixCrime.slice(netflixCrimeBeltPosition, netflixCrimeBeltPosition+3)}
-            <button onClick={advanceNetflixCrimeBelt}>more</button>
+            <button className="arrow-button" onClick={retreatNetflixCrimeBelt}><i className="arrow left"></i></button>
+            {renderNetflixCrime.slice(netflixCrimeBeltPosition, netflixCrimeBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceNetflixCrimeBelt}><i className="arrow right"></i></button>
 
             <h2>Action</h2>
-            {renderNetflixAction.slice(netflixActionBeltPosition, netflixActionBeltPosition+3)}
-            <button onClick={advanceNetflixActionBelt}>more</button>
+            <button className="arrow-button" onClick={retreatNetflixActionBelt}><i className="arrow left"></i></button>
+            {renderNetflixAction.slice(netflixActionBeltPosition, netflixActionBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceNetflixActionBelt}><i className="arrow right"></i></button>
 
             <h2>Mystery</h2>
-            {renderNetflixMystery.slice(netflixMysteryBeltPosition, netflixMysteryBeltPosition+3)}
-            <button onClick={advanceNetflixMysteryBelt}>more</button>
+            <button className="arrow-button" onClick={retreatNetflixMysteryBelt}><i className="arrow left"></i></button>
+            {renderNetflixMystery.slice(netflixMysteryBeltPosition, netflixMysteryBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceNetflixMysteryBelt}><i className="arrow right"></i></button>
 
             <h2>Thriller</h2>
-            {renderNetflixThriller.slice(netflixThrillerBeltPosition, netflixThrillerBeltPosition+3)}
-            <button onClick={advanceNetflixThrillerBelt}>more</button>
+            <button className="arrow-button" onClick={retreatNetflixThrillerBelt}><i className="arrow left"></i></button>
+            {renderNetflixThriller.slice(netflixThrillerBeltPosition, netflixThrillerBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceNetflixThrillerBelt}><i className="arrow right"></i></button>
 
             <h2>Romance</h2>
-            {renderNetflixRomance.slice(netflixRomanceBeltPosition, netflixRomanceBeltPosition+3)}
-            <button onClick={advanceNetflixRomanceBelt}>more</button>
+            <button className="arrow-button" onClick={retreatNetflixRomanceBelt}><i className="arrow left"></i></button>
+            {renderNetflixRomance.slice(netflixRomanceBeltPosition, netflixRomanceBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceNetflixRomanceBelt}><i className="arrow right"></i></button>
 
             <h2>Sci-Fi</h2>
-            {renderNetflixSciFi.slice(netflixSciFiBeltPosition, netflixSciFiBeltPosition+3)}
-            <button onClick={advanceNetflixSciFiBelt}>more</button>
+            <button className="arrow-button" onClick={retreatNetflixSciFiBelt}><i className="arrow left"></i></button>
+            {renderNetflixSciFi.slice(netflixSciFiBeltPosition, netflixSciFiBeltPosition+5)}
+            <button className="arrow-button" onClick={advanceNetflixSciFiBelt}><i className="arrow right"></i></button>
             
         </div>
         )
