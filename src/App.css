@@ -4,10 +4,11 @@
 }
 
 .search{
-  text-align: center;
-  margin: 0 auto;
-
+width: 75%;
+margin: 0 auto;
+text-align: center;
 }
+
 .input-search{
   width: 80%;
   padding: 10px;
@@ -105,15 +106,29 @@ h4{
   width: 50%;
   height: auto;
 }
+a{
+  color:white;
+}
+.filterCategory{
+  text-align: center;
+  margin: 20px auto;
+}
+input[type=radio]{
+  margin: 10px 10px 10px 20px;
+}
+.content-details-image{
+  display: none;
+}
 /* .details-image{
   width: 20%;
   display: inline-grid;
   margin: 2%;
   text-align: center;
 } */
-/* .card-container{
-  position: relative;
-} */
+.card-container{
+  width: 100%;
+  margin: 0 auto;
+}
 input[type=text], select, textarea{
   width: 100%;
   padding: 12px 20px;

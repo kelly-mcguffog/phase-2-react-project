@@ -58,31 +58,31 @@ function Container({allContent}){
         <div className="card-container">
             <h2>Drama</h2>
             {renderDramas.slice(dramaBeltPosition, dramaBeltPosition+5)}
-            <button className="right-button" onClick={advanceDramaBelt}><i class="arrow right"></i></button>
+            <button className="right-button" onClick={advanceDramaBelt}><i className="arrow right"></i></button>
             
             <h2>Crime</h2>
             {renderCrime.slice(crimeBeltPosition, crimeBeltPosition+5)}
-            <button className="right-button" onClick={advanceCrimeBelt}><i class="arrow right"></i></button>
+            <button className="right-button" onClick={advanceCrimeBelt}><i className="arrow right"></i></button>
 
             <h2>Action</h2>
             {renderAction.slice(actionBeltPosition, actionBeltPosition+5)}
-            <button className="right-button" onClick={advanceActionBelt}><i class="arrow right"></i></button>
+            <button className="right-button" onClick={advanceActionBelt}><i className="arrow right"></i></button>
 
             <h2>Mystery</h2>
             {renderMystery.slice(mysteryBeltPosition, mysteryBeltPosition+5)}
-            <button className="right-button" onClick={advanceMysteryBelt}><i class="arrow right"></i></button>
+            <button className="right-button" onClick={advanceMysteryBelt}><i className="arrow right"></i></button>
 
             <h2>Thriller</h2>
             {renderThriller.slice(thrillerBeltPosition, thrillerBeltPosition+5)}
-            <button className="right-button" onClick={advanceThrillerBelt}><i class="arrow right"></i></button>
+            <button className="right-button" onClick={advanceThrillerBelt}><i className="arrow right"></i></button>
 
             <h2>Romance</h2>
             {renderRomance.slice(romanceBeltPosition, romanceBeltPosition+5)}
-            <button className="right-button" onClick={advanceRomanceBelt}><i class="arrow right"></i></button>
+            <button className="right-button" onClick={advanceRomanceBelt}><i className="arrow right"></i></button>
 
             <h2>Sci-Fi</h2>
             {renderSciFi.slice(sciFiBeltPosition, sciFiBeltPosition+5)}
-            <button className="right-button" onClick={advanceSciFiBelt}><i class="arrow right"></i></button>
+            <button className="right-button" onClick={advanceSciFiBelt}><i className="arrow right"></i></button>
             
         </div>
         )
