@@ -32,32 +32,32 @@ function Container({allContent}){
     const renderSciFi = displaySciFi.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceDramaBelt(){
-        setDramaBeltPosition((dramaBeltPosition + 3) % displayDramas.length)
+        setDramaBeltPosition((dramaBeltPosition + 1) % displayDramas.length)
       }
     function advanceCrimeBelt(){
-        setCrimeBeltPosition((crimeBeltPosition + 3) % displayCrime.length)
+        setCrimeBeltPosition((crimeBeltPosition + 1) % displayCrime.length)
     }
     function advanceActionBelt(){
-        setActionBeltPosition((actionBeltPosition + 3) % displayAction.length)
+        setActionBeltPosition((actionBeltPosition + 1) % displayAction.length)
     }
     function advanceMysteryBelt(){
-        setMysteryBeltPosition((mysteryBeltPosition + 3) % displayMystery.length)
+        setMysteryBeltPosition((mysteryBeltPosition + 1) % displayMystery.length)
     }
     function advanceThrillerBelt(){
-        setThrillerBeltPosition((thrillerBeltPosition + 3) % displayThriller.length)
+        setThrillerBeltPosition((thrillerBeltPosition + 1) % displayThriller.length)
     }
     function advanceRomanceBelt(){
-        setRomanceBeltPosition((romanceBeltPosition + 3) % displayRomance.length)
+        setRomanceBeltPosition((romanceBeltPosition + 1) % displayRomance.length)
     }
     function advanceSciFiBelt(){
-        setSciFiBeltPosition((sciFiBeltPosition + 3) % displaySciFi.length)
+        setSciFiBeltPosition((sciFiBeltPosition + 1) % displaySciFi.length)
     }
       
 
     return(
         <div className="card-container">
             <h2>Drama</h2>
-            {renderDramas.slice(dramaBeltPosition, dramaBeltPosition+3)}
+            {renderDramas.slice(dramaBeltPosition, dramaBeltPosition+6)}
             <button onClick={advanceDramaBelt}>more</button>
             
             <h2>Crime</h2>

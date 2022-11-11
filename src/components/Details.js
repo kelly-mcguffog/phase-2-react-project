@@ -1,7 +1,7 @@
 import React from "react";
 
 function Details({content}){
-    const {title, genre, image, platform, description, trailer} = content
+    const {title, genre, category, platform, description, trailer} = content
     return(
         <div className="content-details">
             <div className="trailer-clip">
@@ -10,6 +10,7 @@ function Details({content}){
             </div>
             <div className="details">
                 <h3>{title}</h3>
+                <p>{genre} | {category}</p>
                 <p>{platform}</p>
                 <p>{description}</p>
             </div>

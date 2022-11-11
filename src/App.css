@@ -1,10 +1,26 @@
-.App {
+#root {
+  background: linear-gradient(to right, #000000, #1b1b1b, #040404);
+  color: white;
+}
+
+.search{
   text-align: center;
+  margin: 0 auto;
+
+}
+.input-search{
+  width: 80%;
+  padding: 10px;
+  border-radius: 50px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.navbar{
+  text-align: center;
 }
 
 .card-image{
