@@ -9,10 +9,10 @@ function Details({content}){
                 </iframe>
             </div>
             <div className="details">
-                <h3>{title}</h3>
-                <p>{genre} | {category}</p>
-                <p>{platform}</p>
-                <p>{description}</p>
+                <h3 className="details-title">{title}</h3>
+                <p className="content-info">{genre} | {category}</p>
+                <p className="content-info streaming-info">Streaming on {platform}</p>
+                <p className="content-info">{description}</p>
             </div>
         </div>
     )

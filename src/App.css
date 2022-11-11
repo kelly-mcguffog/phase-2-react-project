@@ -80,7 +80,7 @@ h4{
   display: inline-block;
   width: 10%;
 }
-.content-details{
+.content-details-container{
   background-color: rgba(0,0,0,0.9);
   padding-top: 100px;
   color: white;
@@ -92,19 +92,38 @@ h4{
   overflow: hidden;
   z-index: 1;
 }
+.content-details-title{
+  display: none;
+}
 .trailer-clip{
   display: inline-block;
   vertical-align: middle;
 }
 .details{
   display: inline-block;
-  width: 45%;
+  width: 40%;
   vertical-align: middle;
   text-align: left;
+  margin-left: 30px;
+}
+.content-details{
+  width: 80%;
+  margin: 0 auto;
+}
+.streaming-info{
+  font-weight: 700;
+}
+.details-title{
+  font-size:18px;
+}
+.content-info{
+  font-size: 14px;
+  margin: 10px;
 }
 .trailer{
-  width: 50%;
-  height: auto;
+  width: 400px;
+  height: 300px;
+  border: none;
 }
 a{
   color:white;
@@ -119,12 +138,6 @@ input[type=radio]{
 .content-details-image{
   display: none;
 }
-/* .details-image{
-  width: 20%;
-  display: inline-grid;
-  margin: 2%;
-  text-align: center;
-} */
 .card-container{
   width: 100%;
   margin: 0 auto;

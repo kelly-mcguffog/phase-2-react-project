@@ -11,7 +11,7 @@ function ContentCard({content}){
     }
 
     return(
-        <div className={isShowingDetails ? "content-details" : "content-card"} onClick={showDetails}>
+        <div className={isShowingDetails ? "content-details-container" : "content-card"} onClick={showDetails}>
             {isShowingDetails ? <Details content={content}/> : false}
             <img className={isShowingDetails ? "content-details-image" : "card-image"} src={image}></img>
             <h3 className={isShowingDetails ? "content-details-title" : "card-title"}>{title}</h3>
