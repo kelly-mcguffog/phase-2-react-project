@@ -18,22 +18,22 @@ function App() {
 
     const [isContent, setContent] = useState([]);
     const [search, setSearch] = useState("")
-    // const [filter, setFilter] = useState("All")
+    const [filter, setFilter] = useState("All")
     
     let displayContent = isContent.filter(content => content.title.toLowerCase().includes(search.toLowerCase()))
-    // displayContent = displayContent.filter(content => {
-    //   if(filter === "All") return true;
-    //   return content.category === filter;
-    // })
+    displayContent = displayContent.filter(content => {
+      if(filter === "All") return true;
+      return content.category === filter;
+    })
     displayContent.sort(function(a, b) {
       if(a.title.toLowerCase() < b.title.toLowerCase()) return -1;
       if(a.title.toLowerCase() > b.title.toLowerCase()) return 1;
       return 0;
      })
 
-    // function handleFilter(e){
-    //   setFilter(e.target.value)
-    // }
+    function handleFilter(e){
+      setFilter(e.target.value)
+    }
 
   useEffect(() => {
     fetch('http://localhost:3000/content')
@@ -47,8 +47,7 @@ function App() {
 
   return (
     <Router>
-      <NavBar search={search} setSearch={setSearch}/>
-      {/* <Search handleFilter={handleFilter} search={search} setSearch={setSearch}/> */}
+      <NavBar search={search} handleFilter={handleFilter} setSearch={setSearch}/>
       <Switch>
         <Route exact path="/">
           <Container allContent={displayContent} />

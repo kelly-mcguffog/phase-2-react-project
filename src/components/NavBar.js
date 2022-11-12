@@ -4,12 +4,13 @@ import HboWhiteLogo from "../Assets/HBO_Max_White.png"
 import HuluLogoWhite from "../Assets/Hulu_Logo_White.png"
 import NetflixLogoWhite from "../Assets/Netflix_Logo_White.png"
 import Search from "./Search";
+// import FilterButton from "./FilterButton";
 
 
-function NavBar({search, setSearch}) {
+function NavBar({search, setSearch, handleFilter}) {
   return(
     <div className="navbar">
-        {/* <h4 className="home-button" ><NavLink id="home" exact to="/">Home</NavLink></h4> */}
+       
         <div className="nav-left">
             <h4 className="home-button" ><NavLink id="home" exact to="/">Home</NavLink></h4>
             <NavLink to="/hbo"><img className="nav-logo" src={HboWhiteLogo}/></NavLink>
@@ -17,11 +18,9 @@ function NavBar({search, setSearch}) {
             <NavLink to="/netflix"><img className="nav-logo" src={NetflixLogoWhite}/></NavLink>
         </div>
         <div className="nav-right">
-        <Search  search={search} setSearch={setSearch}/>
-            {/* <NavLink to="/hbo"><img className="nav-logo" src={HboWhiteLogo}/></NavLink>
-            <NavLink to="/hulu"><img className="nav-logo" src={HuluLogoWhite}/></NavLink>
-            <NavLink to="/netflix"><img className="nav-logo" src={NetflixLogoWhite}/></NavLink> */}
-            <h4 className="add-button"><NavLink to="/new">Add New</NavLink></h4>
+            {/* <FilterButton handleFilter={handleFilter} /> */}
+            <Search  handleFilter={handleFilter} search={search} setSearch={setSearch} />
+            <h4 className="add-button"><NavLink to="/new"><i className="fa-solid fa-circle-plus"></i></NavLink></h4>
         </div>
     </div>
   )
