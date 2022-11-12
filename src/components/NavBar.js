@@ -12,10 +12,10 @@ function NavBar({search, setSearch, handleFilter}) {
     <div className="navbar">
        
         <div className="nav-left">
-            <h4 className="home-button" ><NavLink id="home" exact to="/">Home</NavLink></h4>
-            <NavLink to="/hbo"><img className="nav-logo" src={HboWhiteLogo}/></NavLink>
-            <NavLink to="/hulu"><img className="nav-logo" src={HuluLogoWhite}/></NavLink>
-            <NavLink to="/netflix"><img className="nav-logo" src={NetflixLogoWhite}/></NavLink>
+            <h4 className="home-button" ><NavLink id="home" exact to="/">MediaFinder</NavLink></h4>
+            <NavLink className="navLink hbo-link" to="/hbo"><img className="nav-logo" src={HboWhiteLogo}/></NavLink>
+            <NavLink className="navLink hulu-link" to="/hulu"><img className="nav-logo" src={HuluLogoWhite}/></NavLink>
+            <NavLink className="navLink netflix-link" to="/netflix"><img className="nav-logo" src={NetflixLogoWhite}/></NavLink>
         </div>
         <div className="nav-right">
             {/* <FilterButton handleFilter={handleFilter} /> */}

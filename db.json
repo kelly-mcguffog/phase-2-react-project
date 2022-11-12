@@ -278,7 +278,7 @@
       "description": "Orphaned at the tender age of nine, prodigious introvert Beth Harmon discovers and masters the game of chess in 1960s USA. But child stardom comes at a price.",
       "platform": "Netflix",
       "trailer": "https://www.youtube.com/embed/kwrQzTz16w4",
-      "image": "https://m.media-amazon.com/images/M/MV5BZDUxMWNlMTUtYTljZS00MTE0LTlkYjktOTU1ODZjYzBhMTk0XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg"
+      "image": "https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_.jpg"
     },
     {
       "id": 29,
@@ -609,6 +609,16 @@
       "platform": "HBO Max",
       "trailer": "https://www.youtube.com/embed/IEEbUzffzrk",
       "image": "https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg"
+    },
+    {
+      "title": "Gossip Girl",
+      "category": "TV Show",
+      "description": "Privileged teens living on the Upper East Side of New York can hide no secret from the ruthless blogger who is always watching.",
+      "genre": "Romance",
+      "platform": "HBO Max",
+      "trailer": "https://www.youtube.com/embed/hPKvFVYEOKg",
+      "image": "https://m.media-amazon.com/images/M/MV5BNmQ4Zjg1YWYtMTA1Mi00ZGY1LTlmN2ItYTc5ODkzNTFmYWVhXkEyXkFqcGdeQXVyNjQ0OTk1ODg@._V1_FMjpg_UX1000_.jpg",
+      "id": 62
     }
   ]
 }

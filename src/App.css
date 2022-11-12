@@ -10,9 +10,9 @@
   -webkit-text-fill-color: transparent;
 }
 .nav-logo{
-  height: 15px;
+  height: 13px;
   width: auto;
-  margin:0px 20px 0px 20px;
+  /* margin:0px 20px 0px 20px; */
 }
 .nav-right{
   float: right;
@@ -32,7 +32,9 @@ width: 74%;
 text-align: center; */
 display: inline-block;
 }
-
+/* .active{
+  border-bottom: 1px solid red;
+} */
 /* .add-button{
   display: inline-block;
   padding: 5px 30px;
@@ -52,7 +54,24 @@ display: inline-block;
   background: transparent;
   border: 1px solid white;
 }
-
+.streamingButton{
+  padding: 5px 25px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.netflixButton{
+  background: linear-gradient(to right, #E50914, #B81D24);
+  color: white;
+}
+.huluButton{
+  background-color: #1ce783;
+  color: white;
+}
+.hboButton{
+  background: linear-gradient(to right, rgb(148, 29, 232), rgb(122, 107, 226), rgb(123, 167, 242));
+  color: white;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -183,9 +202,28 @@ h4{
   height: 300px;
   border: none;
 }
+.navLink{
+  margin: 20px;
+}
+.hbo-link.active{
+  padding-bottom: 10px;
+  border-bottom: 2px solid blue;
+}
+.hulu-link.active{
+  padding-bottom: 10px;
+  border-bottom: 2px solid green;
+}
+.netflix-link.active{
+  padding-bottom: 10px;
+  border-bottom: 2px solid red;
+}
 a{
   color:black;
   text-decoration: none;
+  /* margin: 20px; */
+}
+input:focus{
+  color:white;
 }
 /* .filterCategory{
   text-align: left;
@@ -250,6 +288,10 @@ button[type=submit]{
   margin: 0 auto;
   /* background-color: #f2f2f2; */
   padding: 20px;
+}
+
+input{
+  color:white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
