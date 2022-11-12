@@ -2,45 +2,33 @@
   background: linear-gradient(to right, #000000, #1b1b1b, #040404);
   color: white;
 }
-#home{
-  margin: 20px;
+#home.active, .fa-circle-plus.active{
+  /* margin: 20px; */
   background:-webkit-linear-gradient(90deg, rgba(174,134,37,1) 0%, rgba(247,239,138,1) 35%, rgba(210,172,71,1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#home{
+  margin: 20px;
+  color: white;
+}
 .nav-logo{
   height: 13px;
   width: auto;
-  /* margin:0px 20px 0px 20px; */
 }
 .nav-right{
   float: right;
   width: 45%;
-  /* margin-top: 20px; */
-  /* display: inline-block; */
 }
 .nav-left{
-  /* float: left;
-  margin-left: 20px; */
   display: inline-block;
   width: 45%;
 }
 .search{
 width: 74%;
-/* margin: 0 auto;
-text-align: center; */
 display: inline-block;
 }
-/* .active{
-  border-bottom: 1px solid red;
-} */
-/* .add-button{
-  display: inline-block;
-  padding: 5px 30px;
-  border-radius: 50px;
-  background:-webkit-linear-gradient(90deg, rgba(174,134,37,1) 0%, rgba(247,239,138,1) 35%, rgba(210,172,71,1) 100%);
-} */
 
 .fa-circle-plus{
   display: inline-block;
@@ -49,16 +37,17 @@ display: inline-block;
 }
 .input-search{
   width: 85%;
-  padding: 4px;
+  padding: 5px;
   border-radius: 0px 5px 5px 0px;
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid #424242;
 }
 .streamingButton{
-  padding: 5px 25px;
+  padding: 12px 35px;
   margin-left: 10px;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 .netflixButton{
   background: linear-gradient(to right, #E50914, #B81D24);
@@ -66,7 +55,7 @@ display: inline-block;
 }
 .huluButton{
   background-color: #1ce783;
-  color: white;
+  color: black;
 }
 .hboButton{
   background: linear-gradient(to right, rgb(148, 29, 232), rgb(122, 107, 226), rgb(123, 167, 242));
@@ -76,9 +65,10 @@ display: inline-block;
   height: 40vmin;
   pointer-events: none;
 }
-
+.fa-play{
+  margin-right: 10px;
+}
 .navbar{
-  /* text-align: center; */
   width: 98%;
   margin: 0 auto;
 }
@@ -151,7 +141,6 @@ p{
 }
 h4{
   display: inline-block;
-  /* width: 10%; */
 }
 .content-details-container{
   background-color: rgba(0,0,0,0.9);
@@ -165,10 +154,6 @@ h4{
   overflow: hidden;
   z-index: 1;
 }
-/* .fa-filter{
-  font-size: 18px;
-  color:white;
-} */
 .content-details-title{
   display: none;
 }
@@ -206,16 +191,28 @@ h4{
   margin: 20px;
 }
 .hbo-link.active{
-  padding-bottom: 10px;
-  border-bottom: 2px solid blue;
+  /* padding-bottom: 10px;
+  border-bottom: 2px solid blue; */
+  content: url("./Assets/HBO_Max_logo.png");
+  height: 13px;
+  width: auto;
+  margin-bottom: 0px;
 }
 .hulu-link.active{
-  padding-bottom: 10px;
-  border-bottom: 2px solid green;
+  /* padding-bottom: 10px;
+  border-bottom: 2px solid green; */
+  content: url("./Assets/Hulu_Logo.png");
+  height: 13px;
+  width: auto;
+  margin-bottom: 0px;
 }
 .netflix-link.active{
-  padding-bottom: 10px;
-  border-bottom: 2px solid red;
+  /* padding-bottom: 10px;
+  border-bottom: 2px solid red; */
+  content: url("./Assets/Netflix_Logo.png");
+  height: 15px;
+  width: auto;
+  margin-bottom: 0px;
 }
 a{
   color:black;
@@ -225,32 +222,15 @@ a{
 input:focus{
   color:white;
 }
-/* .filterCategory{
-  text-align: left;
-  position: absolute;
-  background-color: white;
-  width: 150px;
-  margin: 10px;
-  padding: 20px;
-  z-index: 1;
-} */
 
 .filterCategory{
   width: 80px;
   font-size: 12px;
   padding: 5px;
   border-radius: 5px 0px 0px 5px;
-  border: none;
+  border: 1px solid #424242;
+  color: #bdbdbd
 }
-/* .filter-button, .dropdown-filter{
-  position: relative;
-  background-color: transparent;
-  border: none;
-} */
-/* input[type=radio]{
-  margin: 10px 10px 10px 20px;
-  accent-color:  rgba(174,134,37,1);
-} */
 .content-details-image{
   display: none;
 }
@@ -263,9 +243,11 @@ input[type=text], select, textarea{
   padding: 12px 20px;
   display: inline-block;
   margin: 8px 0;
-  border: 1px solid #ccc;
+  border: 1px solid #424242;
   border-radius: 4px;
   box-sizing: border-box;
+  background-color: #212121;
+  color: #bdbdbd;
 }
 
 input::placeholder, textarea::placeholder{
@@ -289,10 +271,18 @@ button[type=submit]{
   /* background-color: #f2f2f2; */
   padding: 20px;
 }
-
-input{
-  color:white;
+textarea:focus{
+  font-family: Arial, Helvetica, sans-serif;
 }
+/* .form-input:focus{
+  color: black;
+} */
+
+/* input, textarea, select{
+  color:white;
+  border: 1px solid #424242;
+  background-color: #212121;
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -303,10 +293,6 @@ input{
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }

@@ -8,6 +8,7 @@ import Search from "./Search";
 
 
 function NavBar({search, setSearch, handleFilter}) {
+    
   return(
     <div className="navbar">
        
@@ -18,9 +19,8 @@ function NavBar({search, setSearch, handleFilter}) {
             <NavLink className="navLink netflix-link" to="/netflix"><img className="nav-logo" src={NetflixLogoWhite}/></NavLink>
         </div>
         <div className="nav-right">
-            {/* <FilterButton handleFilter={handleFilter} /> */}
             <Search  handleFilter={handleFilter} search={search} setSearch={setSearch} />
-            <h4 className="add-button"><NavLink to="/new"><i className="fa-solid fa-circle-plus"></i></NavLink></h4>
+            <h4 className="add-button"><NavLink className="fa-solid fa-circle-plus" to="/new"></NavLink></h4>
         </div>
     </div>
   )

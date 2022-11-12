@@ -88,7 +88,7 @@ function Form({onContentFormSubmit}){
                 <label>
                     Streaming Service:
                     <select className="form-input" name="platform" onChange={handleChange}>
-                    <option value="HBO">HBO Max</option>
+                    <option value="HBO Max">HBO Max</option>
                     <option value="Hulu">Hulu</option>
                     <option value="Netflix">Netflix</option>
                     </select>
