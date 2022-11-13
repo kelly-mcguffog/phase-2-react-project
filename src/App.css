@@ -41,6 +41,7 @@ display: inline-block;
   border-radius: 0px 5px 5px 0px;
   background: transparent;
   border: 1px solid #424242;
+  color: white;
 }
 .streamingButton{
   padding: 12px 35px;
@@ -118,7 +119,7 @@ display: inline-block;
   width: 50px;
   border-radius: 50px;
   vertical-align: middle;
-  background-color: rgba(25, 22, 15);
+  background-color: #222222;
   filter:drop-shadow(16px 16px 10px black);
   border: 0;
   transition: transform 0.25s ease-in-out;
