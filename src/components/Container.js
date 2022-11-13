@@ -31,47 +31,76 @@ function Container({allContent}){
     const renderRomance = displayRomance.map(content => <ContentCard key={content.id} content={content}/>)
     const renderSciFi = displaySciFi.map(content => <ContentCard key={content.id} content={content}/>)
 
+
     function advanceDramaBelt(){
-        setDramaBeltPosition((dramaBeltPosition + 5) % displayDramas.length)
+        if(dramaBeltPosition <= displayDramas.length){
+            setDramaBeltPosition((dramaBeltPosition + 5) % displayDramas.length)
+        }
       }
       function retreatDramaBelt(){
-        setDramaBeltPosition((dramaBeltPosition - 5) % displayDramas.length)
+        if(dramaBeltPosition > 0){
+            setDramaBeltPosition((dramaBeltPosition - 5) % displayDramas.length)
+        }
       }
     function advanceCrimeBelt(){
-        setCrimeBeltPosition((crimeBeltPosition + 5) % displayCrime.length)
+        if(crimeBeltPosition <= displayCrime.length){
+            setCrimeBeltPosition((crimeBeltPosition + 5) % displayCrime.length)
+        }
     }
     function retreatCrimeBelt(){
-        setCrimeBeltPosition((crimeBeltPosition - 5) % displayCrime.length)
+        if(crimeBeltPosition > 0){
+            setCrimeBeltPosition((crimeBeltPosition - 5) % displayCrime.length)
+        }
     }
     function advanceActionBelt(){
-        setActionBeltPosition((actionBeltPosition + 5) % displayAction.length)
+        if(actionBeltPosition <= displayAction.length){
+            setActionBeltPosition((actionBeltPosition + 5) % displayAction.length)
+        }
     }
     function retreatActionBelt(){
-        setActionBeltPosition((actionBeltPosition - 5) % displayAction.length)
+        if(actionBeltPosition > 0){
+            setActionBeltPosition((actionBeltPosition - 5) % displayAction.length)
+        }
     }
     function advanceMysteryBelt(){
-        setMysteryBeltPosition((mysteryBeltPosition + 5) % displayMystery.length)
+        if(mysteryBeltPosition <= displayMystery.length){
+            setMysteryBeltPosition((mysteryBeltPosition + 5) % displayMystery.length)
+        }
     }
     function retreatMysteryBelt(){
-        setMysteryBeltPosition((mysteryBeltPosition - 5) % displayMystery.length)
+        if(mysteryBeltPosition > 0){
+            setMysteryBeltPosition((mysteryBeltPosition - 5) % displayMystery.length)
+        }
     }
     function advanceThrillerBelt(){
-        setThrillerBeltPosition((thrillerBeltPosition + 5) % displayThriller.length)
+        if(thrillerBeltPosition <= displayThriller.length){
+            setThrillerBeltPosition((thrillerBeltPosition + 5) % displayThriller.length)
+        }
     }
     function retreatThrillerBelt(){
-        setThrillerBeltPosition((thrillerBeltPosition - 5) % displayThriller.length)
+        if(thrillerBeltPosition > 0){
+            setThrillerBeltPosition((thrillerBeltPosition - 5) % displayThriller.length)
+        }
     }
     function advanceRomanceBelt(){
-        setRomanceBeltPosition((romanceBeltPosition + 5) % displayRomance.length)
+        if(romanceBeltPosition <= displayRomance.length){
+            setRomanceBeltPosition((romanceBeltPosition + 5) % displayRomance.length)
+        }
     }
     function retreatRomanceBelt(){
-        setRomanceBeltPosition((romanceBeltPosition - 5) % displayRomance.length)
+        if(romanceBeltPosition > 0){
+            setRomanceBeltPosition((romanceBeltPosition - 5) % displayRomance.length)
+        }
     }
     function advanceSciFiBelt(){
-        setSciFiBeltPosition((sciFiBeltPosition + 5) % displaySciFi.length)
+        if(sciFiBeltPosition <= displaySciFi.length){
+            setSciFiBeltPosition((sciFiBeltPosition + 5) % displaySciFi.length)
+        }
     }
     function retreatSciFiBelt(){
-        setSciFiBeltPosition((sciFiBeltPosition - 5) % displaySciFi.length)
+        if(sciFiBeltPosition > 0){
+            setSciFiBeltPosition((sciFiBeltPosition - 5) % displaySciFi.length)
+        }
     }
       
 

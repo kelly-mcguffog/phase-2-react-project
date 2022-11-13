@@ -88,7 +88,7 @@ display: inline-block;
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
-  background-color: rgb(25, 22, 15);
+  background-color: #222222;
   border-radius: 5px;
   height: 250px;
   filter:drop-shadow(16px 16px 10px black);
@@ -248,6 +248,7 @@ input[type=text], select, textarea{
   box-sizing: border-box;
   background-color: #212121;
   color: #bdbdbd;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 input::placeholder, textarea::placeholder{
