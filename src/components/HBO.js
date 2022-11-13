@@ -31,46 +31,96 @@ function HBO({allContent}){
     const renderHBOSciFi = displayHBOSciFi.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceHBODramaBelt(){
-        setHBODramaBeltPosition((hboDramaBeltPosition + 5) % displayHBODramas.length)
+        if((displayHBODramas.length % 5 !== 0) && ((displayHBODramas.length - hboDramaBeltPosition) < 10) && ((displayHBODramas.length - hboDramaBeltPosition) > 5)){
+            setHBODramaBeltPosition(hboDramaBeltPosition + ((displayHBODramas.length % 5)))
+        }else{
+            setHBODramaBeltPosition((hboDramaBeltPosition + 5) % displayHBODramas.length)
+        }
+        // setHBODramaBeltPosition((hboDramaBeltPosition + 5) % displayHBODramas.length)
       }
+      
       function retreatHBODramaBelt(){
-        setHBODramaBeltPosition((hboDramaBeltPosition - 5) % displayHBODramas.length)
+        if(hboDramaBeltPosition > 0){
+            setHBODramaBeltPosition((hboDramaBeltPosition - 5) % displayHBODramas.length)
+        }
       }
     function advanceHBOCrimeBelt(){
-        setHBOCrimeBeltPosition((hboCrimeBeltPosition + 5) % displayHBOCrime.length)
+        if((displayHBOCrime.length % 5 !== 0) && ((displayHBOCrime.length - hboCrimeBeltPosition) < 10) && ((displayHBOCrime.length - hboCrimeBeltPosition) > 5)){
+            setHBOCrimeBeltPosition(hboCrimeBeltPosition + ((displayHBOCrime.length % 5)))
+        }else{
+            setHBOCrimeBeltPosition((hboCrimeBeltPosition + 5) % displayHBOCrime.length)
+        }
+        // setHBOCrimeBeltPosition((hboCrimeBeltPosition + 5) % displayHBOCrime.length)
     }
     function retreatHBOCrimeBelt(){
-        setHBOCrimeBeltPosition((hboCrimeBeltPosition - 5) % displayHBOCrime.length)
+        if(hboCrimeBeltPosition > 0){
+            setHBOCrimeBeltPosition((hboCrimeBeltPosition - 5) % displayHBOCrime.length)
+        }
     }
     function advanceHBOActionBelt(){
-        setHBOActionBeltPosition((hboActionBeltPosition + 5) % displayHBOAction.length)
+        if((displayHBOAction.length % 5 !== 0) && ((displayHBOAction.length - hboActionBeltPosition) < 10) && ((displayHBOAction.length - hboActionBeltPosition) > 5)){
+            setHBOActionBeltPosition(hboActionBeltPosition + ((displayHBOAction.length % 5)))
+        }else{
+            setHBOActionBeltPosition((hboActionBeltPosition + 5) % displayHBOAction.length)
+        }
+        // setHBOActionBeltPosition((hboActionBeltPosition + 5) % displayHBOAction.length)
     }
     function retreatHBOActionBelt(){
-        setHBOActionBeltPosition((hboActionBeltPosition - 5) % displayHBOAction.length)
+        if(hboActionBeltPosition > 0){
+            setHBOActionBeltPosition((hboActionBeltPosition - 5) % displayHBOAction.length)
+        }
     }
     function advanceHBOMysteryBelt(){
-        setHBOMysteryBeltPosition((hboMysteryBeltPosition + 5) % displayHBOMystery.length)
+        if((displayHBOMystery.length % 5 !== 0) && ((displayHBOMystery.length - hboMysteryBeltPosition) < 10) && ((displayHBOMystery.length - hboMysteryBeltPosition) > 5)){
+            setHBOMysteryBeltPosition(hboMysteryBeltPosition + ((displayHBOMystery.length % 5)))
+        }else{
+            setHBOMysteryBeltPosition((hboMysteryBeltPosition + 5) % displayHBOMystery.length)
+        }
+        // setHBOMysteryBeltPosition((hboMysteryBeltPosition + 5) % displayHBOMystery.length)
     }
     function retreatHBOMysteryBelt(){
-        setHBOMysteryBeltPosition((hboMysteryBeltPosition - 5) % displayHBOMystery.length)
+        if(hboMysteryBeltPosition > 0){
+            setHBOMysteryBeltPosition((hboMysteryBeltPosition - 5) % displayHBOMystery.length)
+        }
     }
     function advanceHBOThrillerBelt(){
-        setHBOThrillerBeltPosition((hboThrillerBeltPosition + 5) % displayHBOThriller.length)
+        if((displayHBOThriller.length % 5 !== 0) && ((displayHBOThriller.length - hboThrillerBeltPosition) < 10) && ((displayHBOThriller.length - hboThrillerBeltPosition) > 5)){
+            setHBOThrillerBeltPosition(hboThrillerBeltPosition + ((displayHBOThriller.length % 5)))
+        }else{
+            setHBOThrillerBeltPosition((hboThrillerBeltPosition + 5) % displayHBOThriller.length)
+        }
+        // setHBOThrillerBeltPosition((hboThrillerBeltPosition + 5) % displayHBOThriller.length)
     }
     function retreatHBOThrillerBelt(){
-        setHBOThrillerBeltPosition((hboThrillerBeltPosition - 5) % displayHBOThriller.length)
+        if(hboThrillerBeltPosition > 0){
+            setHBOThrillerBeltPosition((hboThrillerBeltPosition - 5) % displayHBOThriller.length)
+        }
     }
     function advanceHBORomanceBelt(){
-        setHBORomanceBeltPosition((hboRomanceBeltPosition + 5) % displayHBORomance.length)
+        if((displayHBORomance.length % 5 !== 0) && ((displayHBORomance.length - hboRomanceBeltPosition) < 10) && ((displayHBORomance.length - hboRomanceBeltPosition) > 5)){
+            setHBORomanceBeltPosition(hboRomanceBeltPosition + ((displayHBORomance.length % 5)))
+        }else{
+            setHBORomanceBeltPosition((hboRomanceBeltPosition + 5) % displayHBORomance.length)
+        }
+        // setHBORomanceBeltPosition((hboRomanceBeltPosition + 5) % displayHBORomance.length)
     }
     function retreatHBORomanceBelt(){
-        setHBORomanceBeltPosition((hboRomanceBeltPosition - 5) % displayHBORomance.length)
+        if(hboRomanceBeltPosition > 0){
+            setHBORomanceBeltPosition((hboRomanceBeltPosition - 5) % displayHBORomance.length)
+        }
     }
     function advanceHBOSciFiBelt(){
-        setHBOSciFiBeltPosition((hboSciFiBeltPosition + 5) % displayHBOSciFi.length)
+        if((displayHBOSciFi.length % 5 !== 0) && ((displayHBOSciFi.length - hboSciFiBeltPosition) < 10) && ((displayHBOSciFi.length - hboSciFiBeltPosition) > 5)){
+            setHBOSciFiBeltPosition(hboSciFiBeltPosition + ((displayHBOSciFi.length % 5)))
+        }else{
+            setHBOSciFiBeltPosition((hboSciFiBeltPosition + 5) % displayHBOSciFi.length)
+        }
+        // setHBOSciFiBeltPosition((hboSciFiBeltPosition + 5) % displayHBOSciFi.length)
     }
     function retreatHBOSciFiBelt(){
-        setHBOSciFiBeltPosition((hboSciFiBeltPosition - 5) % displayHBOSciFi.length)
+        if(hboSciFiBeltPosition > 0){
+            setHBOSciFiBeltPosition((hboSciFiBeltPosition - 5) % displayHBOSciFi.length)
+        }
     }
    
     return(

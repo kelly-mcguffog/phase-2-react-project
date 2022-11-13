@@ -30,46 +30,95 @@ function Netflix({allContent}){
     const renderNetflixSciFi = displayNetflixSciFi.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceNetflixDramaBelt(){
-        setNetflixDramaBeltPosition((netflixDramaBeltPosition + 5) % displayNetflixDramas.length)
+        if((displayNetflixDramas.length % 5 !== 0) && ((displayNetflixDramas.length - netflixDramaBeltPosition) < 10) && ((displayNetflixDramas.length - netflixDramaBeltPosition) > 5)){
+            setNetflixDramaBeltPosition(netflixDramaBeltPosition + ((displayNetflixDramas.length % 5)))
+        }else{
+            setNetflixDramaBeltPosition((netflixDramaBeltPosition + 5) % displayNetflixDramas.length)
+        }
+        // setNetflixDramaBeltPosition((netflixDramaBeltPosition + 5) % displayNetflixDramas.length)
       }
       function retreatNetflixDramaBelt(){
-        setNetflixDramaBeltPosition((netflixDramaBeltPosition - 5) % displayNetflixDramas.length)
+        if(netflixDramaBeltPosition > 0){
+            setNetflixDramaBeltPosition((netflixDramaBeltPosition - 5) % displayNetflixDramas.length)
+        }
       }
     function advanceNetflixCrimeBelt(){
-        setNetflixCrimeBeltPosition((netflixCrimeBeltPosition + 5) % displayNetflixCrime.length)
+        if((displayNetflixCrime.length % 5 !== 0) && ((displayNetflixCrime.length - netflixCrimeBeltPosition) < 10) && ((displayNetflixCrime.length - netflixCrimeBeltPosition) > 5)){
+            setNetflixCrimeBeltPosition(netflixCrimeBeltPosition + ((displayNetflixCrime.length % 5)))
+        }else{
+            setNetflixCrimeBeltPosition((netflixCrimeBeltPosition + 5) % displayNetflixCrime.length)
+        }
+        // setNetflixCrimeBeltPosition((netflixCrimeBeltPosition + 5) % displayNetflixCrime.length)
     }
     function retreatNetflixCrimeBelt(){
-        setNetflixCrimeBeltPosition((netflixCrimeBeltPosition - 5) % displayNetflixCrime.length)
+        if(netflixCrimeBeltPosition > 0){
+            setNetflixCrimeBeltPosition((netflixCrimeBeltPosition - 5) % displayNetflixCrime.length)
+        }
     }
     function advanceNetflixActionBelt(){
-        setNetflixActionBeltPosition((netflixActionBeltPosition + 5) % displayNetflixAction.length)
+        if((displayNetflixAction.length % 5 !== 0) && ((displayNetflixAction.length - netflixActionBeltPosition) < 10) && ((displayNetflixAction.length - netflixActionBeltPosition) > 5)){
+            setNetflixActionBeltPosition(netflixActionBeltPosition + ((displayNetflixAction.length % 5)))
+        }else{
+            setNetflixActionBeltPosition((netflixActionBeltPosition + 5) % displayNetflixAction.length)
+        }
+        // setNetflixActionBeltPosition((netflixActionBeltPosition + 5) % displayNetflixAction.length)
     }
     function retreatNetflixActionBelt(){
-        setNetflixActionBeltPosition((netflixActionBeltPosition - 5) % displayNetflixAction.length)
+        if(netflixActionBeltPosition > 0){
+            setNetflixActionBeltPosition((netflixActionBeltPosition - 5) % displayNetflixAction.length)
+        }
     }
     function advanceNetflixMysteryBelt(){
-        setNetflixMysteryBeltPosition((netflixMysteryBeltPosition + 5) % displayNetflixMystery.length)
+        if((displayNetflixMystery.length % 5 !== 0) && ((displayNetflixMystery.length - netflixMysteryBeltPosition) < 10) && ((displayNetflixMystery.length - netflixMysteryBeltPosition) > 5)){
+            setNetflixMysteryBeltPosition(netflixMysteryBeltPosition + ((displayNetflixMystery.length % 5)))
+        }else{
+            setNetflixMysteryBeltPosition((netflixMysteryBeltPosition + 5) % displayNetflixMystery.length)
+        }
+        // setNetflixMysteryBeltPosition((netflixMysteryBeltPosition + 5) % displayNetflixMystery.length)
     }
     function retreatNetflixMysteryBelt(){
-        setNetflixMysteryBeltPosition((netflixMysteryBeltPosition - 5) % displayNetflixMystery.length)
+        if(netflixMysteryBeltPosition > 0){
+            setNetflixMysteryBeltPosition((netflixMysteryBeltPosition - 5) % displayNetflixMystery.length)
+        }
     }
     function advanceNetflixThrillerBelt(){
-        setNetflixThrillerBeltPosition((netflixThrillerBeltPosition + 5) % displayNetflixThriller.length)
+        if((displayNetflixThriller.length % 5 !== 0) && ((displayNetflixThriller.length - netflixThrillerBeltPosition) < 10) && ((displayNetflixThriller.length - netflixThrillerBeltPosition) > 5)){
+            setNetflixThrillerBeltPosition(netflixThrillerBeltPosition + ((displayNetflixThriller.length % 5)))
+        }else{
+            setNetflixThrillerBeltPosition((netflixThrillerBeltPosition + 5) % displayNetflixThriller.length)
+        }
+        // setNetflixThrillerBeltPosition((netflixThrillerBeltPosition + 5) % displayNetflixThriller.length)
     }
     function retreatNetflixThrillerBelt(){
-        setNetflixThrillerBeltPosition((netflixThrillerBeltPosition - 5) % displayNetflixThriller.length)
+        if(netflixThrillerBeltPosition > 0){
+            setNetflixThrillerBeltPosition((netflixThrillerBeltPosition - 5) % displayNetflixThriller.length)
+        }
     }
     function advanceNetflixRomanceBelt(){
-        setNetflixRomanceBeltPosition((netflixRomanceBeltPosition + 5) % displayNetflixRomance.length)
+        if((displayNetflixRomance.length % 5 !== 0) && ((displayNetflixRomance.length - netflixRomanceBeltPosition) < 10) && ((displayNetflixRomance.length - netflixRomanceBeltPosition) > 5)){
+            setNetflixRomanceBeltPosition(netflixRomanceBeltPosition + ((displayNetflixRomance.length % 5)))
+        }else{
+            setNetflixRomanceBeltPosition((netflixRomanceBeltPosition + 5) % displayNetflixRomance.length)
+        }
+        // setNetflixRomanceBeltPosition((netflixRomanceBeltPosition + 5) % displayNetflixRomance.length)
     }
     function retreatNetflixRomanceBelt(){
-        setNetflixRomanceBeltPosition((netflixRomanceBeltPosition - 5) % displayNetflixRomance.length)
+        if(netflixRomanceBeltPosition > 0){
+            setNetflixRomanceBeltPosition((netflixRomanceBeltPosition - 5) % displayNetflixRomance.length)
+        }
     }
     function advanceNetflixSciFiBelt(){
-        setNetflixSciFiBeltPosition((netflixSciFiBeltPosition + 5) % displayNetflixSciFi.length)
+        if((displayNetflixSciFi.length % 5 !== 0) && ((displayNetflixSciFi.length - netflixSciFiBeltPosition) < 10) && ((displayNetflixSciFi.length - netflixSciFiBeltPosition) > 5)){
+            setNetflixSciFiBeltPosition(netflixSciFiBeltPosition + ((displayNetflixSciFi.length % 5)))
+        }else{
+            setNetflixSciFiBeltPosition((netflixSciFiBeltPosition + 5) % displayNetflixSciFi.length)
+        }
+        // setNetflixSciFiBeltPosition((netflixSciFiBeltPosition + 5) % displayNetflixSciFi.length)
     }
     function retreatNetflixSciFiBelt(){
-        setNetflixSciFiBeltPosition((netflixSciFiBeltPosition - 5) % displayNetflixSciFi.length)
+        if(netflixSciFiBeltPosition > 0){
+            setNetflixSciFiBeltPosition((netflixSciFiBeltPosition - 5) % displayNetflixSciFi.length)
+        }
     }
    
     return(

@@ -33,7 +33,9 @@ function Container({allContent}){
 
 
     function advanceDramaBelt(){
-        if(dramaBeltPosition <= displayDramas.length){
+        if((displayDramas.length % 5 !== 0) && ((displayDramas.length - dramaBeltPosition) < 10) && ((displayDramas.length - dramaBeltPosition) > 5)){
+            setDramaBeltPosition(dramaBeltPosition + ((displayDramas.length % 5)))
+        }else{
             setDramaBeltPosition((dramaBeltPosition + 5) % displayDramas.length)
         }
       }
@@ -43,7 +45,9 @@ function Container({allContent}){
         }
       }
     function advanceCrimeBelt(){
-        if(crimeBeltPosition <= displayCrime.length){
+        if((displayCrime.length % 5 !== 0) && ((displayCrime.length - crimeBeltPosition) < 10) && ((displayCrime.length - crimeBeltPosition) > 5)){
+            setCrimeBeltPosition(crimeBeltPosition + ((displayCrime.length % 5)))
+        }else{
             setCrimeBeltPosition((crimeBeltPosition + 5) % displayCrime.length)
         }
     }
@@ -53,7 +57,9 @@ function Container({allContent}){
         }
     }
     function advanceActionBelt(){
-        if(actionBeltPosition <= displayAction.length){
+        if((displayAction.length % 5 !== 0) && ((displayAction.length - actionBeltPosition) < 10) && ((displayAction.length - actionBeltPosition) > 5)){
+            setActionBeltPosition(actionBeltPosition + ((displayAction.length % 5)))
+        }else{
             setActionBeltPosition((actionBeltPosition + 5) % displayAction.length)
         }
     }
@@ -63,7 +69,9 @@ function Container({allContent}){
         }
     }
     function advanceMysteryBelt(){
-        if(mysteryBeltPosition <= displayMystery.length){
+        if((displayMystery.length % 5 !== 0) && ((displayMystery.length - mysteryBeltPosition) < 10) && ((displayMystery.length - mysteryBeltPosition) > 5)){
+            setMysteryBeltPosition(mysteryBeltPosition + ((displayMystery.length % 5)))
+        }else{
             setMysteryBeltPosition((mysteryBeltPosition + 5) % displayMystery.length)
         }
     }
@@ -73,7 +81,9 @@ function Container({allContent}){
         }
     }
     function advanceThrillerBelt(){
-        if(thrillerBeltPosition <= displayThriller.length){
+        if((displayThriller.length % 5 !== 0) && ((displayThriller.length - thrillerBeltPosition) < 10) && ((displayThriller.length - thrillerBeltPosition) > 5)){
+            setThrillerBeltPosition(thrillerBeltPosition + ((displayThriller.length % 5)))
+        }else{
             setThrillerBeltPosition((thrillerBeltPosition + 5) % displayThriller.length)
         }
     }
@@ -83,7 +93,9 @@ function Container({allContent}){
         }
     }
     function advanceRomanceBelt(){
-        if(romanceBeltPosition <= displayRomance.length){
+        if((displayRomance.length % 5 !== 0) && ((displayRomance.length - romanceBeltPosition) < 10) && ((displayRomance.length - romanceBeltPosition) > 5)){
+            setRomanceBeltPosition(romanceBeltPosition + ((displayRomance.length % 5)))
+        }else{
             setRomanceBeltPosition((romanceBeltPosition + 5) % displayRomance.length)
         }
     }
@@ -93,7 +105,9 @@ function Container({allContent}){
         }
     }
     function advanceSciFiBelt(){
-        if(sciFiBeltPosition <= displaySciFi.length){
+        if((displaySciFi.length % 5 !== 0) && ((displaySciFi.length - sciFiBeltPosition) < 10) && ((displaySciFi.length - sciFiBeltPosition) > 5)){
+            setSciFiBeltPosition(sciFiBeltPosition + ((displaySciFi.length % 5)))
+        }else{
             setSciFiBeltPosition((sciFiBeltPosition + 5) % displaySciFi.length)
         }
     }
@@ -106,41 +120,55 @@ function Container({allContent}){
 
     return(
         <div className="card-container">
-            <h2>Drama</h2>
-            <button className="arrow-button" onClick={retreatDramaBelt}><i className="arrow left"></i></button>
-            {renderDramas.slice(dramaBeltPosition, dramaBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceDramaBelt}><i className="arrow right"></i></button>
-            
-            <h2>Crime</h2>
-            <button className="arrow-button" onClick={retreatCrimeBelt}><i className="arrow left"></i></button>
-            {renderCrime.slice(crimeBeltPosition, crimeBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceCrimeBelt}><i className="arrow right"></i></button>
+            <div className="drama-Container">
+                <h2>Drama</h2>
+                <button className="arrow-button" onClick={retreatDramaBelt}><i className="arrow left"></i></button>
+                {renderDramas.slice(dramaBeltPosition, dramaBeltPosition+5)}
+                <button className="arrow-button" onClick={advanceDramaBelt}><i className="arrow right"></i></button>
+            </div>
 
-            <h2>Action</h2>
-            <button className="arrow-button" onClick={retreatActionBelt}><i className="arrow left"></i></button>
-            {renderAction.slice(actionBeltPosition, actionBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceActionBelt}><i className="arrow right"></i></button>
+            <div className="crime-Container">
+                <h2>Crime</h2>
+                <button className="arrow-button" onClick={retreatCrimeBelt}><i className="arrow left"></i></button>
+                {renderCrime.slice(crimeBeltPosition, crimeBeltPosition+5)}
+                <button className="arrow-button" onClick={advanceCrimeBelt}><i className="arrow right"></i></button>
+            </div>
 
-            <h2>Mystery</h2>
-            <button className="arrow-button" onClick={retreatMysteryBelt}><i className="arrow left"></i></button>
-            {renderMystery.slice(mysteryBeltPosition, mysteryBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceMysteryBelt}><i className="arrow right"></i></button>
+            <div className="action-Container">
+                <h2>Action</h2>
+                <button className="arrow-button" onClick={retreatActionBelt}><i className="arrow left"></i></button>
+                {renderAction.slice(actionBeltPosition, actionBeltPosition+5)}
+                <button className="arrow-button" onClick={advanceActionBelt}><i className="arrow right"></i></button>
+            </div>
 
-            <h2>Thriller</h2>
-            <button className="arrow-button" onClick={retreatThrillerBelt}><i className="arrow left"></i></button>
-            {renderThriller.slice(thrillerBeltPosition, thrillerBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceThrillerBelt}><i className="arrow right"></i></button>
 
-            <h2>Romance</h2>
-            <button className="arrow-button" onClick={retreatRomanceBelt}><i className="arrow left"></i></button>
-            {renderRomance.slice(romanceBeltPosition, romanceBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceRomanceBelt}><i className="arrow right"></i></button>
+            <div className="mystery-Container">
+                <h2>Mystery</h2>
+                <button className="arrow-button" onClick={retreatMysteryBelt}><i className="arrow left"></i></button>
+                {renderMystery.slice(mysteryBeltPosition, mysteryBeltPosition+5)}
+                <button className="arrow-button" onClick={advanceMysteryBelt}><i className="arrow right"></i></button>
+            </div>
 
-            <h2>Sci-Fi</h2>
-            <button className="arrow-button" onClick={retreatSciFiBelt}><i className="arrow left"></i></button>
-            {renderSciFi.slice(sciFiBeltPosition, sciFiBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceSciFiBelt}><i className="arrow right"></i></button>
-            
+            <div className="thriller-Container">
+                <h2>Thriller</h2>
+                <button className="arrow-button" onClick={retreatThrillerBelt}><i className="arrow left"></i></button>
+                {renderThriller.slice(thrillerBeltPosition, thrillerBeltPosition+5)}
+                <button className="arrow-button" onClick={advanceThrillerBelt}><i className="arrow right"></i></button>
+            </div>
+
+            <div className="romance-Container">
+                <h2>Romance</h2>
+                <button className="arrow-button" onClick={retreatRomanceBelt}><i className="arrow left"></i></button>
+                {renderRomance.slice(romanceBeltPosition, romanceBeltPosition+5)}
+                <button className="arrow-button" onClick={advanceRomanceBelt}><i className="arrow right"></i></button>
+            </div>
+
+            <div className="scifi-Container">
+                <h2>Sci-Fi</h2>
+                <button className="arrow-button" onClick={retreatSciFiBelt}><i className="arrow left"></i></button>
+                {renderSciFi.slice(sciFiBeltPosition, sciFiBeltPosition+5)}
+                <button className="arrow-button" onClick={advanceSciFiBelt}><i className="arrow right"></i></button>
+            </div>
         </div>
         )
 }
