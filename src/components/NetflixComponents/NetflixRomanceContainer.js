@@ -28,9 +28,9 @@ function NetflixRomanceContainer({displayNetflixRomance}){
                 </div>
             </div>
             <div className="row">
-                <div className="arrow-button" onClick={retreatNetflixRomanceBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                <div className="arrow-button" onClick={retreatNetflixRomanceBelt}>{renderNetflixRomance.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                 {renderNetflixRomance.slice(netflixRomanceBeltPosition, netflixRomanceBeltPosition+6)}
-                <div className="arrow-button" onClick={advanceNetflixRomanceBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                <div className="arrow-button" onClick={advanceNetflixRomanceBelt}>{renderNetflixRomance.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
             </div>
     )

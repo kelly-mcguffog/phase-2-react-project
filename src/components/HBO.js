@@ -6,7 +6,6 @@ import HBOMysteryContainer from "./HBOComponents/HBOMysteryContainer";
 import HBORomanceContainer from "./HBOComponents/HBORomanceContainer";
 import HBOSciFiContainer from "./HBOComponents/HBOSciFiContainer";
 import HBOThrillerContainer from "./HBOComponents/HBOThrillerContainer";
-// import ContentCard from "./ContentCard";
 
 
 function HBO({allContent}){

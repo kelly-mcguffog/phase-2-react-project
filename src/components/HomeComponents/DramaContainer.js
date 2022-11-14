@@ -29,9 +29,9 @@ function DramaContainer({displayDramas}){
                 </div>
             </div>
                 <div className="row">
-                    <div className="back arrow-button" onClick={retreatDramaBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                    <div className="back arrow-button" onClick={retreatDramaBelt}>{renderDramas.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                     {renderDramas.slice(dramaBeltPosition, dramaBeltPosition+6)}
-                    <div className="forward arrow-button" onClick={advanceDramaBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                    <div className="forward arrow-button" onClick={advanceDramaBelt}>{renderDramas.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
                 </div>
             </div>
     )

@@ -28,9 +28,9 @@ function ActionContainer({displayAction}){
                 </div>
             </div>
                 <div className="row">
-                    <div className="arrow-button" onClick={retreatActionBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                    <div className="arrow-button" onClick={retreatActionBelt}>{renderAction.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                     {renderAction.slice(actionBeltPosition, actionBeltPosition+6)}
-                    <div className="arrow-button" onClick={advanceActionBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                    <div className="arrow-button" onClick={advanceActionBelt}>{renderAction.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
                 </div>
             </div>
     )

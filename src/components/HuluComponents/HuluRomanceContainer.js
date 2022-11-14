@@ -28,9 +28,9 @@ function HuluRomanceContainer({displayHuluRomance}){
                 </div>
             </div>
             <div className="row">
-                <div className="arrow-button" onClick={retreatHuluRomanceBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                <div className="arrow-button" onClick={retreatHuluRomanceBelt}>{renderHuluRomance.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                 {renderHuluRomance.slice(huluRomanceBeltPosition, huluRomanceBeltPosition+6)}
-                <div className="arrow-button" onClick={advanceHuluRomanceBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                <div className="arrow-button" onClick={advanceHuluRomanceBelt}>{renderHuluRomance.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
             </div>
     )

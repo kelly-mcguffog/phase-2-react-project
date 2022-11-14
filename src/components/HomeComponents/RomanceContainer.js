@@ -28,9 +28,9 @@ function RomanceContainer({displayRomance}){
                 </div>
             </div>
                 <div className="row">
-                    <div className="arrow-button" onClick={retreatRomanceBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                    <div className="arrow-button" onClick={retreatRomanceBelt}>{renderRomance.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                     {renderRomance.slice(romanceBeltPosition, romanceBeltPosition+6)}
-                    <div className="arrow-button" onClick={advanceRomanceBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                    <div className="arrow-button" onClick={advanceRomanceBelt}>{renderRomance.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
                 </div>
             </div>
     )

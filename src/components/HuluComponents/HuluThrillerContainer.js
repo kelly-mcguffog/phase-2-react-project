@@ -28,9 +28,9 @@ function HuluThrillerContainer({displayHuluThriller}){
                 </div>
             </div>
             <div className="row">
-                <div className="arrow-button" onClick={retreatHuluThrillerBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                <div className="arrow-button" onClick={retreatHuluThrillerBelt}>{renderHuluThriller.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                 {renderHuluThriller.slice(huluThrillerBeltPosition, huluThrillerBeltPosition+6)}
-                <div className="arrow-button" onClick={advanceHuluThrillerBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                <div className="arrow-button" onClick={advanceHuluThrillerBelt}>{renderHuluThriller.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
         </div>
     )

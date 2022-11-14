@@ -6,12 +6,6 @@ import NetflixButton from "./NetflixButton";
 function Details({content}){
     const {title, genre, category, platform, description, trailer} = content
 
-    // const [isShowingDetails, setDetails] = useState(false)
-
-    // function showDetails(){
-    //     setDetails(isShowingDetails => !isShowingDetails)
-    // }
-
     function streamingButton(){
         if(platform === "HBO Max"){
             return <HBOButton />

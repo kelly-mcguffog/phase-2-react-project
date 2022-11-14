@@ -28,9 +28,9 @@ function HBOThrillerContainer({displayHBOThriller}){
                 </div>
             </div>
             <div className="row">
-                <div className="arrow-button" onClick={retreatHBOThrillerBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                <div className="arrow-button" onClick={retreatHBOThrillerBelt}>{renderHBOThriller.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                 {renderHBOThriller.slice(hboThrillerBeltPosition, hboThrillerBeltPosition+6)}
-                <div className="arrow-button" onClick={advanceHBOThrillerBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                <div className="arrow-button" onClick={advanceHBOThrillerBelt}>{renderHBOThriller.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
             </div>
         </div>
     )

@@ -27,9 +27,9 @@ function NetflixCrimeContainer({displayNetflixCrime}){
                 </div>
             </div>
             <div className="row">
-                <div className="arrow-button" onClick={retreatNetflixCrimeBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                <div className="arrow-button" onClick={retreatNetflixCrimeBelt}>{renderNetflixCrime.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                 {renderNetflixCrime.slice(netflixCrimeBeltPosition, netflixCrimeBeltPosition+6)}
-                <div className="arrow-button" onClick={advanceNetflixCrimeBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                <div className="arrow-button" onClick={advanceNetflixCrimeBelt}>{renderNetflixCrime.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
             </div>
     )

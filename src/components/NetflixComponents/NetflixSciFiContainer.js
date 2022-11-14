@@ -28,9 +28,9 @@ function NetflixSciFiContainer({displayNetflixSciFi}){
                 </div>
             </div>
             <div className="row">
-                <div className="arrow-button" onClick={retreatNetflixSciFiBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                <div className="arrow-button" onClick={retreatNetflixSciFiBelt}>{renderNetflixSciFi.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                 {renderNetflixSciFi.slice(netflixSciFiBeltPosition, netflixSciFiBeltPosition+6)}
-                <div className="arrow-button" onClick={advanceNetflixSciFiBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                <div className="arrow-button" onClick={advanceNetflixSciFiBelt}>{renderNetflixSciFi.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
         </div>
     )

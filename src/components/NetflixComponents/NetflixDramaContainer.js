@@ -28,9 +28,9 @@ function NetflixDramaContainer({displayNetflixDramas}){
                 </div>
             </div>
             <div className="row">
-                <div className="arrow-button" onClick={retreatNetflixDramaBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                <div className="arrow-button" onClick={retreatNetflixDramaBelt}>{renderNetflixDramas.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                 {renderNetflixDramas.slice(netflixDramaBeltPosition, netflixDramaBeltPosition+6)}
-                <div className="arrow-button" onClick={advanceNetflixDramaBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                <div className="arrow-button" onClick={advanceNetflixDramaBelt}>{renderNetflixDramas.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
         </div>
     )

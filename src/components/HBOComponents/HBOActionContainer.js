@@ -28,9 +28,9 @@ function HBOActionContainer({displayHBOAction}){
                 </div>
             </div>
             <div className="row">
-                <div className="arrow-button" onClick={retreatHBOActionBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                <div className="arrow-button" onClick={retreatHBOActionBelt}>{renderHBOAction.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
                 {renderHBOAction.slice(hboActionBeltPosition, hboActionBeltPosition+6)}
-                <div className="arrow-button" onClick={advanceHBOActionBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                <div className="arrow-button" onClick={advanceHBOActionBelt}>{renderHBOAction.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
             </div>
     )

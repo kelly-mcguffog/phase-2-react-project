@@ -28,9 +28,9 @@ function CrimeContainer({displayCrime}){
                 </div>
             </div>
                 <div className="row">
-                    <div className="arrow-button" onClick={retreatCrimeBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                    <div className="arrow-button" onClick={retreatCrimeBelt}>{renderCrime.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                     {renderCrime.slice(crimeBeltPosition, crimeBeltPosition+6)}
-                    <div className="arrow-button" onClick={advanceCrimeBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                    <div className="arrow-button" onClick={advanceCrimeBelt}>{renderCrime.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
                 </div>
             </div>
     )

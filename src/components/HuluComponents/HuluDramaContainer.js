@@ -28,9 +28,9 @@ function HuluDramaContainer({displayHuluDramas}){
                 </div>
             </div>
             <div className="row">
-                <div className="arrow-button" onClick={retreatHuluDramaBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                <div className="arrow-button" onClick={retreatHuluDramaBelt}>{renderHuluDramas.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                 {renderHuluDramas.slice(huluDramaBeltPosition, huluDramaBeltPosition+6)}
-                <div className="arrow-button" onClick={advanceHuluDramaBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                <div className="arrow-button" onClick={advanceHuluDramaBelt}>{renderHuluDramas.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
         </div>
     )

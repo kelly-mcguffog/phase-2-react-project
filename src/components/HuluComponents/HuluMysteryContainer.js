@@ -28,9 +28,9 @@ function HuluMysteryContainer({displayHuluMystery}){
                 </div>
             </div>
             <div className="row">
-                <div className="arrow-button" onClick={retreatHuluMysteryBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                <div className="arrow-button" onClick={retreatHuluMysteryBelt}>{renderHuluMystery.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                 {renderHuluMystery.slice(huluMysteryBeltPosition, huluMysteryBeltPosition+6)}
-                <div className="arrow-button" onClick={advanceHuluMysteryBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                <div className="arrow-button" onClick={advanceHuluMysteryBelt}>{renderHuluMystery.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
         </div>
     )

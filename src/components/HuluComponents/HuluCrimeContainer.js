@@ -27,9 +27,9 @@ function HuluCrimeContainer({displayHuluCrime}){
                 </div>
             </div>
             <div className="row">
-                <div className="arrow-button" onClick={retreatHuluCrimeBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                <div className="arrow-button" onClick={retreatHuluCrimeBelt}>{renderHuluCrime.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                 {renderHuluCrime.slice(huluCrimeBeltPosition, huluCrimeBeltPosition+6)}
-                <div className="arrow-button" onClick={advanceHuluCrimeBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                <div className="arrow-button" onClick={advanceHuluCrimeBelt}>{renderHuluCrime.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
         </div>
     )

@@ -22,7 +22,7 @@ function ContentCard({content}){
             <img className={isShowingDetails ? "content-details-image" : "card-image"} src={image}></img>
             <h3 className={isShowingDetails ? "content-details-title" : "card-title"}>{title}</h3>
             <div id="close-btn" onClick={showDetails}>
-                <i id="bar" className={isShowingDetails ? "fa-solid fa-circle-xmark" : "fa-solid fa-bars"}></i>
+                <i id="bar" className={isShowingDetails ? "fa-solid fa-circle-xmark" : "see-more"}></i>
                 {isShowingDetails ? <Details isShowingDetails={isShowingDetails} showDetails={showDetails} content={content}/> : false}
             </div>
         </div>

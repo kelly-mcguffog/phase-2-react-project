@@ -27,9 +27,9 @@ function HBOSciFiContainer({displayHBOSciFi}){
                 </div>
             </div>
             <div className="row">
-                <div className="arrow-button" onClick={retreatHBOSciFiBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                <div className="arrow-button" onClick={retreatHBOSciFiBelt}>{renderHBOSciFi.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
                 {renderHBOSciFi.slice(hboSciFiBeltPosition, hboSciFiBeltPosition+6)}
-                <div className="arrow-button" onClick={advanceHBOSciFiBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                <div className="arrow-button" onClick={advanceHBOSciFiBelt}>{renderHBOSciFi.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
         </div>
     )

@@ -1,5 +1,4 @@
 import React from "react";
-// import { ContentContext } from "../Context/Content";
 import DramaContainer from "./HomeComponents/DramaContainer";
 import CrimeContainer from "./HomeComponents/CrimeContainer";
 import ActionContainer from "./HomeComponents/ActionContainer";
@@ -9,9 +8,6 @@ import SciFiContainer from "./HomeComponents/SciFiContainer";
 import ThrillerContainer from "./HomeComponents/ThrillerContainer";
 
 function Container({allContent}){
-
-    // const value = useContext(ContentContext)
-    // console.log(value)
     
     const displayDramas = allContent.filter(content => content.genre === "Drama")
     const displayCrime = allContent.filter(content => content.genre === "Crime")
