@@ -19,6 +19,22 @@ function App() {
     const [isContent, setContent] = useState([]);
     const [search, setSearch] = useState("")
     const [filter, setFilter] = useState("All")
+  //   const [width, setWindowWidth] = useState(0);
+
+  // useEffect( () => {
+  //   updateDimensions();
+  //   window.addEventListener("resize", updateDimensions);
+  //   return () => window.removeEventListener("resize", updateDimensions);
+  // }, [])
+
+  // const updateDimensions = () => {
+  //   const width = window.innerWidth;
+  //   setWindowWidth(width);
+  // };
+
+  // const responsive = {
+  //   showTopNavMenu: width > 1023
+  // }
     
     let displayContent = isContent.filter(content => content.title.toLowerCase().includes(search.toLowerCase()))
     displayContent = displayContent.filter(content => {
@@ -47,6 +63,7 @@ function App() {
 
   return (
     <Router>
+      {/* {responsive.showTopNavMenu ? <NavBar search={search} handleFilter={handleFilter} setSearch={setSearch}/> : <span className="menu-icon" /> } */}
       <NavBar search={search} handleFilter={handleFilter} setSearch={setSearch}/>
       <Switch>
         <Route exact path="/">
