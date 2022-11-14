@@ -6,24 +6,33 @@ function DramaContainer({displayDramas}){
     const renderDramas = displayDramas.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceDramaBelt(){
-        if((displayDramas.length % 5 !== 0) && ((displayDramas.length - dramaBeltPosition) < 10) && ((displayDramas.length - dramaBeltPosition) > 5)){
-            setDramaBeltPosition(dramaBeltPosition + ((displayDramas.length % 5)))
+        console.log(displayDramas.length - dramaBeltPosition)
+        if((displayDramas.length % 6 !== 0) && ((displayDramas.length - dramaBeltPosition) < 12) && ((displayDramas.length - dramaBeltPosition) > 6)){
+            setDramaBeltPosition(dramaBeltPosition + ((displayDramas.length % 6)))
         }else{
-            setDramaBeltPosition((dramaBeltPosition + 5) % displayDramas.length)
+            setDramaBeltPosition((dramaBeltPosition + 6) % displayDramas.length)
         }
       }
       function retreatDramaBelt(){
         if(dramaBeltPosition > 0){
-            setDramaBeltPosition((dramaBeltPosition - 5) % displayDramas.length)
+            setDramaBeltPosition((dramaBeltPosition - 6) % displayDramas.length)
         }
       }
 
     return(
-        <div className="drama-Container">
+        <div className="media-container">
+                <div className="genre-header">
                 <h2>Drama</h2>
-                <button className="arrow-button" onClick={retreatDramaBelt}><i className="arrow left"></i></button>
-                {renderDramas.slice(dramaBeltPosition, dramaBeltPosition+5)}
-                <button className="arrow-button" onClick={advanceDramaBelt}><i className="arrow right"></i></button>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatDramaBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceDramaBelt}><i className="arrow right"></i></div>
+                </div>
+            </div>
+                <div className="row">
+                    <div className="back arrow-button" onClick={retreatDramaBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                    {renderDramas.slice(dramaBeltPosition, dramaBeltPosition+6)}
+                    <div className="forward arrow-button" onClick={advanceDramaBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                </div>
             </div>
     )
 }

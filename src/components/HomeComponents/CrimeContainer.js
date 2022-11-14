@@ -6,24 +6,32 @@ function CrimeContainer({displayCrime}){
     const renderCrime = displayCrime.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceCrimeBelt(){
-        if((displayCrime.length % 5 !== 0) && ((displayCrime.length - crimeBeltPosition) < 10) && ((displayCrime.length - crimeBeltPosition) > 5)){
+        if((displayCrime.length % 6 !== 0) && ((displayCrime.length - crimeBeltPosition) < 12) && ((displayCrime.length - crimeBeltPosition) > 6)){
             setCrimeBeltPosition(crimeBeltPosition + ((displayCrime.length % 5)))
         }else{
-            setCrimeBeltPosition((crimeBeltPosition + 5) % displayCrime.length)
+            setCrimeBeltPosition((crimeBeltPosition + 6) % displayCrime.length)
         }
     }
     function retreatCrimeBelt(){
         if(crimeBeltPosition > 0){
-            setCrimeBeltPosition((crimeBeltPosition - 5) % displayCrime.length)
+            setCrimeBeltPosition((crimeBeltPosition - 6) % displayCrime.length)
         }
     }
 
     return(
-        <div className="crime-Container">
+        <div className="media-container">
+                <div className="genre-header">
                 <h2>Crime</h2>
-                <button className="arrow-button" onClick={retreatCrimeBelt}><i className="arrow left"></i></button>
-                {renderCrime.slice(crimeBeltPosition, crimeBeltPosition+5)}
-                <button className="arrow-button" onClick={advanceCrimeBelt}><i className="arrow right"></i></button>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatCrimeBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceCrimeBelt}><i className="arrow right"></i></div>
+                </div>
+            </div>
+                <div className="row">
+                    <div className="arrow-button" onClick={retreatCrimeBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                    {renderCrime.slice(crimeBeltPosition, crimeBeltPosition+6)}
+                    <div className="arrow-button" onClick={advanceCrimeBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                </div>
             </div>
     )
 }

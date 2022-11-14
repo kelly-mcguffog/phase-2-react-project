@@ -6,24 +6,32 @@ function RomanceContainer({displayRomance}){
     const renderRomance = displayRomance.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceRomanceBelt(){
-        if((displayRomance.length % 5 !== 0) && ((displayRomance.length - romanceBeltPosition) < 10) && ((displayRomance.length - romanceBeltPosition) > 5)){
-            setRomanceBeltPosition(romanceBeltPosition + ((displayRomance.length % 5)))
+        if((displayRomance.length % 6 !== 0) && ((displayRomance.length - romanceBeltPosition) < 12) && ((displayRomance.length - romanceBeltPosition) > 6)){
+            setRomanceBeltPosition(romanceBeltPosition + ((displayRomance.length % 6)))
         }else{
-            setRomanceBeltPosition((romanceBeltPosition + 5) % displayRomance.length)
+            setRomanceBeltPosition((romanceBeltPosition + 6) % displayRomance.length)
         }
     }
     function retreatRomanceBelt(){
         if(romanceBeltPosition > 0){
-            setRomanceBeltPosition((romanceBeltPosition - 5) % displayRomance.length)
+            setRomanceBeltPosition((romanceBeltPosition - 6) % displayRomance.length)
         }
     }
 
     return(
-            <div className="romance-Container">
+            <div className="media-container">
+                <div className="genre-header">
                 <h2>Romance</h2>
-                <button className="arrow-button" onClick={retreatRomanceBelt}><i className="arrow left"></i></button>
-                {renderRomance.slice(romanceBeltPosition, romanceBeltPosition+5)}
-                <button className="arrow-button" onClick={advanceRomanceBelt}><i className="arrow right"></i></button>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatRomanceBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceRomanceBelt}><i className="arrow right"></i></div>
+                </div>
+            </div>
+                <div className="row">
+                    <div className="arrow-button" onClick={retreatRomanceBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                    {renderRomance.slice(romanceBeltPosition, romanceBeltPosition+6)}
+                    <div className="arrow-button" onClick={advanceRomanceBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                </div>
             </div>
     )
 }

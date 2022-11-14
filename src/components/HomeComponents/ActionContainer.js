@@ -6,24 +6,32 @@ function ActionContainer({displayAction}){
     const renderAction = displayAction.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceActionBelt(){
-        if((displayAction.length % 5 !== 0) && ((displayAction.length - actionBeltPosition) < 10) && ((displayAction.length - actionBeltPosition) > 5)){
-            setActionBeltPosition(actionBeltPosition + ((displayAction.length % 5)))
+        if((displayAction.length % 6 !== 0) && ((displayAction.length - actionBeltPosition) < 12) && ((displayAction.length - actionBeltPosition) > 6)){
+            setActionBeltPosition(actionBeltPosition + ((displayAction.length % 6)))
         }else{
-            setActionBeltPosition((actionBeltPosition + 5) % displayAction.length)
+            setActionBeltPosition((actionBeltPosition + 6) % displayAction.length)
         }
     }
     function retreatActionBelt(){
         if(actionBeltPosition > 0){
-            setActionBeltPosition((actionBeltPosition - 5) % displayAction.length)
+            setActionBeltPosition((actionBeltPosition - 6) % displayAction.length)
         }
     }
 
     return(
-        <div className="action-Container">
+        <div className="media-container">
+                <div className="genre-header">
                 <h2>Action</h2>
-                <button className="arrow-button" onClick={retreatActionBelt}><i className="arrow left"></i></button>
-                {renderAction.slice(actionBeltPosition, actionBeltPosition+5)}
-                <button className="arrow-button" onClick={advanceActionBelt}><i className="arrow right"></i></button>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatActionBelt}><i className="arrow right"></i></div>
+                    <div className="forward" onClick={advanceActionBelt}><i className="arrow right"></i></div>
+                </div>
+            </div>
+                <div className="row">
+                    <div className="arrow-button" onClick={retreatActionBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                    {renderAction.slice(actionBeltPosition, actionBeltPosition+6)}
+                    <div className="arrow-button" onClick={advanceActionBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                </div>
             </div>
     )
 }

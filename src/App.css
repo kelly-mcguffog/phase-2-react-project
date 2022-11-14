@@ -88,7 +88,6 @@
 }
 .content-card{
   width: 150px;
-  display: inline-grid;
   margin: 1%;
   text-align: center;
   cursor: pointer;
@@ -100,39 +99,25 @@
   -webkit-transition: transform 0.25s ease-in-out;
   vertical-align: middle;
 }
+.row{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .content-card:hover{
   transform: scale(1.1);
 }
-
-.arrow{
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-.arrow-button{
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  vertical-align: middle;
-  background-color: #222222;
+.fa-circle-chevron-left, .fa-circle-chevron-right{
+  font-size: 24px;
   filter:drop-shadow(16px 16px 10px black);
-  border: 0;
   transition: transform 0.25s ease-in-out;
   -webkit-transition: transform 0.25s ease-in-out;
   cursor: pointer;
 }
-.arrow-button:hover{
+.fa-circle-chevron-left:hover, .fa-circle-chevron-right:hover{
   transform: scale(1.3);
 }
+
 h2{
   margin: 20px;
 }
@@ -149,7 +134,6 @@ h4{
 }
 .content-details-container{
   background-color: rgba(0,0,0,0.9);
-  /* padding-top: 100px; */
   color: white;
   position: fixed;
   left: 0;
@@ -165,17 +149,6 @@ h4{
 .content-details-title{
   display: none;
 }
-/* .trailer-clip{
-  display: inline-block;
-  vertical-align: middle;
-} */
-/* .details{
-  display: inline-block;
-  width: 40%;
-  vertical-align: middle;
-  text-align: left;
-  margin-left: 30px;
-} */
 
 .details{
   margin-left: 20px;
@@ -185,9 +158,6 @@ h4{
 }
 
 .content-details{
-  /* width: 80%;
-  margin: 0 auto; */
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,63 +174,29 @@ h4{
   font-size: 14px;
   margin: 10px;
 }
-/* .iframe{
-  aspect-ratio: 16 / 9;
-	height: 100%;
-	width: 100%;
-} */
 
 .trailer{
   width: 500px;
   height: 300px;
 }
-/* .trailer-clip{
-  width: 500px;
-  height: 300px;
-} */
-/* .trailer{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
-.trailer-clip{
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%;
-} */
 #hbo-link.active{
-  /* padding-bottom: 10px;
-  border-bottom: 2px solid blue; */
   content: url("./Assets/HBO_Max_logo.png");
   height: 15px;
   width: auto;
-  /* margin-bottom: 0px; */
 }
 #hulu-link.active{
-  /* padding-bottom: 10px;
-  border-bottom: 2px solid green; */
   content: url("./Assets/Hulu_Logo.png");
   height: 15px;
   width: auto;
-  /* margin-bottom: 0px; */
 }
 #netflix-link.active{
-  /* padding-bottom: 10px;
-  border-bottom: 2px solid red; */
   content: url("./Assets/Netflix_Logo.png");
   height: 15px;
   width: auto;
-  /* margin-bottom: 0px; */
 }
 a{
   color:black;
   text-decoration: none;
-  /* margin: 20px; */
 }
 input:focus{
   color:white;
@@ -278,8 +214,9 @@ input:focus{
   display: none;
 }
 .card-container{
-  width: 98%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 input[type=text], select, textarea{
   width: 100%;
@@ -312,7 +249,6 @@ button[type=submit]{
   border-radius: 5px;
   width: 80%;
   margin: 0 auto;
-  /* background-color: #f2f2f2; */
   padding: 20px;
 }
 textarea:focus{
@@ -329,15 +265,10 @@ textarea:focus{
 .fa-circle-xmark:hover{
   color: rgba(255, 255, 255, 0.5);
 }
-
-@media only screen and (min-width: 900px) {
-  /* .nav-links, .nav-search{
-    display: inline-block;
-   }
-   .fa-bars{
-    display: none;
-   } */
+.mobileBtns{
+  display: none;
 }
+ 
 
 @media only screen and (max-width: 899px) and (min-width: 300px) {
   
@@ -394,11 +325,9 @@ textarea:focus{
   .details{
     width: 80%;
     margin: 0 auto;
-    /* text-align: center; */
   }
   .content-details-container{
     background-color: rgba(0,0,0,0.9);
-    /* padding-top: 100px; */
     color: white;
     position: fixed;
     left: 0;
@@ -408,9 +337,6 @@ textarea:focus{
     overflow: hidden;
     z-index: 1;
     display: flex;
-    /* flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start; */
   }
   .trailer{
     width: 80%;
@@ -428,4 +354,40 @@ textarea:focus{
     font-size: 24px;
     padding-bottom: 20px;
   }
+  .media-container{
+    position: relative;
+  }
+  .arrow-button{
+    display: none;
+  }
+  .back{
+    margin-right: 40px;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content-card{
+    display: block;
+    flex-grow: 2;
+  }
+
+.genre-header, .mobileBtns {
+    display: flex;
+   align-items: center;
+  }
+  .arrow{
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
 }

@@ -5,25 +5,33 @@ function HBOSciFiContainer({displayHBOSciFi}){
     const [hboSciFiBeltPosition, setHBOSciFiBeltPosition] = useState(0)
     const renderHBOSciFi = displayHBOSciFi.map(content => <ContentCard key={content.id} content={content}/>)
     function advanceHBOSciFiBelt(){
-        if((displayHBOSciFi.length % 5 !== 0) && ((displayHBOSciFi.length - hboSciFiBeltPosition) < 10) && ((displayHBOSciFi.length - hboSciFiBeltPosition) > 5)){
-            setHBOSciFiBeltPosition(hboSciFiBeltPosition + ((displayHBOSciFi.length % 5)))
+        if((displayHBOSciFi.length % 6 !== 0) && ((displayHBOSciFi.length - hboSciFiBeltPosition) < 12) && ((displayHBOSciFi.length - hboSciFiBeltPosition) > 6)){
+            setHBOSciFiBeltPosition(hboSciFiBeltPosition + ((displayHBOSciFi.length % 6)))
         }else{
-            setHBOSciFiBeltPosition((hboSciFiBeltPosition + 5) % displayHBOSciFi.length)
+            setHBOSciFiBeltPosition((hboSciFiBeltPosition + 6) % displayHBOSciFi.length)
         }
     }
     function retreatHBOSciFiBelt(){
         if(hboSciFiBeltPosition > 0){
-            setHBOSciFiBeltPosition((hboSciFiBeltPosition - 5) % displayHBOSciFi.length)
+            setHBOSciFiBeltPosition((hboSciFiBeltPosition - 6) % displayHBOSciFi.length)
         }
     }
 
     return(
-        <div className="scifi-Container">
+        <div className="media-container">
+            <div className="genre-header">
                 <h2>Sci-Fi</h2>
-            <button className="arrow-button" onClick={retreatHBOSciFiBelt}><i className="arrow left"></i></button>
-            {renderHBOSciFi.slice(hboSciFiBeltPosition, hboSciFiBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceHBOSciFiBelt}><i className="arrow right"></i></button>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatHBOSciFiBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceHBOSciFiBelt}><i className="arrow right"></i></div>
+                </div>
             </div>
+            <div className="row">
+                <div className="arrow-button" onClick={retreatHBOSciFiBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                {renderHBOSciFi.slice(hboSciFiBeltPosition, hboSciFiBeltPosition+6)}
+                <div className="arrow-button" onClick={advanceHBOSciFiBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+            </div>
+        </div>
     )
 }
 

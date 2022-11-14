@@ -6,25 +6,33 @@ function NetflixSciFiContainer({displayNetflixSciFi}){
     const renderNetflixSciFi = displayNetflixSciFi.map(content => <ContentCard key={content.id} content={content}/>)
 
         function advanceNetflixSciFiBelt(){
-            if((displayNetflixSciFi.length % 5 !== 0) && ((displayNetflixSciFi.length - netflixSciFiBeltPosition) < 10) && ((displayNetflixSciFi.length - netflixSciFiBeltPosition) > 5)){
-                setNetflixSciFiBeltPosition(netflixSciFiBeltPosition + ((displayNetflixSciFi.length % 5)))
+            if((displayNetflixSciFi.length % 6 !== 0) && ((displayNetflixSciFi.length - netflixSciFiBeltPosition) < 12) && ((displayNetflixSciFi.length - netflixSciFiBeltPosition) > 6)){
+                setNetflixSciFiBeltPosition(netflixSciFiBeltPosition + ((displayNetflixSciFi.length % 6)))
             }else{
-                setNetflixSciFiBeltPosition((netflixSciFiBeltPosition + 5) % displayNetflixSciFi.length)
+                setNetflixSciFiBeltPosition((netflixSciFiBeltPosition + 6) % displayNetflixSciFi.length)
             }
         }
         function retreatNetflixSciFiBelt(){
             if(netflixSciFiBeltPosition > 0){
-                setNetflixSciFiBeltPosition((netflixSciFiBeltPosition - 5) % displayNetflixSciFi.length)
+                setNetflixSciFiBeltPosition((netflixSciFiBeltPosition - 6) % displayNetflixSciFi.length)
             }
         }
 
     return(
-        <div className="scifi-Container">
-           <h2>Sci-Fi</h2>
-            <button className="arrow-button" onClick={retreatNetflixSciFiBelt}><i className="arrow left"></i></button>
-            {renderNetflixSciFi.slice(netflixSciFiBeltPosition, netflixSciFiBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceNetflixSciFiBelt}><i className="arrow right"></i></button>
+        <div className="media-container">
+            <div className="genre-header">
+                <h2>Sci-Fi</h2>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatNetflixSciFiBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceNetflixSciFiBelt}><i className="arrow right"></i></div>
+                </div>
             </div>
+            <div className="row">
+                <div className="arrow-button" onClick={retreatNetflixSciFiBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                {renderNetflixSciFi.slice(netflixSciFiBeltPosition, netflixSciFiBeltPosition+6)}
+                <div className="arrow-button" onClick={advanceNetflixSciFiBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+            </div>
+        </div>
     )
 }
 

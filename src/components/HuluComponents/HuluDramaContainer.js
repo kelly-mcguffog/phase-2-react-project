@@ -6,24 +6,32 @@ function HuluDramaContainer({displayHuluDramas}){
     const renderHuluDramas = displayHuluDramas.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceHuluDramaBelt(){
-        if((displayHuluDramas.length % 5 !== 0) && ((displayHuluDramas.length - huluDramaBeltPosition) < 10) && ((displayHuluDramas.length - huluDramaBeltPosition) > 5)){
-            setHuluDramaBeltPosition(huluDramaBeltPosition + ((displayHuluDramas.length % 5)))
+        if((displayHuluDramas.length % 6 !== 0) && ((displayHuluDramas.length - huluDramaBeltPosition) < 12) && ((displayHuluDramas.length - huluDramaBeltPosition) > 6)){
+            setHuluDramaBeltPosition(huluDramaBeltPosition + ((displayHuluDramas.length % 6)))
         }else{
-            setHuluDramaBeltPosition((huluDramaBeltPosition + 5) % displayHuluDramas.length)
+            setHuluDramaBeltPosition((huluDramaBeltPosition + 6) % displayHuluDramas.length)
         }
       }
       function retreatHuluDramaBelt(){
         if(huluDramaBeltPosition > 0){
-            setHuluDramaBeltPosition((huluDramaBeltPosition - 5) % displayHuluDramas.length)
+            setHuluDramaBeltPosition((huluDramaBeltPosition - 6) % displayHuluDramas.length)
         }
       }
 
     return(
-        <div>
-            <h2>Drama</h2>
-            <button className="arrow-button" onClick={retreatHuluDramaBelt}><i className="arrow left"></i></button>
-            {renderHuluDramas.slice(huluDramaBeltPosition, huluDramaBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceHuluDramaBelt}><i className="arrow right"></i></button>
+        <div className="media-container">
+            <div className="genre-header">
+                <h2>Drama</h2>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatHuluDramaBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceHuluDramaBelt}><i className="arrow right"></i></div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="arrow-button" onClick={retreatHuluDramaBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                {renderHuluDramas.slice(huluDramaBeltPosition, huluDramaBeltPosition+6)}
+                <div className="arrow-button" onClick={advanceHuluDramaBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+            </div>
         </div>
     )
 }

@@ -6,24 +6,32 @@ function HBOMysteryContainer({displayHBOMystery}){
     const renderHBOMystery = displayHBOMystery.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceHBOMysteryBelt(){
-        if((displayHBOMystery.length % 5 !== 0) && ((displayHBOMystery.length - hboMysteryBeltPosition) < 10) && ((displayHBOMystery.length - hboMysteryBeltPosition) > 5)){
-            setHBOMysteryBeltPosition(hboMysteryBeltPosition + ((displayHBOMystery.length % 5)))
+        if((displayHBOMystery.length % 6 !== 0) && ((displayHBOMystery.length - hboMysteryBeltPosition) < 12) && ((displayHBOMystery.length - hboMysteryBeltPosition) > 6)){
+            setHBOMysteryBeltPosition(hboMysteryBeltPosition + ((displayHBOMystery.length % 6)))
         }else{
-            setHBOMysteryBeltPosition((hboMysteryBeltPosition + 5) % displayHBOMystery.length)
+            setHBOMysteryBeltPosition((hboMysteryBeltPosition + 6) % displayHBOMystery.length)
         }
     }
     function retreatHBOMysteryBelt(){
         if(hboMysteryBeltPosition > 0){
-            setHBOMysteryBeltPosition((hboMysteryBeltPosition - 5) % displayHBOMystery.length)
+            setHBOMysteryBeltPosition((hboMysteryBeltPosition - 6) % displayHBOMystery.length)
         }
     }
 
     return(
-        <div className="mystery-Container">
+        <div className="media-container">
+            <div className="genre-header">
                 <h2>Mystery</h2>
-            <button className="arrow-button" onClick={retreatHBOMysteryBelt}><i className="arrow left"></i></button>
-            {renderHBOMystery.slice(hboMysteryBeltPosition, hboMysteryBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceHBOMysteryBelt}><i className="arrow right"></i></button>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatHBOMysteryBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceHBOMysteryBelt}><i className="arrow right"></i></div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="arrow-button" onClick={retreatHBOMysteryBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                {renderHBOMystery.slice(hboMysteryBeltPosition, hboMysteryBeltPosition+6)}
+                <div className="arrow-button" onClick={advanceHBOMysteryBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+            </div>
             </div>
     )
 }

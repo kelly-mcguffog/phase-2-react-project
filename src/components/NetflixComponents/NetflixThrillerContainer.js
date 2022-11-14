@@ -6,24 +6,32 @@ function NetflixThrillerContainer({displayNetflixThriller}){
     const renderNetflixThriller = displayNetflixThriller.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceNetflixThrillerBelt(){
-        if((displayNetflixThriller.length % 5 !== 0) && ((displayNetflixThriller.length - netflixThrillerBeltPosition) < 10) && ((displayNetflixThriller.length - netflixThrillerBeltPosition) > 5)){
-            setNetflixThrillerBeltPosition(netflixThrillerBeltPosition + ((displayNetflixThriller.length % 5)))
+        if((displayNetflixThriller.length % 6 !== 0) && ((displayNetflixThriller.length - netflixThrillerBeltPosition) < 12) && ((displayNetflixThriller.length - netflixThrillerBeltPosition) > 6)){
+            setNetflixThrillerBeltPosition(netflixThrillerBeltPosition + ((displayNetflixThriller.length % 6)))
         }else{
-            setNetflixThrillerBeltPosition((netflixThrillerBeltPosition + 5) % displayNetflixThriller.length)
+            setNetflixThrillerBeltPosition((netflixThrillerBeltPosition + 6) % displayNetflixThriller.length)
         }
     }
     function retreatNetflixThrillerBelt(){
         if(netflixThrillerBeltPosition > 0){
-            setNetflixThrillerBeltPosition((netflixThrillerBeltPosition - 5) % displayNetflixThriller.length)
+            setNetflixThrillerBeltPosition((netflixThrillerBeltPosition - 6) % displayNetflixThriller.length)
         }
     }
 
     return(
-        <div className="thriller-Container">
-            <h2>Thriller</h2>
-            <button className="arrow-button" onClick={retreatNetflixThrillerBelt}><i className="arrow left"></i></button>
-            {renderNetflixThriller.slice(netflixThrillerBeltPosition, netflixThrillerBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceNetflixThrillerBelt}><i className="arrow right"></i></button>
+        <div className="media-container">
+            <div className="genre-header">
+                <h2>Thriller</h2>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatNetflixThrillerBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceNetflixThrillerBelt}><i className="arrow right"></i></div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="arrow-button" onClick={retreatNetflixThrillerBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                {renderNetflixThriller.slice(netflixThrillerBeltPosition, netflixThrillerBeltPosition+6)}
+                <div className="arrow-button" onClick={advanceNetflixThrillerBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+            </div>
         </div>
     )
 }

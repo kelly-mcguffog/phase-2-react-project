@@ -6,24 +6,32 @@ function NetflixActionContainer({displayNetflixAction}){
     const renderNetflixAction = displayNetflixAction.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceNetflixActionBelt(){
-        if((displayNetflixAction.length % 5 !== 0) && ((displayNetflixAction.length - netflixActionBeltPosition) < 10) && ((displayNetflixAction.length - netflixActionBeltPosition) > 5)){
-            setNetflixActionBeltPosition(netflixActionBeltPosition + ((displayNetflixAction.length % 5)))
+        if((displayNetflixAction.length % 6 !== 0) && ((displayNetflixAction.length - netflixActionBeltPosition) < 12) && ((displayNetflixAction.length - netflixActionBeltPosition) > 6)){
+            setNetflixActionBeltPosition(netflixActionBeltPosition + ((displayNetflixAction.length % 6)))
         }else{
-            setNetflixActionBeltPosition((netflixActionBeltPosition + 5) % displayNetflixAction.length)
+            setNetflixActionBeltPosition((netflixActionBeltPosition + 6) % displayNetflixAction.length)
         }
     }
     function retreatNetflixActionBelt(){
         if(netflixActionBeltPosition > 0){
-            setNetflixActionBeltPosition((netflixActionBeltPosition - 5) % displayNetflixAction.length)
+            setNetflixActionBeltPosition((netflixActionBeltPosition - 6) % displayNetflixAction.length)
         }
     }
 
     return(
-        <div className="action-Container">
-            <h2>Action</h2>
-            <button className="arrow-button" onClick={retreatNetflixActionBelt}><i className="arrow left"></i></button>
-            {renderNetflixAction.slice(netflixActionBeltPosition, netflixActionBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceNetflixActionBelt}><i className="arrow right"></i></button>
+        <div className="media-container">
+            <div className="genre-header">
+                <h2>Action</h2>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatNetflixActionBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceNetflixActionBelt}><i className="arrow right"></i></div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="arrow-button" onClick={retreatNetflixActionBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                {renderNetflixAction.slice(netflixActionBeltPosition, netflixActionBeltPosition+6)}
+                <div className="arrow-button" onClick={advanceNetflixActionBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+            </div>
             </div>
     )
 }

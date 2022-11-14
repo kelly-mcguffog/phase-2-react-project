@@ -6,24 +6,32 @@ function MysteryContainer({displayMystery}){
     const renderMystery = displayMystery.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceMysteryBelt(){
-        if((displayMystery.length % 5 !== 0) && ((displayMystery.length - mysteryBeltPosition) < 10) && ((displayMystery.length - mysteryBeltPosition) > 5)){
-            setMysteryBeltPosition(mysteryBeltPosition + ((displayMystery.length % 5)))
+        if((displayMystery.length % 6 !== 0) && ((displayMystery.length - mysteryBeltPosition) < 12) && ((displayMystery.length - mysteryBeltPosition) > 6)){
+            setMysteryBeltPosition(mysteryBeltPosition + ((displayMystery.length % 6)))
         }else{
-            setMysteryBeltPosition((mysteryBeltPosition + 5) % displayMystery.length)
+            setMysteryBeltPosition((mysteryBeltPosition + 6) % displayMystery.length)
         }
     }
     function retreatMysteryBelt(){
         if(mysteryBeltPosition > 0){
-            setMysteryBeltPosition((mysteryBeltPosition - 5) % displayMystery.length)
+            setMysteryBeltPosition((mysteryBeltPosition - 6) % displayMystery.length)
         }
     }
 
     return(
-        <div className="mystery-Container">
+        <div className="media-container">
+                <div className="genre-header">
                 <h2>Mystery</h2>
-                <button className="arrow-button" onClick={retreatMysteryBelt}><i className="arrow left"></i></button>
-                {renderMystery.slice(mysteryBeltPosition, mysteryBeltPosition+5)}
-                <button className="arrow-button" onClick={advanceMysteryBelt}><i className="arrow right"></i></button>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatMysteryBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceMysteryBelt}><i className="arrow right"></i></div>
+                </div>
+            </div>
+                <div className="row">
+                    <div className="arrow-button" onClick={retreatMysteryBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                    {renderMystery.slice(mysteryBeltPosition, mysteryBeltPosition+6)}
+                    <div className="arrow-button" onClick={advanceMysteryBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+                </div>
             </div>
     )
 }

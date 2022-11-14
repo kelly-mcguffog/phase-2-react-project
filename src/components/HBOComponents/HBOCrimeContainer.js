@@ -6,23 +6,31 @@ function HBOCrimeContainer({displayHBOCrime}){
     const renderHBOCrime = displayHBOCrime.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceHBOCrimeBelt(){
-        if((displayHBOCrime.length % 5 !== 0) && ((displayHBOCrime.length - hboCrimeBeltPosition) < 10) && ((displayHBOCrime.length - hboCrimeBeltPosition) > 5)){
-            setHBOCrimeBeltPosition(hboCrimeBeltPosition + ((displayHBOCrime.length % 5)))
+        if((displayHBOCrime.length % 6 !== 0) && ((displayHBOCrime.length - hboCrimeBeltPosition) < 12) && ((displayHBOCrime.length - hboCrimeBeltPosition) > 6)){
+            setHBOCrimeBeltPosition(hboCrimeBeltPosition + ((displayHBOCrime.length % 6)))
         }else{
-            setHBOCrimeBeltPosition((hboCrimeBeltPosition + 5) % displayHBOCrime.length)
+            setHBOCrimeBeltPosition((hboCrimeBeltPosition + 6) % displayHBOCrime.length)
         }
     }
     function retreatHBOCrimeBelt(){
         if(hboCrimeBeltPosition > 0){
-            setHBOCrimeBeltPosition((hboCrimeBeltPosition - 5) % displayHBOCrime.length)
+            setHBOCrimeBeltPosition((hboCrimeBeltPosition - 6) % displayHBOCrime.length)
         }
     }
     return(
-        <div className="crime-Container">
+        <div className="media-container">
+            <div className="genre-header">
                 <h2>Crime</h2>
-            <button className="arrow-button" onClick={retreatHBOCrimeBelt}><i className="arrow left"></i></button>
-            {renderHBOCrime.slice(hboCrimeBeltPosition, hboCrimeBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceHBOCrimeBelt}><i className="arrow right"></i></button>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatHBOCrimeBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceHBOCrimeBelt}><i className="arrow right"></i></div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="arrow-button" onClick={retreatHBOCrimeBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                {renderHBOCrime.slice(hboCrimeBeltPosition, hboCrimeBeltPosition+6)}
+                <div className="arrow-button" onClick={advanceHBOCrimeBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+            </div>
             </div>
     )
 }

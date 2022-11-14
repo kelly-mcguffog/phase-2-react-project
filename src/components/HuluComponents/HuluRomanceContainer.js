@@ -6,24 +6,32 @@ function HuluRomanceContainer({displayHuluRomance}){
     const renderHuluRomance = displayHuluRomance.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceHuluRomanceBelt(){
-        if((displayHuluRomance.length % 5 !== 0) && ((displayHuluRomance.length - huluRomanceBeltPosition) < 10) && ((displayHuluRomance.length - huluRomanceBeltPosition) > 5)){
-            setHuluRomanceBeltPosition(huluRomanceBeltPosition + ((displayHuluRomance.length % 5)))
+        if((displayHuluRomance.length % 6 !== 0) && ((displayHuluRomance.length - huluRomanceBeltPosition) < 12) && ((displayHuluRomance.length - huluRomanceBeltPosition) > 6)){
+            setHuluRomanceBeltPosition(huluRomanceBeltPosition + ((displayHuluRomance.length % 6)))
         }else{
-            setHuluRomanceBeltPosition((huluRomanceBeltPosition + 5) % displayHuluRomance.length)
+            setHuluRomanceBeltPosition((huluRomanceBeltPosition + 6) % displayHuluRomance.length)
         }
     }
     function retreatHuluRomanceBelt(){
         if(huluRomanceBeltPosition > 0){
-            setHuluRomanceBeltPosition((huluRomanceBeltPosition - 5) % displayHuluRomance.length)
+            setHuluRomanceBeltPosition((huluRomanceBeltPosition - 6) % displayHuluRomance.length)
         }
     }
 
     return(
-            <div className="romance-Container">
-            <h2>Romance</h2>
-            <button className="arrow-button" onClick={retreatHuluRomanceBelt}><i className="arrow left"></i></button>
-            {renderHuluRomance.slice(huluRomanceBeltPosition, huluRomanceBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceHuluRomanceBelt}><i className="arrow right"></i></button>
+            <div className="media-container">
+            <div className="genre-header">
+                <h2>Romance</h2>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatHuluRomanceBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceHuluRomanceBelt}><i className="arrow right"></i></div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="arrow-button" onClick={retreatHuluRomanceBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                {renderHuluRomance.slice(huluRomanceBeltPosition, huluRomanceBeltPosition+6)}
+                <div className="arrow-button" onClick={advanceHuluRomanceBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+            </div>
             </div>
     )
 }

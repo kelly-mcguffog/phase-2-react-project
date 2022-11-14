@@ -6,24 +6,32 @@ function HBORomanceContainer({displayHBORomance}){
     const renderHBORomance = displayHBORomance.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceHBORomanceBelt(){
-        if((displayHBORomance.length % 5 !== 0) && ((displayHBORomance.length - hboRomanceBeltPosition) < 10) && ((displayHBORomance.length - hboRomanceBeltPosition) > 5)){
-            setHBORomanceBeltPosition(hboRomanceBeltPosition + ((displayHBORomance.length % 5)))
+        if((displayHBORomance.length % 6 !== 0) && ((displayHBORomance.length - hboRomanceBeltPosition) < 12) && ((displayHBORomance.length - hboRomanceBeltPosition) > 6)){
+            setHBORomanceBeltPosition(hboRomanceBeltPosition + ((displayHBORomance.length % 6)))
         }else{
-            setHBORomanceBeltPosition((hboRomanceBeltPosition + 5) % displayHBORomance.length)
+            setHBORomanceBeltPosition((hboRomanceBeltPosition + 6) % displayHBORomance.length)
         }
     }
     function retreatHBORomanceBelt(){
         if(hboRomanceBeltPosition > 0){
-            setHBORomanceBeltPosition((hboRomanceBeltPosition - 5) % displayHBORomance.length)
+            setHBORomanceBeltPosition((hboRomanceBeltPosition - 6) % displayHBORomance.length)
         }
     }
 
     return(
-            <div className="romance-Container">
+            <div className="media-container">
+                <div className="genre-header">
                 <h2>Romance</h2>
-            <button className="arrow-button" onClick={retreatHBORomanceBelt}><i className="arrow left"></i></button>
-            {renderHBORomance.slice(hboRomanceBeltPosition, hboRomanceBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceHBORomanceBelt}><i className="arrow right"></i></button>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatHBORomanceBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceHBORomanceBelt}><i className="arrow right"></i></div>
+                </div>
+            </div>
+                <div className="row">
+                    <div className="arrow-button" onClick={retreatHBORomanceBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                    {renderHBORomance.slice(hboRomanceBeltPosition, hboRomanceBeltPosition+6)}
+                    <div className="arrow-button" onClick={advanceHBORomanceBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+            </div>
             </div>
     )
 }

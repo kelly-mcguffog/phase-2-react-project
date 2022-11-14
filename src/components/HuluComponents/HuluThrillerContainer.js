@@ -6,24 +6,32 @@ function HuluThrillerContainer({displayHuluThriller}){
     const renderHuluThriller = displayHuluThriller.map(content => <ContentCard key={content.id} content={content}/>)
 
     function advanceHuluThrillerBelt(){
-        if((displayHuluThriller.length % 5 !== 0) && ((displayHuluThriller.length - huluThrillerBeltPosition) < 10) && ((displayHuluThriller.length - huluThrillerBeltPosition) > 5)){
-            setHuluThrillerBeltPosition(huluThrillerBeltPosition + ((displayHuluThriller.length % 5)))
+        if((displayHuluThriller.length % 6 !== 0) && ((displayHuluThriller.length - huluThrillerBeltPosition) < 12) && ((displayHuluThriller.length - huluThrillerBeltPosition) > 6)){
+            setHuluThrillerBeltPosition(huluThrillerBeltPosition + ((displayHuluThriller.length % 6)))
         }else{
-            setHuluThrillerBeltPosition((huluThrillerBeltPosition + 5) % displayHuluThriller.length)
+            setHuluThrillerBeltPosition((huluThrillerBeltPosition + 6) % displayHuluThriller.length)
         }
     }
     function retreatHuluThrillerBelt(){
         if(huluThrillerBeltPosition > 0){
-            setHuluThrillerBeltPosition((huluThrillerBeltPosition - 5) % displayHuluThriller.length)
+            setHuluThrillerBeltPosition((huluThrillerBeltPosition - 6) % displayHuluThriller.length)
         }
     }
 
     return(
-        <div className="thriller-Container">
-            <h2>Thriller</h2>
-            <button className="arrow-button" onClick={retreatHuluThrillerBelt}><i className="arrow left"></i></button>
-            {renderHuluThriller.slice(huluThrillerBeltPosition, huluThrillerBeltPosition+5)}
-            <button className="arrow-button" onClick={advanceHuluThrillerBelt}><i className="arrow right"></i></button>
+        <div className="media-container">
+            <div className="genre-header">
+                <h2>Thriller</h2>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatHuluThrillerBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceHuluThrillerBelt}><i className="arrow right"></i></div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="arrow-button" onClick={retreatHuluThrillerBelt}><i className="fa-sharp fa-solid fa-circle-chevron-left"></i></div>
+                {renderHuluThriller.slice(huluThrillerBeltPosition, huluThrillerBeltPosition+6)}
+                <div className="arrow-button" onClick={advanceHuluThrillerBelt}><i className="fa-sharp fa-solid fa-circle-chevron-right"></i></div>
+            </div>
         </div>
     )
 }
