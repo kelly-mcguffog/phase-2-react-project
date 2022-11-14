@@ -6,6 +6,12 @@ import NetflixButton from "./NetflixButton";
 function Details({content}){
     const {title, genre, category, platform, description, trailer} = content
 
+    // const [isShowingDetails, setDetails] = useState(false)
+
+    // function showDetails(){
+    //     setDetails(isShowingDetails => !isShowingDetails)
+    // }
+
     function streamingButton(){
         if(platform === "HBO Max"){
             return <HBOButton />
@@ -19,7 +25,7 @@ function Details({content}){
     return(
         <div className="content-details">
             <div className="trailer-clip">
-                <iframe className="trailer" src={trailer}>
+                <iframe frameBorder="0" className="trailer" src={trailer} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen>
                 </iframe>
             </div>
             <div className="details">

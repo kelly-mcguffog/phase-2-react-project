@@ -149,7 +149,7 @@ h4{
 }
 .content-details-container{
   background-color: rgba(0,0,0,0.9);
-  padding-top: 100px;
+  /* padding-top: 100px; */
   color: white;
   position: fixed;
   left: 0;
@@ -158,24 +158,41 @@ h4{
   height: 100%;
   overflow: hidden;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .content-details-title{
   display: none;
 }
-.trailer-clip{
+/* .trailer-clip{
   display: inline-block;
   vertical-align: middle;
-}
-.details{
+} */
+/* .details{
   display: inline-block;
   width: 40%;
   vertical-align: middle;
   text-align: left;
   margin-left: 30px;
+} */
+
+.details{
+  margin-left: 20px;
 }
+.close-details{
+  font-size: 24px;
+}
+
 .content-details{
-  width: 80%;
-  margin: 0 auto;
+  /* width: 80%;
+  margin: 0 auto; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+
 }
 .streaming-info{
   font-weight: 700;
@@ -187,11 +204,35 @@ h4{
   font-size: 14px;
   margin: 10px;
 }
+/* .iframe{
+  aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
+} */
+
 .trailer{
-  width: 400px;
+  width: 500px;
   height: 300px;
-  border: none;
 }
+/* .trailer-clip{
+  width: 500px;
+  height: 300px;
+} */
+/* .trailer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.trailer-clip{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+} */
 #hbo-link.active{
   /* padding-bottom: 10px;
   border-bottom: 2px solid blue; */
@@ -276,6 +317,17 @@ button[type=submit]{
 }
 textarea:focus{
   font-family: Arial, Helvetica, sans-serif;
+}
+.fa-circle-xmark{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.fa-circle-xmark:hover{
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @media only screen and (min-width: 900px) {
