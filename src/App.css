@@ -380,4 +380,52 @@ textarea:focus{
   .add-button{
     margin: 20px;
   }
+  .content-details{
+    width: 100%;
+    margin: 0 auto;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  
+  }
+  .details{
+    width: 80%;
+    margin: 0 auto;
+    /* text-align: center; */
+  }
+  .content-details-container{
+    background-color: rgba(0,0,0,0.9);
+    /* padding-top: 100px; */
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    /* flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; */
+  }
+  .trailer{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .trailer-clip{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .fa-circle-xmark{
+    padding-right: 20px;
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
 }
