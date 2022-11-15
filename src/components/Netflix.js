@@ -8,7 +8,7 @@ import NetflixSciFiContainer from "./NetflixComponents/NetflixSciFiContainer";
 import NetflixThrillerContainer from "./NetflixComponents/NetflixThrillerContainer";
 
 
-function Netflix({allContent}){
+function Netflix({handleEditMedia, allContent}){
     
     const netflixContent = allContent.filter(content => content.platform === "Netflix")
 
@@ -23,13 +23,13 @@ function Netflix({allContent}){
    
     return(
         <div className="card-container">
-            {displayNetflixDramas.length > 0 ? <NetflixDramaContainer displayNetflixDramas={displayNetflixDramas}/> : false}
-            {displayNetflixCrime.length > 0 ? <NetflixCrimeContainer displayNetflixCrime={displayNetflixCrime}/> : false}
-            {displayNetflixAction.length > 0 ? <NetflixActionContainer displayNetflixAction={displayNetflixAction}/> : false}
-            {displayNetflixMystery.length > 0 ? <NetflixMysteryContainer displayNetflixMystery={displayNetflixMystery}/> : false}
-            {displayNetflixRomance.length > 0 ? <NetflixRomanceContainer displayNetflixRomance={displayNetflixRomance}/> : false}
-            {displayNetflixThriller.length > 0 ? <NetflixThrillerContainer displayNetflixThriller={displayNetflixThriller}/> : false}
-            {displayNetflixSciFi.length > 0 ? <NetflixSciFiContainer displayNetflixSciFi={displayNetflixSciFi}/> : false}
+            {displayNetflixDramas.length > 0 ? <NetflixDramaContainer handleEditMedia={handleEditMedia} displayNetflixDramas={displayNetflixDramas}/> : false}
+            {displayNetflixCrime.length > 0 ? <NetflixCrimeContainer handleEditMedia={handleEditMedia} displayNetflixCrime={displayNetflixCrime}/> : false}
+            {displayNetflixAction.length > 0 ? <NetflixActionContainer handleEditMedia={handleEditMedia} displayNetflixAction={displayNetflixAction}/> : false}
+            {displayNetflixMystery.length > 0 ? <NetflixMysteryContainer handleEditMedia={handleEditMedia} displayNetflixMystery={displayNetflixMystery}/> : false}
+            {displayNetflixRomance.length > 0 ? <NetflixRomanceContainer handleEditMedia={handleEditMedia} displayNetflixRomance={displayNetflixRomance}/> : false}
+            {displayNetflixThriller.length > 0 ? <NetflixThrillerContainer handleEditMedia={handleEditMedia} displayNetflixThriller={displayNetflixThriller}/> : false}
+            {displayNetflixSciFi.length > 0 ? <NetflixSciFiContainer handleEditMedia={handleEditMedia} displayNetflixSciFi={displayNetflixSciFi}/> : false}
             
         </div>
         )

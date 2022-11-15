@@ -10,6 +10,7 @@ import Netflix from "./Netflix";
 import Hulu from "./Hulu";
 import Container from "./Container";
 import Form from "./Form";
+import EditForm from "./EditForm";
 import "../App.css"
 
 
@@ -18,6 +19,8 @@ function App() {
     const [isContent, setContent] = useState([]);
     const [search, setSearch] = useState("")
     const [filter, setFilter] = useState("All")
+    const [editMedia, setEditMedia] = useState(null)
+
     
     let displayContent = isContent.filter(content => content.title.toLowerCase().includes(search.toLowerCase()))
     displayContent = displayContent.filter(content => {
@@ -44,24 +47,43 @@ function App() {
     setContent([...isContent, newContent]);
   }
 
+  function handleEditMedia(id){
+    const selectedMedia = displayContent.find(content => content.id === id)
+    setEditMedia(selectedMedia)
+  }
+
+  const updateMediaList = (newMedia) => {
+    const newList = displayContent.map(content => {
+      if(content.id === newMedia.id){
+        return newMedia
+      }else {
+        return content
+      }
+    })
+    setContent(newList)
+  }
+
   return (
     <Router>
       <NavBar search={search} handleFilter={handleFilter} setSearch={setSearch}/>
       <Switch>
         <Route exact path="/">
-          <Container allContent={displayContent} />
+          <Container handleEditMedia={handleEditMedia} allContent={displayContent} />
         </Route>
         <Route path="/hbo">
-          <HBO allContent={displayContent} />
+          <HBO handleEditMedia={handleEditMedia} allContent={displayContent} />
         </Route>
         <Route path="/hulu">
-          <Hulu allContent={displayContent} />
+          <Hulu handleEditMedia={handleEditMedia} allContent={displayContent} />
         </Route>
         <Route path="/netflix">
-          <Netflix allContent={displayContent} />
+          <Netflix handleEditMedia={handleEditMedia} allContent={displayContent} />
         </Route>
         <Route path="/new">
           <Form onContentFormSubmit={handleAddNewContent} />
+        </Route>
+        <Route path="/edit">
+          <EditForm {...editMedia} setEditMedia={setEditMedia} updateMediaList={updateMediaList} />
         </Route>
       </Switch>
     </Router>

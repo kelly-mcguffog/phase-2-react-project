@@ -2,9 +2,14 @@ import React from "react";
 import HBOButton from "./HBOButton"
 import HuluButton from "./HuluButton";
 import NetflixButton from "./NetflixButton";
+import { Link } from "react-router-dom";
 
-function Details({content}){
-    const {title, genre, category, platform, description, trailer} = content
+function Details({content, handleEditMedia}){
+    const {id, title, genre, category, platform, description, trailer} = content
+
+    function sendIdToApp(){
+        handleEditMedia(id)
+    }
 
     function streamingButton(){
         if(platform === "HBO Max"){
@@ -27,6 +32,7 @@ function Details({content}){
                 <p className="content-info">{genre} | {category}</p>
                 {streamingButton()}
                 <p className="content-info">{description}</p>
+                <p className="edit" onClick={sendIdToApp}><i className="fa-solid fa-pen-to-square"></i> <Link to="/edit">Edit Details</Link></p>
             </div>
         </div>
     )

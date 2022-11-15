@@ -8,7 +8,7 @@ import HBOSciFiContainer from "./HBOComponents/HBOSciFiContainer";
 import HBOThrillerContainer from "./HBOComponents/HBOThrillerContainer";
 
 
-function HBO({allContent}){
+function HBO({allContent, handleEditMedia}){
     
     const hboContent = allContent.filter(content => content.platform === "HBO Max")
 
@@ -22,13 +22,13 @@ function HBO({allContent}){
    
     return(
         <div className="card-container">
-            {displayHBODramas.length > 0 ? <HBODramaContainer displayHBODramas={displayHBODramas}/> : false}
-            {displayHBOCrime.length > 0 ? <HBOCrimeContainer displayHBOCrime={displayHBOCrime}/> : false}
-            {displayHBOAction.length > 0 ? <HBOActionContainer displayHBOAction={displayHBOAction}/> : false}
-            {displayHBOMystery.length > 0 ? <HBOMysteryContainer displayHBOMystery={displayHBOMystery}/> : false}
-            {displayHBORomance.length > 0 ? <HBORomanceContainer displayHBORomance={displayHBORomance}/> : false}
-            {displayHBOThriller.length > 0 ? <HBOThrillerContainer displayHBOThriller={displayHBOThriller}/> : false}
-            {displayHBOSciFi.length > 0 ? <HBOSciFiContainer displayHBOSciFi={displayHBOSciFi}/> : false}
+            {displayHBODramas.length > 0 ? <HBODramaContainer handleEditMedia={handleEditMedia} displayHBODramas={displayHBODramas}/> : false}
+            {displayHBOCrime.length > 0 ? <HBOCrimeContainer handleEditMedia={handleEditMedia} displayHBOCrime={displayHBOCrime}/> : false}
+            {displayHBOAction.length > 0 ? <HBOActionContainer handleEditMedia={handleEditMedia} displayHBOAction={displayHBOAction}/> : false}
+            {displayHBOMystery.length > 0 ? <HBOMysteryContainer handleEditMedia={handleEditMedia} displayHBOMystery={displayHBOMystery}/> : false}
+            {displayHBORomance.length > 0 ? <HBORomanceContainer handleEditMedia={handleEditMedia} displayHBORomance={displayHBORomance}/> : false}
+            {displayHBOThriller.length > 0 ? <HBOThrillerContainer handleEditMedia={handleEditMedia} displayHBOThriller={displayHBOThriller}/> : false}
+            {displayHBOSciFi.length > 0 ? <HBOSciFiContainer handleEditMedia={handleEditMedia} displayHBOSciFi={displayHBOSciFi}/> : false}
         </div>
         )
 

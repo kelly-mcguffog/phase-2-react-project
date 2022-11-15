@@ -13,7 +13,6 @@ const [clicked, setClicked] = useState(false)
 function mobileNavBar(){
     setClicked(clicked => !clicked)
 }
-
   return(
     <div className="navbar">
        <h4><NavLink id="home" exact to="/">MediaFinder</NavLink></h4>

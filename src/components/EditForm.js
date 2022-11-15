@@ -1,40 +1,39 @@
-import React, {useState} from "react";
+import React from "react";
 
 
-function Form({onContentFormSubmit}){
+function EditForm({id, title, category, description, genre, platform, trailer, image, setEditMedia, updateMediaList}){
 
-    const initialState = {
-        title: "",
-        category: "Movie",
-        description: "",
-        genre: "Crime",
-        platform: "HBO Max",
-        trailer: "",
-        image: ""
-    }
 
-    const [formData, setFormData] = useState(initialState)
-
-    function handleChange(event) {
-        setFormData({
-          ...formData,
-          [event.target.name]: event.target.value
-        });
-
+    function handleEditChange(event) {
+        setEditMedia((prevMedia) => {
+            console.log(prevMedia)
+              return{
+                ...prevMedia,
+                [event.target.name]: event.target.value
+              }
+          })
       }
 
-      function handleSubmit(e){
+      function handleEditSubmit(e){
         e.preventDefault();
-        fetch('http://localhost:3000/content', {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
-        })
-        .then(res => res.json())
-        .then(content => onContentFormSubmit(content))
-        setFormData(initialState)
+        fetch(`http://localhost:3000/content${id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                id,
+                title,
+                category,
+                description,
+                genre,
+                platform,
+                trailer,
+                image
+            })
+            })
+            .then(res => res.json())
+            .then(newMedia => updateMediaList(newMedia))
 
       }
 
@@ -42,14 +41,14 @@ function Form({onContentFormSubmit}){
 
         return (
             <div className="form-container">
-                <form className="NewItem" onSubmit={handleSubmit}>
+                <form className="NewItem" onSubmit={handleEditSubmit}>
                 <label>
                     Title:
                     <input 
                     type="text" 
                     name="title" 
-                    onChange={handleChange} 
-                    value={formData.title}
+                    onChange={handleEditChange} 
+                    value={title}
                     className="form-input"
                     placeholder="Enter a Title"
                     />
@@ -57,7 +56,7 @@ function Form({onContentFormSubmit}){
                 
                 <label>
                     Category:
-                    <select className="form-input" name="category" onChange={handleChange}>
+                    <select className="form-input" name="category" value={category} onChange={handleEditChange}>
                     <option value="Movie">Movie</option>
                     <option value="TV Show">TV Show</option>
                     </select>
@@ -65,7 +64,7 @@ function Form({onContentFormSubmit}){
 
                 <label>
                     Genre:
-                    <select className="form-input" name="genre" onChange={handleChange}>
+                    <select className="form-input" name="genre" value={genre} onChange={handleEditChange}>
                     <option value="Crime">Crime</option>
                     <option value="Action">Action</option>
                     <option value="Drama">Drama</option>
@@ -80,8 +79,8 @@ function Form({onContentFormSubmit}){
                     Description:
                     <textarea 
                     name="description" 
-                    onChange={handleChange} 
-                    value={formData.description}
+                    onChange={handleEditChange} 
+                    value={description}
                     className="form-textarea"
                     placeholder="Enter a Description..."
                     >
@@ -90,7 +89,7 @@ function Form({onContentFormSubmit}){
 
                 <label>
                     Streaming Service:
-                    <select className="form-input" name="platform" onChange={handleChange}>
+                    <select className="form-input" name="platform" value={platform} onChange={handleEditChange}>
                     <option value="HBO Max">HBO Max</option>
                     <option value="Hulu">Hulu</option>
                     <option value="Netflix">Netflix</option>
@@ -102,8 +101,8 @@ function Form({onContentFormSubmit}){
                     <input 
                     type="text" 
                     name="trailer" 
-                    onChange={handleChange} 
-                    value={formData.trailer}
+                    onChange={handleEditChange} 
+                    value={trailer}
                     placeholder="Enter a URL for the Trailer"
                     className="form-input"
                     />
@@ -114,19 +113,19 @@ function Form({onContentFormSubmit}){
                     <input 
                     type="text" 
                     name="image" 
-                    onChange={handleChange} 
-                    value={formData.image}
+                    onChange={handleEditChange} 
+                    value={image}
                     placeholder="Enter an Image URL"
                     className="form-input"
                     />
                 </label>
                 
             
-                <button onChange={(e) => setFormData(e.target.value)} name="submit" type="submit">Add to List</button>
+                <button name="submit" type="submit">Submit Changes</button>
                 </form>
             </div>
           );
 
 }
 
-export default Form;
+export default EditForm;

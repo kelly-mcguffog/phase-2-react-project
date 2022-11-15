@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function HuluActionContainer({displayHuluAction}){
+function HuluActionContainer({displayHuluAction, handleEditMedia}){
     const [huluActionBeltPosition, setHuluActionBeltPosition] = useState(0)
-    const renderHuluAction = displayHuluAction.map(content => <ContentCard key={content.id} content={content}/>)
+    const renderHuluAction = displayHuluAction.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
 
     function advanceHuluActionBelt(){
         if((displayHuluAction.length % 6 !== 0) && ((displayHuluAction.length - huluActionBeltPosition) < 12) && ((displayHuluAction.length - huluActionBeltPosition) > 6)){

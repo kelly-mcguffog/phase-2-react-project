@@ -3,8 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+    background: linear-gradient(to right, #000000, #1b1b1b, #040404);
+}
 #root {
-  background: linear-gradient(to right, #000000, #1b1b1b, #040404);
   color: white;
 }
 #home.active, .fa-circle-plus.active{
@@ -18,7 +20,7 @@
   color: white;
 }
 .nav-logo{
-  height: 13px;
+  height: 15px;
   width: auto;
 }
 .navbar{
@@ -50,6 +52,15 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.edit{
+  font-size: 12px;
+  font-style: normal;
+  background:-webkit-linear-gradient(90deg, rgba(174,134,37,1) 0%, rgba(247,239,138,1) 35%, rgba(210,172,71,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px;
 }
 .fa-circle-plus{
   display: inline-block;
@@ -191,7 +202,7 @@ h4{
   height: 300px;
 }
 #hbo-link.active{
-  content: url("./Assets/HBO_Max_logo.png");
+  content: url("./Assets/HBO_Max_Logo.png");
   height: 15px;
   width: auto;
 }

@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function NetflixRomanceContainer({displayNetflixRomance}){
+function NetflixRomanceContainer({displayNetflixRomance, handleEditMedia}){
     const [netflixRomanceBeltPosition, setNetflixRomanceBeltPosition] = useState(0)
-    const renderNetflixRomance = displayNetflixRomance.map(content => <ContentCard key={content.id} content={content}/>)
+    const renderNetflixRomance = displayNetflixRomance.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
 
     function advanceNetflixRomanceBelt(){
         if((displayNetflixRomance.length % 6 !== 0) && ((displayNetflixRomance.length - netflixRomanceBeltPosition) < 12) && ((displayNetflixRomance.length - netflixRomanceBeltPosition) > 6)){

@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function RomanceContainer({displayRomance}){
+function RomanceContainer({displayRomance, handleEditMedia}){
     const [romanceBeltPosition, setRomanceBeltPosition] = useState(0)
-    const renderRomance = displayRomance.map(content => <ContentCard key={content.id} content={content}/>)
+    const renderRomance = displayRomance.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
 
     function advanceRomanceBelt(){
         if((displayRomance.length % 6 !== 0) && ((displayRomance.length - romanceBeltPosition) < 12) && ((displayRomance.length - romanceBeltPosition) > 6)){
