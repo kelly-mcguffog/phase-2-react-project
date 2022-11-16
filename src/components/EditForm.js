@@ -3,6 +3,8 @@ import React from "react";
 
 function EditForm({id, title, category, description, genre, platform, trailer, image, setEditMedia, updateMediaList}){
 
+    // const [successMessage, setSuccessMessage] = useState(false)
+
 
     function handleEditChange(event) {
         setEditMedia((prevMedia) => {
@@ -16,7 +18,7 @@ function EditForm({id, title, category, description, genre, platform, trailer, i
 
       function handleEditSubmit(e){
         e.preventDefault();
-        fetch(`http://localhost:3000/content${id}`, {
+        fetch(`http://localhost:3000/content/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
@@ -34,6 +36,7 @@ function EditForm({id, title, category, description, genre, platform, trailer, i
             })
             .then(res => res.json())
             .then(newMedia => updateMediaList(newMedia))
+            .then(alert("Changes made succesfully!"))
 
       }
 
@@ -42,6 +45,7 @@ function EditForm({id, title, category, description, genre, platform, trailer, i
         return (
             <div className="form-container">
                 <form className="NewItem" onSubmit={handleEditSubmit}>
+                    
                 <label>
                     Title:
                     <input 
