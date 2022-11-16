@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function HBOSciFiContainer({displayHBOSciFi, handleEditMedia}){
+function HBOSciFiContainer({displayHBOSciFi, handleEditMedia, setSearch}){
     const [hboSciFiBeltPosition, setHBOSciFiBeltPosition] = useState(0)
-    const renderHBOSciFi = displayHBOSciFi.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderHBOSciFi = displayHBOSciFi.map(content => <ContentCard key={content.id} setSearch={setSearch} content={content} handleEditMedia={handleEditMedia}/>)
     function advanceHBOSciFiBelt(){
         if((displayHBOSciFi.length % 6 !== 0) && ((displayHBOSciFi.length - hboSciFiBeltPosition) < 12) && ((displayHBOSciFi.length - hboSciFiBeltPosition) > 6)){
             setHBOSciFiBeltPosition(hboSciFiBeltPosition + ((displayHBOSciFi.length % 6)))

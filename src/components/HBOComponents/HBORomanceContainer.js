@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function HBORomanceContainer({displayHBORomance, handleEditMedia}){
+function HBORomanceContainer({displayHBORomance, handleEditMedia, setSearch}){
     const [hboRomanceBeltPosition, setHBORomanceBeltPosition] = useState(0)
-    const renderHBORomance = displayHBORomance.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderHBORomance = displayHBORomance.map(content => <ContentCard key={content.id} setSearch={setSearch} content={content} handleEditMedia={handleEditMedia}/>)
 
     function advanceHBORomanceBelt(){
         if((displayHBORomance.length % 6 !== 0) && ((displayHBORomance.length - hboRomanceBeltPosition) < 12) && ((displayHBORomance.length - hboRomanceBeltPosition) > 6)){

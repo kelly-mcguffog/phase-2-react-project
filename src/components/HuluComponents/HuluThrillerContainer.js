@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function HuluThrillerContainer({displayHuluThriller, handleEditMedia}){
+function HuluThrillerContainer({displayHuluThriller, handleEditMedia, setSearch}){
     const [huluThrillerBeltPosition, setHuluThrillerBeltPosition] = useState(0)
-    const renderHuluThriller = displayHuluThriller.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderHuluThriller = displayHuluThriller.map(content => <ContentCard key={content.id} setSearch={setSearch} content={content} handleEditMedia={handleEditMedia}/>)
 
     function advanceHuluThrillerBelt(){
         if((displayHuluThriller.length % 6 !== 0) && ((displayHuluThriller.length - huluThrillerBeltPosition) < 12) && ((displayHuluThriller.length - huluThrillerBeltPosition) > 6)){

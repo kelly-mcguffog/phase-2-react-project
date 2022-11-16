@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function HuluSciFiContainer({displayHuluSciFi, handleEditMedia}){
+function HuluSciFiContainer({displayHuluSciFi, handleEditMedia, setSearch}){
     const [huluSciFiBeltPosition, setHuluSciFiBeltPosition] = useState(0)
-    const renderHuluSciFi = displayHuluSciFi.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderHuluSciFi = displayHuluSciFi.map(content => <ContentCard key={content.id} setSearch={setSearch} content={content} handleEditMedia={handleEditMedia}/>)
     function advanceHuluSciFiBelt(){
         if((displayHuluSciFi.length % 6 !== 0) && ((displayHuluSciFi.length - huluSciFiBeltPosition) < 12) && ((displayHuluSciFi.length - huluSciFiBeltPosition) > 6)){
             setHuluSciFiBeltPosition(huluSciFiBeltPosition + ((displayHuluSciFi.length % 6)))

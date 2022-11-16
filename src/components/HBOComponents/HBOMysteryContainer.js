@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function HBOMysteryContainer({displayHBOMystery, handleEditMedia}){
+function HBOMysteryContainer({displayHBOMystery, handleEditMedia, setSearch}){
     const [hboMysteryBeltPosition, setHBOMysteryBeltPosition] = useState(0)
-    const renderHBOMystery = displayHBOMystery.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderHBOMystery = displayHBOMystery.map(content => <ContentCard key={content.id} setSearch={setSearch} content={content} handleEditMedia={handleEditMedia}/>)
 
     function advanceHBOMysteryBelt(){
         if((displayHBOMystery.length % 6 !== 0) && ((displayHBOMystery.length - hboMysteryBeltPosition) < 12) && ((displayHBOMystery.length - hboMysteryBeltPosition) > 6)){

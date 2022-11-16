@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function ActionContainer({handleEditMedia, displayAction}){
+function ActionContainer({handleEditMedia, displayAction, setSearch}){
     const [actionBeltPosition, setActionBeltPosition] = useState(0)
-    const renderAction = displayAction.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderAction = displayAction.map(content => <ContentCard key={content.id} setSearch={setSearch} content={content} handleEditMedia={handleEditMedia}/>)
 
     function advanceActionBelt(){
         if((displayAction.length % 6 !== 0) && ((displayAction.length - actionBeltPosition) < 12) && ((displayAction.length - actionBeltPosition) > 6)){

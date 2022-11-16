@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function ThrillerContainer({displayThriller, handleEditMedia}){
+function ThrillerContainer({displayThriller, handleEditMedia, setSearch}){
     const [thrillerBeltPosition, setThrillerBeltPosition] = useState(0)
-    const renderThriller = displayThriller.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderThriller = displayThriller.map(content => <ContentCard key={content.id} setSearch={setSearch} content={content} handleEditMedia={handleEditMedia}/>)
 
     function advanceThrillerBelt(){
         if((displayThriller.length % 6 !== 0) && ((displayThriller.length - thrillerBeltPosition) < 12) && ((displayThriller.length - thrillerBeltPosition) > 6)){

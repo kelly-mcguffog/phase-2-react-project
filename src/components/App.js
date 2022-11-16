@@ -68,16 +68,16 @@ function App() {
       <NavBar search={search} handleFilter={handleFilter} setSearch={setSearch}/>
       <Switch>
         <Route exact path="/">
-          <Container handleEditMedia={handleEditMedia} allContent={displayContent} />
+          <Container setSearch={setSearch} handleEditMedia={handleEditMedia} allContent={displayContent} />
         </Route>
         <Route path="/hbo">
-          <HBO handleEditMedia={handleEditMedia} allContent={displayContent} />
+          <HBO setSearch={setSearch} handleEditMedia={handleEditMedia} allContent={displayContent} />
         </Route>
         <Route path="/hulu">
-          <Hulu handleEditMedia={handleEditMedia} allContent={displayContent} />
+          <Hulu setSearch={setSearch} handleEditMedia={handleEditMedia} allContent={displayContent} />
         </Route>
         <Route path="/netflix">
-          <Netflix handleEditMedia={handleEditMedia} allContent={displayContent} />
+          <Netflix setSearch={setSearch} handleEditMedia={handleEditMedia} allContent={displayContent} />
         </Route>
         <Route path="/new">
           <Form onContentFormSubmit={handleAddNewContent} />

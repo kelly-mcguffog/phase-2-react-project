@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function NetflixThrillerContainer({displayNetflixThriller, handleEditMedia}){
+function NetflixThrillerContainer({displayNetflixThriller, handleEditMedia, setSearch}){
     const [netflixThrillerBeltPosition, setNetflixThrillerBeltPosition] = useState(0)
-    const renderNetflixThriller = displayNetflixThriller.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderNetflixThriller = displayNetflixThriller.map(content => <ContentCard key={content.id} setSearch={setSearch} content={content} handleEditMedia={handleEditMedia}/>)
 
     function advanceNetflixThrillerBelt(){
         if((displayNetflixThriller.length % 6 !== 0) && ((displayNetflixThriller.length - netflixThrillerBeltPosition) < 12) && ((displayNetflixThriller.length - netflixThrillerBeltPosition) > 6)){

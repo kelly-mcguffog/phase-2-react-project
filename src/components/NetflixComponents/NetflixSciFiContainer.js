@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function NetflixSciFiContainer({displayNetflixSciFi, handleEditMedia}){
+function NetflixSciFiContainer({displayNetflixSciFi, handleEditMedia, setSearch}){
     const [netflixSciFiBeltPosition, setNetflixSciFiBeltPosition] = useState(0)
-    const renderNetflixSciFi = displayNetflixSciFi.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderNetflixSciFi = displayNetflixSciFi.map(content => <ContentCard key={content.id} setSearch={setSearch} content={content} handleEditMedia={handleEditMedia}/>)
 
         function advanceNetflixSciFiBelt(){
             if((displayNetflixSciFi.length % 6 !== 0) && ((displayNetflixSciFi.length - netflixSciFiBeltPosition) < 12) && ((displayNetflixSciFi.length - netflixSciFiBeltPosition) > 6)){

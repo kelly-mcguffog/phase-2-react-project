@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function DramaContainer({displayDramas, handleEditMedia}){
+function DramaContainer({displayDramas, handleEditMedia, setSearch}){
     const [dramaBeltPosition, setDramaBeltPosition] = useState(0)
-    const renderDramas = displayDramas.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderDramas = displayDramas.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia} setSearch={setSearch}/>)
 
     function advanceDramaBelt(){
         console.log(displayDramas.length - dramaBeltPosition)

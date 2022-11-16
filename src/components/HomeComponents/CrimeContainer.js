@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function CrimeContainer({displayCrime, handleEditMedia}){
+function CrimeContainer({displayCrime, handleEditMedia, setSearch}){
     const [crimeBeltPosition, setCrimeBeltPosition] = useState(0)
-    const renderCrime = displayCrime.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderCrime = displayCrime.map(content => <ContentCard key={content.id} content={content} setSearch={setSearch} handleEditMedia={handleEditMedia}/>)
 
     function advanceCrimeBelt(){
         if((displayCrime.length % 6 !== 0) && ((displayCrime.length - crimeBeltPosition) < 12) && ((displayCrime.length - crimeBeltPosition) > 6)){

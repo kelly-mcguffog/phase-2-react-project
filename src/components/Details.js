@@ -4,13 +4,15 @@ import HuluButton from "./HuluButton";
 import NetflixButton from "./NetflixButton";
 import { Link } from "react-router-dom";
 
-function Details({content, handleEditMedia}){
+function Details({content, handleEditMedia, setSearch}){
     const {id, title, genre, category, platform, description, trailer} = content
 
     function sendIdToApp(){
         handleEditMedia(id)
     }
 
+    setSearch("")
+    
     function streamingButton(){
         if(platform === "HBO Max"){
             return <HBOButton />

@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function HBOThrillerContainer({displayHBOThriller, handleEditMedia}){
+function HBOThrillerContainer({displayHBOThriller, handleEditMedia, setSearch}){
     const [hboThrillerBeltPosition, setHBOThrillerBeltPosition] = useState(0)
-    const renderHBOThriller = displayHBOThriller.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderHBOThriller = displayHBOThriller.map(content => <ContentCard key={content.id} content={content} setSearch={setSearch} handleEditMedia={handleEditMedia}/>)
 
         function advanceHBOThrillerBelt(){
             if((displayHBOThriller.length % 6 !== 0) && ((displayHBOThriller.length - hboThrillerBeltPosition) < 12) && ((displayHBOThriller.length - hboThrillerBeltPosition) > 6)){

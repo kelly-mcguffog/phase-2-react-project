@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Details from "./Details"
 
-function ContentCard({content, handleEditMedia}){
+function ContentCard({content, handleEditMedia, setSearch}){
     const {title, image} = content
 
     const [isShowingDetails, setDetails] = useState(false)
@@ -17,7 +17,7 @@ function ContentCard({content, handleEditMedia}){
             <h3 className={isShowingDetails ? "content-details-title" : "card-title"}>{title}</h3>
             <div id="close-btn" onClick={showDetails}>
                 <i id="bar" className={isShowingDetails ? "fa-solid fa-circle-xmark" : "see-more"}></i>
-                {isShowingDetails ? <Details handleEditMedia={handleEditMedia} isShowingDetails={isShowingDetails} showDetails={showDetails} content={content}/> : false}
+                {isShowingDetails ? <Details setSearch={setSearch} handleEditMedia={handleEditMedia} isShowingDetails={isShowingDetails} showDetails={showDetails} content={content}/> : false}
             </div>
         </div>
 

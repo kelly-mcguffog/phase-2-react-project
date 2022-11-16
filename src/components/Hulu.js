@@ -8,7 +8,7 @@ import HuluSciFiContainer from "./HuluComponents/HuluSciFiContainer";
 import HuluThrillerContainer from "./HuluComponents/HuluThrillerContainer";
 
 
-function Hulu({handleEditMedia, allContent}){
+function Hulu({handleEditMedia, allContent, setSearch}){
     
     const huluContent = allContent.filter(content => content.platform === "Hulu")
 
@@ -23,13 +23,13 @@ function Hulu({handleEditMedia, allContent}){
     
     return(
         <div className="card-container">
-            {displayHuluDramas.length > 0 ? <HuluDramaContainer handleEditMedia={handleEditMedia} displayHuluDramas={displayHuluDramas}/> : false}
-            {displayHuluCrime.length > 0 ? <HuluCrimeContainer handleEditMedia={handleEditMedia} displayHuluCrime={displayHuluCrime}/> : false}
-            {displayHuluAction.length > 0 ? <HuluActionContainer handleEditMedia={handleEditMedia} displayHuluAction={displayHuluAction}/> : false}
-            {displayHuluMystery.length > 0 ? <HuluMysteryContainer handleEditMedia={handleEditMedia} displayHuluMystery={displayHuluMystery}/> : false}
-            {displayHuluRomance.length > 0 ? <HuluRomanceContainer handleEditMedia={handleEditMedia} displayHuluRomance={displayHuluRomance}/> : false}
-            {displayHuluThriller.length > 0 ? <HuluThrillerContainer handleEditMedia={handleEditMedia} displayHuluThriller={displayHuluThriller}/> : false}
-            {displayHuluSciFi.length > 0 ? <HuluSciFiContainer handleEditMedia={handleEditMedia} displayHuluSciFi={displayHuluSciFi}/> : false}
+            {displayHuluDramas.length > 0 ? <HuluDramaContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayHuluDramas={displayHuluDramas}/> : false}
+            {displayHuluCrime.length > 0 ? <HuluCrimeContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayHuluCrime={displayHuluCrime}/> : false}
+            {displayHuluAction.length > 0 ? <HuluActionContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayHuluAction={displayHuluAction}/> : false}
+            {displayHuluMystery.length > 0 ? <HuluMysteryContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayHuluMystery={displayHuluMystery}/> : false}
+            {displayHuluRomance.length > 0 ? <HuluRomanceContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayHuluRomance={displayHuluRomance}/> : false}
+            {displayHuluThriller.length > 0 ? <HuluThrillerContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayHuluThriller={displayHuluThriller}/> : false}
+            {displayHuluSciFi.length > 0 ? <HuluSciFiContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayHuluSciFi={displayHuluSciFi}/> : false}
         </div>
         )
 }

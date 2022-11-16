@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function NetflixMysteryContainer({displayNetflixMystery, handleEditMedia}){
+function NetflixMysteryContainer({displayNetflixMystery, handleEditMedia, setSearch}){
     const [netflixMysteryBeltPosition, setNetflixMysteryBeltPosition] = useState(0)
-    const renderNetflixMystery = displayNetflixMystery.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderNetflixMystery = displayNetflixMystery.map(content => <ContentCard key={content.id} content={content} setSearch={setSearch} handleEditMedia={handleEditMedia}/>)
 
     function advanceNetflixMysteryBelt(){
         if((displayNetflixMystery.length % 6 !== 0) && ((displayNetflixMystery.length - netflixMysteryBeltPosition) < 12) && ((displayNetflixMystery.length - netflixMysteryBeltPosition) > 6)){

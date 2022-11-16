@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function MysteryContainer({displayMystery, handleEditMedia}){
+function MysteryContainer({displayMystery, handleEditMedia, setSearch}){
     const [mysteryBeltPosition, setMysteryBeltPosition] = useState(0)
-    const renderMystery = displayMystery.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia}/>)
+    const renderMystery = displayMystery.map(content => <ContentCard key={content.id} content={content} handleEditMedia={handleEditMedia} setSearch={setSearch} />)
 
     function advanceMysteryBelt(){
         if((displayMystery.length % 6 !== 0) && ((displayMystery.length - mysteryBeltPosition) < 12) && ((displayMystery.length - mysteryBeltPosition) > 6)){

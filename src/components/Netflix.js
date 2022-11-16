@@ -8,7 +8,7 @@ import NetflixSciFiContainer from "./NetflixComponents/NetflixSciFiContainer";
 import NetflixThrillerContainer from "./NetflixComponents/NetflixThrillerContainer";
 
 
-function Netflix({handleEditMedia, allContent}){
+function Netflix({handleEditMedia, allContent, setSearch}){
     
     const netflixContent = allContent.filter(content => content.platform === "Netflix")
 
@@ -23,13 +23,13 @@ function Netflix({handleEditMedia, allContent}){
    
     return(
         <div className="card-container">
-            {displayNetflixDramas.length > 0 ? <NetflixDramaContainer handleEditMedia={handleEditMedia} displayNetflixDramas={displayNetflixDramas}/> : false}
-            {displayNetflixCrime.length > 0 ? <NetflixCrimeContainer handleEditMedia={handleEditMedia} displayNetflixCrime={displayNetflixCrime}/> : false}
-            {displayNetflixAction.length > 0 ? <NetflixActionContainer handleEditMedia={handleEditMedia} displayNetflixAction={displayNetflixAction}/> : false}
-            {displayNetflixMystery.length > 0 ? <NetflixMysteryContainer handleEditMedia={handleEditMedia} displayNetflixMystery={displayNetflixMystery}/> : false}
-            {displayNetflixRomance.length > 0 ? <NetflixRomanceContainer handleEditMedia={handleEditMedia} displayNetflixRomance={displayNetflixRomance}/> : false}
-            {displayNetflixThriller.length > 0 ? <NetflixThrillerContainer handleEditMedia={handleEditMedia} displayNetflixThriller={displayNetflixThriller}/> : false}
-            {displayNetflixSciFi.length > 0 ? <NetflixSciFiContainer handleEditMedia={handleEditMedia} displayNetflixSciFi={displayNetflixSciFi}/> : false}
+            {displayNetflixDramas.length > 0 ? <NetflixDramaContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayNetflixDramas={displayNetflixDramas}/> : false}
+            {displayNetflixCrime.length > 0 ? <NetflixCrimeContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayNetflixCrime={displayNetflixCrime}/> : false}
+            {displayNetflixAction.length > 0 ? <NetflixActionContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayNetflixAction={displayNetflixAction}/> : false}
+            {displayNetflixMystery.length > 0 ? <NetflixMysteryContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayNetflixMystery={displayNetflixMystery}/> : false}
+            {displayNetflixRomance.length > 0 ? <NetflixRomanceContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayNetflixRomance={displayNetflixRomance}/> : false}
+            {displayNetflixThriller.length > 0 ? <NetflixThrillerContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayNetflixThriller={displayNetflixThriller}/> : false}
+            {displayNetflixSciFi.length > 0 ? <NetflixSciFiContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayNetflixSciFi={displayNetflixSciFi}/> : false}
             
         </div>
         )

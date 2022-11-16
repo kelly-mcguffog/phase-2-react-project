@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import ContentCard from "../ContentCard";
 
-function SciFiContainer({displaySciFi, handleEditMedia}){
+function SciFiContainer({displaySciFi, handleEditMedia, setSearch}){
     const [sciFiBeltPosition, setSciFiBeltPosition] = useState(0)
-    const renderSciFi = displaySciFi.map(content => <ContentCard key={content.id} content={content} handleEditMedi={handleEditMedia}/>)
+    const renderSciFi = displaySciFi.map(content => <ContentCard key={content.id} content={content} setSearch={setSearch} handleEditMedi={handleEditMedia}/>)
     function advanceSciFiBelt(){
         if((displaySciFi.length % 6 !== 0) && ((displaySciFi.length - sciFiBeltPosition) < 12) && ((displaySciFi.length - sciFiBeltPosition) > 6)){
             setSciFiBeltPosition(sciFiBeltPosition + ((displaySciFi.length % 6)))
