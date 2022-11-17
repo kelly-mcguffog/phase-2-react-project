@@ -19,20 +19,20 @@ function RomanceContainer({displayRomance, handleEditMedia, setSearch}){
     }
 
     return(
-            <div className="media-container">
-                <div className="genre-header">
+        <div className="media-container">
+            <div className="genre-header">
                 <h2>Romance</h2>
                 <div className="mobileBtns">
                     <div className="back" onClick={retreatRomanceBelt}><i className="arrow left"></i></div>
                     <div className="forward" onClick={advanceRomanceBelt}><i className="arrow right"></i></div>
                 </div>
             </div>
-                <div className="row">
-                    <div className="arrow-button" onClick={retreatRomanceBelt}>{renderRomance.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
-                    {renderRomance.slice(romanceBeltPosition, romanceBeltPosition+6)}
-                    <div className="arrow-button" onClick={advanceRomanceBelt}>{renderRomance.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
-                </div>
+            <div className="row">
+                <div className="arrow-button" onClick={retreatRomanceBelt}>{renderRomance.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
+                {renderRomance.slice(romanceBeltPosition, romanceBeltPosition+6)}
+                <div className="arrow-button" onClick={advanceRomanceBelt}>{renderRomance.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
+        </div>
     )
 }
 

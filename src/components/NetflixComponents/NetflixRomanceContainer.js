@@ -19,7 +19,7 @@ function NetflixRomanceContainer({displayNetflixRomance, handleEditMedia, setSea
     }
 
     return(
-            <div className="media-container">
+        <div className="media-container">
             <div className="genre-header">
                 <h2>Romance</h2>
                 <div className="mobileBtns">
@@ -32,7 +32,7 @@ function NetflixRomanceContainer({displayNetflixRomance, handleEditMedia, setSea
                 {renderNetflixRomance.slice(netflixRomanceBeltPosition, netflixRomanceBeltPosition+6)}
                 <div className="arrow-button" onClick={advanceNetflixRomanceBelt}>{renderNetflixRomance.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
-            </div>
+        </div>
     )
 }
 

@@ -10,7 +10,7 @@ function Search({search, setSearch, handleFilter}){
             <input placeholder="search..." onChange={(e)=> setSearch(e.target.value)} className="input-search" value={search}/>
         </div> 
         </>
-      );    
+    );    
 }
 
 export default Search;

@@ -29,10 +29,9 @@ function Netflix({handleEditMedia, allContent, setSearch}){
             {displayNetflixMystery.length > 0 ? <NetflixMysteryContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayNetflixMystery={displayNetflixMystery}/> : false}
             {displayNetflixRomance.length > 0 ? <NetflixRomanceContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayNetflixRomance={displayNetflixRomance}/> : false}
             {displayNetflixThriller.length > 0 ? <NetflixThrillerContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayNetflixThriller={displayNetflixThriller}/> : false}
-            {displayNetflixSciFi.length > 0 ? <NetflixSciFiContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayNetflixSciFi={displayNetflixSciFi}/> : false}
-            
+            {displayNetflixSciFi.length > 0 ? <NetflixSciFiContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayNetflixSciFi={displayNetflixSciFi}/> : false}   
         </div>
-        )
+    )
 }
 
 export default Netflix;

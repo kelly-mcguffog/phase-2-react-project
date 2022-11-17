@@ -21,19 +21,19 @@ function DramaContainer({displayDramas, handleEditMedia, setSearch}){
 
     return(
         <div className="media-container">
-                <div className="genre-header">
+            <div className="genre-header">
                 <h2>Drama</h2>
                 <div className="mobileBtns">
                     <div className="back" onClick={retreatDramaBelt}><i className="arrow left"></i></div>
                     <div className="forward" onClick={advanceDramaBelt}><i className="arrow right"></i></div>
                 </div>
             </div>
-                <div className="row">
-                    <div className="back arrow-button" onClick={retreatDramaBelt}>{renderDramas.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
-                    {renderDramas.slice(dramaBeltPosition, dramaBeltPosition+6)}
-                    <div className="forward arrow-button" onClick={advanceDramaBelt}>{renderDramas.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
-                </div>
+            <div className="row">
+                <div className="back arrow-button" onClick={retreatDramaBelt}>{renderDramas.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
+                {renderDramas.slice(dramaBeltPosition, dramaBeltPosition+6)}
+                <div className="forward arrow-button" onClick={advanceDramaBelt}>{renderDramas.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
+        </div>
     )
 }
 

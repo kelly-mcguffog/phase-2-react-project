@@ -26,12 +26,12 @@ function SciFiContainer({displaySciFi, handleEditMedia, setSearch}){
                     <div className="forward" onClick={advanceSciFiBelt}><i className="arrow right"></i></div>
                 </div>
             </div>
-                <div className="row">
-                    <div className="arrow-button" onClick={retreatSciFiBelt}>{renderSciFi.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
-                    {renderSciFi.slice(sciFiBeltPosition, sciFiBeltPosition+6)}
-                    <div className="arrow-button" onClick={advanceSciFiBelt}>{renderSciFi.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i>: null}</div>
-                </div>
+            <div className="row">
+                <div className="arrow-button" onClick={retreatSciFiBelt}>{renderSciFi.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
+                {renderSciFi.slice(sciFiBeltPosition, sciFiBeltPosition+6)}
+                <div className="arrow-button" onClick={advanceSciFiBelt}>{renderSciFi.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i>: null}</div>
             </div>
+        </div>
     )
 }
 

@@ -32,7 +32,7 @@ function HuluActionContainer({displayHuluAction, handleEditMedia, setSearch}){
                 {renderHuluAction.slice(huluActionBeltPosition, huluActionBeltPosition+6)}
                 <div className="arrow-button" onClick={advanceHuluActionBelt}>{renderHuluAction.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
-            </div>
+        </div>
     )
 }
 

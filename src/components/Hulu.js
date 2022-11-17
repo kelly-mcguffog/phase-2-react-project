@@ -31,7 +31,7 @@ function Hulu({handleEditMedia, allContent, setSearch}){
             {displayHuluThriller.length > 0 ? <HuluThrillerContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayHuluThriller={displayHuluThriller}/> : false}
             {displayHuluSciFi.length > 0 ? <HuluSciFiContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayHuluSciFi={displayHuluSciFi}/> : false}
         </div>
-        )
+    )
 }
 
 export default Hulu;

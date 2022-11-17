@@ -32,7 +32,7 @@ function HBOActionContainer({displayHBOAction, handleEditMedia, setSearch}){
                 {renderHBOAction.slice(hboActionBeltPosition, hboActionBeltPosition+6)}
                 <div className="arrow-button" onClick={advanceHBOActionBelt}>{renderHBOAction.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
-            </div>
+        </div>
     )
 }
 

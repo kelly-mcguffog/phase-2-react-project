@@ -20,19 +20,19 @@ function ActionContainer({handleEditMedia, displayAction, setSearch}){
 
     return(
         <div className="media-container">
-                <div className="genre-header">
+            <div className="genre-header">
                 <h2>Action</h2>
                 <div className="mobileBtns">
                     <div className="back" onClick={retreatActionBelt}><i className="arrow right"></i></div>
                     <div className="forward" onClick={advanceActionBelt}><i className="arrow right"></i></div>
                 </div>
             </div>
-                <div className="row">
-                    <div className="arrow-button" onClick={retreatActionBelt}>{renderAction.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
-                    {renderAction.slice(actionBeltPosition, actionBeltPosition+6)}
-                    <div className="arrow-button" onClick={advanceActionBelt}>{renderAction.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
-                </div>
+            <div className="row">
+                <div className="arrow-button" onClick={retreatActionBelt}>{renderAction.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>
+                {renderAction.slice(actionBeltPosition, actionBeltPosition+6)}
+                <div className="arrow-button" onClick={advanceActionBelt}>{renderAction.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
+        </div>
     )
 }
 

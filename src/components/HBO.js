@@ -30,8 +30,7 @@ function HBO({allContent, handleEditMedia, setSearch}){
             {displayHBOThriller.length > 0 ? <HBOThrillerContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayHBOThriller={displayHBOThriller}/> : false}
             {displayHBOSciFi.length > 0 ? <HBOSciFiContainer setSearch={setSearch} handleEditMedia={handleEditMedia} displayHBOSciFi={displayHBOSciFi}/> : false}
         </div>
-        )
-
+    )
 }
 
 export default HBO;

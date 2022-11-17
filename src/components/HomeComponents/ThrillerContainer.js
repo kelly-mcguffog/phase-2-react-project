@@ -21,11 +21,11 @@ function ThrillerContainer({displayThriller, handleEditMedia, setSearch}){
     return(
         <div className="media-container">
             <div className="genre-header">
-            <h2>Thriller</h2>
-            <div className="mobileBtns">
-                <div className="back" onClick={retreatThrillerBelt}><i className="arrow left"></i></div>
-                <div className="forward" onClick={advanceThrillerBelt}><i className="arrow right"></i></div>
-            </div>
+                <h2>Thriller</h2>
+                <div className="mobileBtns">
+                    <div className="back" onClick={retreatThrillerBelt}><i className="arrow left"></i></div>
+                    <div className="forward" onClick={advanceThrillerBelt}><i className="arrow right"></i></div>
+                </div>
             </div>
             <div className="row">
                 <div className="arrow-button" onClick={retreatThrillerBelt}>{renderThriller.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-left"></i> : null}</div>

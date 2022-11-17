@@ -36,13 +36,11 @@ function Form({onContentFormSubmit}){
         .then(content => onContentFormSubmit(content))
         setFormData(initialState)
 
-      }
+    }
 
-
-
-        return (
-            <div className="form-container">
-                <form className="NewItem" onSubmit={handleSubmit}>
+    return (
+        <div className="form-container">
+            <form className="NewItem" onSubmit={handleSubmit}>
                 <label>
                     Title:
                     <input 
@@ -123,10 +121,9 @@ function Form({onContentFormSubmit}){
                 
             
                 <button onChange={(e) => setFormData(e.target.value)} name="submit" type="submit">Add to List</button>
-                </form>
-            </div>
-          );
-
+            </form>
+        </div>
+    );
 }
 
 export default Form;

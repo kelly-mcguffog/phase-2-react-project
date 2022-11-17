@@ -31,7 +31,7 @@ function NetflixCrimeContainer({displayNetflixCrime, handleEditMedia, setSearch}
                 {renderNetflixCrime.slice(netflixCrimeBeltPosition, netflixCrimeBeltPosition+6)}
                 <div className="arrow-button" onClick={advanceNetflixCrimeBelt}>{renderNetflixCrime.length > 6 ? <i className="fa-sharp fa-solid fa-circle-chevron-right"></i> : null}</div>
             </div>
-            </div>
+        </div>
     )
 }
 
