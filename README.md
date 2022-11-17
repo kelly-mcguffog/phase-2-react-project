@@ -2,7 +2,7 @@
 
 ## Overview
 
-Media Finder Pulls Popular movies and TV shows from different streaming services and tells you where they are available to watch.
+Media Finder pulls popular movies and TV shows from different streaming services and tells you where they are available to watch.
 
 App walk-through: https://www.youtube.com/watch?v=lLMOMnFQOdU
 
