@@ -208,21 +208,6 @@ h4{
   width: 500px;
   height: 300px;
 }
-#hbo-link.active{
-  content: url("./Assets/HBO_Max_Logo.png");
-  height: 15px;
-  width: auto;
-}
-#hulu-link.active{
-  content: url("./Assets/Hulu_Logo.png");
-  height: 15px;
-  width: auto;
-}
-#netflix-link.active{
-  content: url("./Assets/Netflix_Logo.png");
-  height: 15px;
-  width: auto;
-}
 a{
   color:black;
   text-decoration: none;

@@ -26,12 +26,6 @@ function Hulu({ allContent, handleEditMedia, setSearch }) {
                 setSearch={setSearch}
             />
             <GenreContainer
-                genre="Drama"
-                allContent={huluContent}
-                handleEditMedia={handleEditMedia}
-                setSearch={setSearch}
-            />
-            <GenreContainer
                 genre="Mystery"
                 allContent={huluContent}
                 handleEditMedia={handleEditMedia}

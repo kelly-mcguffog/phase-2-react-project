@@ -26,12 +26,6 @@ function Netflix({ allContent, handleEditMedia, setSearch }) {
                 setSearch={setSearch}
             />
             <GenreContainer
-                genre="Drama"
-                allContent={netflixContent}
-                handleEditMedia={handleEditMedia}
-                setSearch={setSearch}
-            />
-            <GenreContainer
                 genre="Mystery"
                 allContent={netflixContent}
                 handleEditMedia={handleEditMedia}

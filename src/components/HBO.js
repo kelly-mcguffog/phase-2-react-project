@@ -26,12 +26,6 @@ function Hbo({ allContent, handleEditMedia, setSearch }) {
                 setSearch={setSearch}
             />
             <GenreContainer
-                genre="Drama"
-                allContent={hboContent}
-                handleEditMedia={handleEditMedia}
-                setSearch={setSearch}
-            />
-            <GenreContainer
                 genre="Mystery"
                 allContent={hboContent}
                 handleEditMedia={handleEditMedia}
