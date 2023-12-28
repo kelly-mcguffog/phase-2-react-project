@@ -28,7 +28,9 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  /* padding: 20px; */
+  width: 95%;
+  margin: 20px auto;
 }
 #nav-right{
   display: flex;
@@ -44,6 +46,10 @@ body{
 }
 #mobile{
   display: none;
+}
+.media-container{
+  width: 95%;
+  margin: 20px auto;
 }
 .see-more::before{
   content: "View Details";

@@ -1,7 +1,10 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 
 function EditForm({id, title, category, description, genre, platform, trailer, image, setEditMedia, updateMediaList}){
+
+    const history = useHistory()
 
     function handleEditChange(event) {
         setEditMedia((prevMedia) => {
@@ -32,7 +35,7 @@ function EditForm({id, title, category, description, genre, platform, trailer, i
         })
         .then(res => res.json())
         .then(newMedia => updateMediaList(newMedia))
-        .then(alert("Changes made succesfully!"))
+        history.push("/")
     }
 
     return (

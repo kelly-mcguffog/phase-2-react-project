@@ -11,7 +11,8 @@ import Hulu from "./Hulu";
 import Container from "./Container";
 import Form from "./Form";
 import EditForm from "./EditForm";
-import "../App.css"
+import "../App.css";
+import data from '../db.json';
 
 
 function App() {
@@ -20,7 +21,6 @@ function App() {
     const [search, setSearch] = useState("")
     const [filter, setFilter] = useState("All")
     const [editMedia, setEditMedia] = useState(null)
-
     
     let displayContent = isContent.filter(content => content.title.toLowerCase().includes(search.toLowerCase()))
     displayContent = displayContent.filter(content => {
@@ -38,10 +38,8 @@ function App() {
     }
 
   useEffect(() => {
-    fetch('http://localhost:3000/content')
-      .then(res => res.json())
-      .then(data => setContent(data))
-  },[])
+    setContent(data.content);
+  }, []);
 
   function handleAddNewContent(newContent){
     setContent([...isContent, newContent]);

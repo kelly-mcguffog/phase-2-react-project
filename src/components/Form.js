@@ -35,7 +35,6 @@ function Form({onContentFormSubmit}){
         .then(res => res.json())
         .then(content => onContentFormSubmit(content))
         setFormData(initialState)
-
     }
 
     return (
@@ -46,7 +45,7 @@ function Form({onContentFormSubmit}){
                     <input 
                     type="text" 
                     name="title" 
-                    onChange={handleChange} 
+                    onChange={handleChange}
                     value={formData.title}
                     className="form-input"
                     placeholder="Enter a Title"

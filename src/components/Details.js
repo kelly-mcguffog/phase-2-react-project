@@ -26,7 +26,7 @@ function Details({content, handleEditMedia, setSearch}){
     return(
         <div className="content-details">
             <div className="trailer-clip">
-                <iframe frameBorder="0" className="trailer" src={trailer} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen>
+                <iframe title={title} frameBorder="0" className="trailer" src={trailer} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen>
                 </iframe>
             </div>
             <div className="details">

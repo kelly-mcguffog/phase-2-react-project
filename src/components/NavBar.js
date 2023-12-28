@@ -18,9 +18,9 @@ function mobileNavBar(){
        <h4><NavLink id="home" exact to="/">MediaFinder</NavLink></h4>
 
         <div id="nav-right" className={clicked ? "active" : "inactive"}>
-            <NavLink id="hbo-link" className="navLink" to="/hbo"><img className="nav-logo" src={HboWhiteLogo}/></NavLink>
-            <NavLink id="hulu-link" className="navLink" to="/hulu"><img className="nav-logo" src={HuluLogoWhite}/></NavLink>
-            <NavLink id="netflix-link" className="navLink" to="/netflix"><img className="nav-logo" src={NetflixLogoWhite}/></NavLink>
+            <NavLink id="hbo-link" className="navLink" to="/hbo"><img alt="hbo" className="nav-logo" src={HboWhiteLogo}/></NavLink>
+            <NavLink id="hulu-link" className="navLink" to="/hulu"><img alt="hulu" className="nav-logo" src={HuluLogoWhite}/></NavLink>
+            <NavLink id="netflix-link" className="navLink" to="/netflix"><img alt="netflix" className="nav-logo" src={NetflixLogoWhite}/></NavLink>
             <Search  handleFilter={handleFilter} search={search} setSearch={setSearch} />
             <h4 className="add-button">
                 <NavLink className="fa-solid fa-circle-plus" to="/new"></NavLink>

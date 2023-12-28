@@ -8,19 +8,17 @@ function ContentCard({content, handleEditMedia, setSearch}){
 
     function showDetails(){
         setDetails(isShowingDetails => !isShowingDetails)
-        console.log("hi")
     }
 
     return(
         <div className={isShowingDetails ? "content-details-container" : "content-card"}>
-            <img className={isShowingDetails ? "content-details-image" : "card-image"} src={image}></img>
+            <img className={isShowingDetails ? "content-details-image" : "card-image"} src={image} alt={title}></img>
             <h3 className={isShowingDetails ? "content-details-title" : "card-title"}>{title}</h3>
             <div id="close-btn" onClick={showDetails}>
                 <i id="bar" className={isShowingDetails ? "fa-solid fa-circle-xmark" : "see-more"}></i>
                 {isShowingDetails ? <Details setSearch={setSearch} handleEditMedia={handleEditMedia} isShowingDetails={isShowingDetails} showDetails={showDetails} content={content}/> : false}
             </div>
         </div>
-
     )
 }
 
