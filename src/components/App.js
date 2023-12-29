@@ -13,48 +13,49 @@ import Form from "./Form";
 import EditForm from "./EditForm";
 import "../App.css";
 import data from '../db.json';
+import Details from "./Details";
 
 
 function App() {
 
-    const [isContent, setContent] = useState([]);
-    const [search, setSearch] = useState("")
-    const [filter, setFilter] = useState("All")
-    const [editMedia, setEditMedia] = useState(null)
-    
-    let displayContent = isContent.filter(content => content.title.toLowerCase().includes(search.toLowerCase()))
-    displayContent = displayContent.filter(content => {
-      if(filter === "All") return true;
-      return content.category === filter;
-    })
-    displayContent.sort(function(a, b) {
-      if(a.title.toLowerCase() < b.title.toLowerCase()) return -1;
-      if(a.title.toLowerCase() > b.title.toLowerCase()) return 1;
-      return 0;
-     })
+  const [isContent, setContent] = useState([]);
+  const [search, setSearch] = useState("")
+  const [filter, setFilter] = useState("All")
+  const [editMedia, setEditMedia] = useState(null)
 
-    function handleFilter(e){
-      setFilter(e.target.value)
-    }
+  let displayContent = isContent.filter(content => content.title.toLowerCase().includes(search.toLowerCase()))
+  displayContent = displayContent.filter(content => {
+    if (filter === "All") return true;
+    return content.category === filter;
+  })
+  displayContent.sort(function (a, b) {
+    if (a.title.toLowerCase() < b.title.toLowerCase()) return -1;
+    if (a.title.toLowerCase() > b.title.toLowerCase()) return 1;
+    return 0;
+  })
+
+  function handleFilter(e) {
+    setFilter(e.target.value)
+  }
 
   useEffect(() => {
     setContent(data.content);
   }, []);
 
-  function handleAddNewContent(newContent){
+  function handleAddNewContent(newContent) {
     setContent([...isContent, newContent]);
   }
 
-  function handleEditMedia(id){
+  function handleEditMedia(id) {
     const selectedMedia = displayContent.find(content => content.id === id)
     setEditMedia(selectedMedia)
   }
 
   const updateMediaList = (newMedia) => {
     const newList = displayContent.map(content => {
-      if(content.id === newMedia.id){
+      if (content.id === newMedia.id) {
         return newMedia
-      }else {
+      } else {
         return content
       }
     })
@@ -63,19 +64,22 @@ function App() {
 
   return (
     <Router>
-      <NavBar search={search} handleFilter={handleFilter} setSearch={setSearch}/>
+      <NavBar search={search} handleFilter={handleFilter} setSearch={setSearch} />
       <Switch>
         <Route exact path="/">
-          <Container setSearch={setSearch} handleEditMedia={handleEditMedia} allContent={displayContent} />
+          <Container search={search} setSearch={setSearch} handleEditMedia={handleEditMedia} allContent={displayContent} />
         </Route>
         <Route path="/hbo">
-          <HBO setSearch={setSearch} handleEditMedia={handleEditMedia} allContent={displayContent} />
+          <HBO search={search} setSearch={setSearch} handleEditMedia={handleEditMedia} allContent={displayContent} />
         </Route>
         <Route path="/hulu">
-          <Hulu setSearch={setSearch} handleEditMedia={handleEditMedia} allContent={displayContent} />
+          <Hulu search={search} setSearch={setSearch} handleEditMedia={handleEditMedia} allContent={displayContent} />
         </Route>
         <Route path="/netflix">
-          <Netflix setSearch={setSearch} handleEditMedia={handleEditMedia} allContent={displayContent} />
+          <Netflix search={search} setSearch={setSearch} handleEditMedia={handleEditMedia} allContent={displayContent} />
+        </Route>
+        <Route path="/:id">
+          <Details allContent={displayContent} handleEditMedia={handleEditMedia} />
         </Route>
         <Route path="/new">
           <Form onContentFormSubmit={handleAddNewContent} />

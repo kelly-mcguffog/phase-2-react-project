@@ -1,7 +1,7 @@
 import React from "react";
 import GenreContainer from "./GenreContainer";
 
-function Hbo({ allContent, handleEditMedia, setSearch }) {
+function Hbo({ allContent, handleEditMedia, search, setSearch }) {
 
     const hboContent = allContent.filter(content => content.platform === "HBO Max")
 
@@ -11,42 +11,49 @@ function Hbo({ allContent, handleEditMedia, setSearch }) {
                 genre="Drama"
                 allContent={hboContent}
                 handleEditMedia={handleEditMedia}
+                search={search}
                 setSearch={setSearch}
             />
             <GenreContainer
                 genre="Action"
                 allContent={hboContent}
                 handleEditMedia={handleEditMedia}
+                search={search}
                 setSearch={setSearch}
             />
             <GenreContainer
                 genre="Crime"
                 allContent={hboContent}
                 handleEditMedia={handleEditMedia}
+                search={search}
                 setSearch={setSearch}
             />
             <GenreContainer
                 genre="Mystery"
                 allContent={hboContent}
                 handleEditMedia={handleEditMedia}
+                search={search}
                 setSearch={setSearch}
             />
             <GenreContainer
                 genre="Romance"
                 allContent={hboContent}
                 handleEditMedia={handleEditMedia}
+                search={search}
                 setSearch={setSearch}
             />
             <GenreContainer
                 genre="Sci-Fi"
                 allContent={hboContent}
                 handleEditMedia={handleEditMedia}
+                search={search}
                 setSearch={setSearch}
             />
             <GenreContainer
                 genre="Thriller"
                 allContent={hboContent}
                 handleEditMedia={handleEditMedia}
+                search={search}
                 setSearch={setSearch}
             />
         </>

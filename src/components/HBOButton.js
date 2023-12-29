@@ -1,10 +1,10 @@
 import React from "react";
+import StreamingButton from "./StreamingButton";
 
-function HBOButton(){
-    const hboUrl = "https://www.hbomax.com/";
-   
-    return(
-        <a href={hboUrl} target="_blank" rel="noreferrer"><button className="hboButton streamingButton"><i className="fa-solid fa-play"></i> Watch Now</button></a>
-    )
+function HBOButton() {
+  const hboUrl = "https://www.hbomax.com/";
+
+  return <StreamingButton streamingService="HBO" url={hboUrl} />;
 }
+
 export default HBOButton;
