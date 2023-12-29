@@ -50,7 +50,7 @@ function Details({ allContent, handleEditMedia }) {
                     <p className="content-info">{description}</p>
                     <p className="edit" onClick={sendIdToApp}>
                         <i className="fa-solid fa-pen-to-square"></i>
-                        <Link to="/edit">Edit Details</Link>
+                        <Link to={`/${id}/edit`}>Edit Details</Link>
                     </p>
                 </div>
             </div>

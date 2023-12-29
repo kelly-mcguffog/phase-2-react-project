@@ -15,6 +15,7 @@ function Form({ onContentFormSubmit }) {
 
     const [formData, setFormData] = useState(initialState)
 
+
     function handleChange(event) {
         setFormData({
             ...formData,
@@ -25,7 +26,7 @@ function Form({ onContentFormSubmit }) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        fetch('http://localhost:3000/content', {
+            fetch('http://localhost:3001/content', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

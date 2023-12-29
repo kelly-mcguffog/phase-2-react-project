@@ -1,47 +1,87 @@
-import React from "react";
-import { useHistory } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useHistory, useParams } from "react-router-dom";
+
+function EditForm({ updateMediaList, allContent }) {
+    const history = useHistory();
+    const { id } = useParams();
+
+    // const [formData, setFormData] = useState({
+    //     title: "",
+    //     category: "Movie",
+    //     genre: "Crime",
+    //     description: "",
+    //     platform: "HBO Max",
+    //     trailer: "",
+    //     image: "",
+    // });
+
+    // const [formData, setFormData] = useState("")
+    const contentObj = allContent.find((selected) => selected.id === parseInt(id));
+    const content = contentObj || {};
+
+    const [formData, setFormData] = useState({
+        title: "",
+        genre: "",
+        category: "",
+        platform: "",
+        description: "",
+        trailer: "",
+        image: "",
+    });
+    
+    useEffect(() => {
+        console.log("Content:", content);
+
+        if (content && content.title) {
+          setFormData({
+            title: content.title || "",
+            genre: content.genre || "",
+            category: content.category || "",
+            platform: content.platform || "",
+            description: content.description || "",
+            trailer: content.trailer || "",
+            image: content.image || "",
+          });
+        }
+      }, [content && content.title]);
+      
+    
+
+    if (!content) {
+        return <div>Loading...</div>;
+    }
 
 
-function EditForm({ id, title, category, description, genre, platform, trailer, image, setEditMedia, updateMediaList }) {
 
-    const history = useHistory()
+    // console.log(formData)
+    const { title, genre, category, platform, description, trailer, image } = formData;
 
     function handleEditChange(event) {
-        setEditMedia((prevMedia) => {
+        setFormData((prevMedia) => {
             return {
                 ...prevMedia,
-                [event.target.name]: event.target.value
-            }
-        })
+                [event.target.name]: event.target.value,
+            };
+        });
     }
 
     function handleEditSubmit(e) {
         e.preventDefault();
-        fetch(`http://localhost:3000/content/${id}`, {
+        fetch(`http://localhost:3001/content/${id}`, {
             method: "PATCH",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
             },
-            body: JSON.stringify({
-                id,
-                title,
-                category,
-                description,
-                genre,
-                platform,
-                trailer,
-                image
-            })
+            body: JSON.stringify(formData),
         })
-            .then(res => res.json())
-            .then(newMedia => updateMediaList(newMedia))
-        history.push("/")
+            .then((res) => res.json())
+            .then((newMedia) => updateMediaList(newMedia));
+        history.push("/");
     }
 
     return (
         <div className="form-container">
             <form className="NewItem" onSubmit={handleEditSubmit}>
-
                 <label>
                     Title:
                     <input
@@ -119,13 +159,12 @@ function EditForm({ id, title, category, description, genre, platform, trailer, 
                         className="form-input"
                     />
                 </label>
-
-
-                <button name="submit" type="submit">Submit Changes</button>
+                <button name="submit" type="submit">
+                    Submit Changes
+                </button>
             </form>
         </div>
     );
-
 }
 
 export default EditForm;
